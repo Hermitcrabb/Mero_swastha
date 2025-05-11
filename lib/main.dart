@@ -1,16 +1,25 @@
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
-void main() => runApp(mero_swastha());
+void main() async{
+  // Ensure Flutter bindings are initialized before running the app
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  // Your app startup code
+  runApp(MeroSwastha());
+}
 
-class mero_swastha extends StatefulWidget {
-  const mero_swastha({super.key});
-
+class MeroSwastha extends StatelessWidget {
   @override
-  State<StatefulWidget> createState() {
-    // TODO: implement createState
-    throw UnimplementedError();
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Mero Swastha',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Welcome to Mero Swastha'),
+        ),
+        body: Center(child: Text('Hello, World!')),
+      ),
+    );
   }
-
-  @override
-
 }
