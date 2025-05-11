@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 void main() => runApp(mero_swastha());
 
-class mero_swastha extends StatefulWidget{
+class mero_swastha extends StatefulWidget {
   const mero_swastha({super.key});
 
   @override
@@ -12,6 +12,5 @@ class mero_swastha extends StatefulWidget{
   }
 
   @override
-
 
 }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "118186084482",
+    "project_id": "mero-swastha",
+    "storage_bucket": "mero-swastha.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:118186084482:android:c8a3fbb8369f4d62468c9b",
+        "android_client_info": {
+          "package_name": "com.example.mero_swastha"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAoQZGkARFByRhwJrTMhQvaxh3-nQqFkZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
