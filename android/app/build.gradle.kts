@@ -29,6 +29,7 @@ android {
         targetSdk= 35
         versionCode = 1
         versionName = "1.0.0"
+        multiDexEnabled = true
     }
 
     buildTypes {
@@ -52,8 +53,13 @@ dependencies {
     // TODO: Add the dependencies for Firebase products you want to use
     // When using the BoM, don't specify versions in Firebase dependencies
     implementation("com.google.firebase:firebase-analytics")
-
+    implementation("com.google.android.gms:play-services-auth")
 
     // Add the dependencies for any other desired Firebase products
     // https://firebase.google.com/docs/android/setup#available-libraries
+}
+buildscript {
+    dependencies {
+        classpath("com.google.gms:google-services:4.4.2")
+    }
 }

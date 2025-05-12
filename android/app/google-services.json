@@ -12,7 +12,20 @@
           "package_name": "com.example.mero_swastha"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "118186084482-ntg573cjaio873kfn7nmi39hpn16v2lc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.mero_swastha",
+            "certificate_hash": "1a5dc4d07a75833fcf18623cb8db6e5b84a01f82"
+          }
+        },
+        {
+          "client_id": "118186084482-tui5ufrhemro53k3ro6odof2mgo6oidh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyAoQZGkARFByRhwJrTMhQvaxh3-nQqFkZI"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "118186084482-tui5ufrhemro53k3ro6odof2mgo6oidh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

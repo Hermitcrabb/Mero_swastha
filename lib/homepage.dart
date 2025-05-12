@@ -13,6 +13,7 @@ class _HomepageState extends State<Homepage> {
   final user = FirebaseAuth.instance.currentUser!;
 
   signOut()async{
+    // add google sign in and sign out: await GoogleSignIn().signOut();
     await FirebaseAuth.instance.signOut();
   }
 
