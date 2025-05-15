@@ -28,23 +28,80 @@ class Debouncer{
     _timer?.cancel();
   }
 }
+bool isValidEmail(String email){
+  final emailRegex = RegExp(r'^[\w-]+(\.[\w-]+)*@([\w-]+\.)+[a-zA-Z]{2,7}$');
+  return emailRegex.hasMatch(email);
+}
+bool isValidPassword(String password){
+  if(password.length<4) return false;
+  final numberRegex = RegExp(r'[0-9]');
+  return numberRegex.hasMatch(password);
+}
 
 
 class _SignupState extends State<Signup> {
+
+  final userNameController = TextEditingController();
+  final emailController = TextEditingController();
+  final passwordController = TextEditingController();
+  final confirmPasswordController = TextEditingController();
+
+  final _debouncer = Debouncer(delay: Duration(milliseconds: 500));
+
+  bool isEmailValid = false;
+  bool isPasswordValid = false;
+  bool isConfirmPasswordValid = false;
+  bool isUsernameAvailable =false;
+  String? emailError;
+  String? passwordError;
+  String usernameStatusMessage='';
+
   @override
   void initState() {
     super.initState();
 
     // Add your username availability listener here
     userNameController.addListener(_checkUsernameAvailability);
+    //Add your emailController listener here
+    emailController.addListener(() {
+      _debouncer.run((){
+        final email = emailController.text.trim();
+        setState(() {
+          isEmailValid = isValidEmail(email);
+          emailError = isEmailValid ? null : 'Invalid email address or format';
+        });
+      });
+    });
+
+    passwordController.addListener((){
+      _debouncer.run((){
+        final password = passwordController.text.trim();
+        setState(() {
+          isPasswordValid = isValidPassword(password);
+          passwordError = isPasswordValid ? null : 'Password must be at least 4 characters long and contain at least one number';
+        });
+      });
+    });
+
+    confirmPasswordController.addListener(() {
+      _debouncer.run((){
+        setState(() {
+          isConfirmPasswordValid = confirmPasswordController.text.trim() == passwordController.text.trim();
+        });
+      });
+    });
   }
-  final _debouncer = Debouncer(delay: Duration(milliseconds: 500));
-  final userNameController = TextEditingController();
-  final emailController = TextEditingController();
-  final passwordController = TextEditingController();
-  final confirmPasswordController = TextEditingController();
-  bool isUsernameAvailable =false;
-  String usernameStatusMessage='';
+
+  bool isValidEmail(String email) {
+    final emailRegex = RegExp(r'^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$');
+    return emailRegex.hasMatch(email);
+  }
+
+  bool isValidPassword(String password) {
+    if (password.length < 4) return false;
+    final numberRegex = RegExp(r'[0-9]');
+    return numberRegex.hasMatch(password);
+  }
 
   bool isLoading = false;
 
@@ -57,6 +114,14 @@ class _SignupState extends State<Signup> {
 
     if (user.isEmpty || email.isEmpty || password.isEmpty || confirmPassword.isEmpty) {
       Get.snackbar("Error", "All fields are required");
+      return;
+    }
+    if(!isEmailValid){
+      Get.snackbar("Error", "Invalid email address");
+      return;
+    }
+    if(!isPasswordValid){
+      Get.snackbar("Error", "Password must be at least 4 characters long and contain at least one number");
       return;
     }
 
@@ -128,6 +193,15 @@ class _SignupState extends State<Signup> {
     });
   }
 
+  @override
+  void dispose() {
+    userNameController.removeListener(_checkUsernameAvailability);
+    userNameController.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+    confirmPasswordController.dispose();
+    super.dispose();
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -161,15 +235,15 @@ class _SignupState extends State<Signup> {
                 hintText: 'Enter your username',
               ),
             ),
-            const SizedBox(height: 8),
+            const SizedBox(height: 4),
             Text(
               usernameStatusMessage,
               style: TextStyle(
                 color: isUsernameAvailable ? Colors.green : Colors.red,fontSize: 13,)
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 10),
             const Text("Email", style: TextStyle(fontWeight: FontWeight.bold)),
-            const SizedBox(height: 8),
+            const SizedBox(height: 4),
             TextField(
               controller: emailController,
               decoration: InputDecoration(
@@ -177,6 +251,12 @@ class _SignupState extends State<Signup> {
                 border: OutlineInputBorder(),
                 hintText: 'Enter your email',
               ),
+            ),
+            const SizedBox(height: 4,),
+            Text(
+                emailError ?? "",
+                style: TextStyle(
+                  color: isUsernameAvailable ? Colors.green : Colors.red,fontSize: 13,)
             ),
             const SizedBox(height: 20),
             const Text("Password", style: TextStyle(fontWeight: FontWeight.bold)),
@@ -190,9 +270,15 @@ class _SignupState extends State<Signup> {
                 hintText: 'Create a password',
               ),
             ),
-            const SizedBox(height: 20),
-            const Text("Confirm Password", style: TextStyle(fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),
+            Text(
+                passwordError ?? "",
+                style: TextStyle(
+                  color: isUsernameAvailable ? Colors.green : Colors.red,fontSize: 13,)
+            ),
+            const SizedBox(height: 10),
+            const Text("Confirm Password", style: TextStyle(fontWeight: FontWeight.bold)),
+            const SizedBox(height: 4),
             TextField(
               controller: confirmPasswordController,
               obscureText: true,
@@ -202,16 +288,24 @@ class _SignupState extends State<Signup> {
                 hintText: 'Re-enter your password',
               ),
             ),
-            const SizedBox(height: 30),
+            const SizedBox(height: 4),
+            Text(
+                passwordError ?? "",
+                style: TextStyle(
+                  color: isUsernameAvailable ? Colors.green : Colors.red,fontSize: 13,)
+            ),
+            const SizedBox(height: 4),
+            const SizedBox(height: 20),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
-                onPressed: signup,
+                onPressed: (isUsernameAvailable && isEmailValid && isPasswordValid && isConfirmPasswordValid && !isLoading)
+                  ? signup: null,
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepPurple,
                   padding: const EdgeInsets.symmetric(vertical: 16),
                 ),
-                child: const Text("Sign up", style: TextStyle(fontSize: 18)),
+                child: isLoading? CircularProgressIndicator() : const Text("Sign up", style: TextStyle(fontSize: 18)),
               ),
             ),
             const SizedBox(height: 20),
@@ -229,14 +323,5 @@ class _SignupState extends State<Signup> {
         ),
       ),
     );
-  }
-  @override
-  void dispose() {
-    userNameController.removeListener(_checkUsernameAvailability);
-    userNameController.dispose();
-    emailController.dispose();
-    passwordController.dispose();
-    confirmPasswordController.dispose();
-    super.dispose();
   }
 }
