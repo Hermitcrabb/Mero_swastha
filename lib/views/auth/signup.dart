@@ -3,6 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
 import 'login.dart';
 import 'verify.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'dart:async';
 
 
 class Signup extends StatefulWidget {
@@ -11,22 +13,49 @@ class Signup extends StatefulWidget {
   @override
   State<Signup> createState() => _SignupState();
 }
+class Debouncer{
+  final Duration delay;
+  VoidCallback? action;
+  Timer? _timer;
+
+  Debouncer({required this.delay});
+
+  run(VoidCallback action){
+    _timer?.cancel();
+    _timer = Timer(delay, action);
+  }
+  void dispose(){
+    _timer?.cancel();
+  }
+}
+
 
 class _SignupState extends State<Signup> {
+  @override
+  void initState() {
+    super.initState();
 
+    // Add your username availability listener here
+    userNameController.addListener(_checkUsernameAvailability);
+  }
+  final _debouncer = Debouncer(delay: Duration(milliseconds: 500));
+  final userNameController = TextEditingController();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final confirmPasswordController = TextEditingController();
+  bool isUsernameAvailable =false;
+  String usernameStatusMessage='';
 
   bool isLoading = false;
 
   void signup() async {
 
+    final user = userNameController.text.trim();
     final email = emailController.text.trim();
     final password = passwordController.text.trim();
     final confirmPassword = confirmPasswordController.text.trim();
 
-    if (email.isEmpty || password.isEmpty || confirmPassword.isEmpty) {
+    if (user.isEmpty || email.isEmpty || password.isEmpty || confirmPassword.isEmpty) {
       Get.snackbar("Error", "All fields are required");
       return;
     }
@@ -39,17 +68,66 @@ class _SignupState extends State<Signup> {
     setState(() => isLoading = true);
 
     try {
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+      // 🔍 Check if username is already taken
+      final usernameExists = await FirebaseFirestore.instance
+          .collection('users')
+          .where('username', isEqualTo: user)
+          .get();
+
+      if (usernameExists.docs.isNotEmpty) {
+        Get.snackbar("Error", "Username already taken");
+        setState(() => isLoading = false);
+        return;
+      }
+
+      // ✅ Create the user in Firebase Auth
+      final userCredential = await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: email,
         password: password,
       );
+
+      // 📝 Save username & email to Firestore
+      await FirebaseFirestore.instance.collection('users').doc(userCredential.user!.uid).set({
+        'username': user,
+        'email': email,
+        'createdAt': FieldValue.serverTimestamp(),
+      });
+
+      // 🚀 Navigate to verification screen
       Get.offAll(() => const Verify());
+
     } on FirebaseAuthException catch (e) {
       Get.snackbar("Signup Failed", e.message ?? "Unknown error");
     }
 
     setState(() => isLoading = false);
   }
+  void _checkUsernameAvailability() {
+    final username = userNameController.text.trim();
+
+    if (username.isEmpty) {
+      setState(() {
+        usernameStatusMessage = '';
+        isUsernameAvailable = false;
+      });
+      return;
+    }
+
+    _debouncer.run(() async {
+      final query = await FirebaseFirestore.instance
+          .collection('users')
+          .where('username', isEqualTo: username)
+          .get();
+
+      setState(() {
+        isUsernameAvailable = query.docs.isEmpty;
+        usernameStatusMessage = isUsernameAvailable
+            ? "✅ Username available"
+            : "❌ Username already taken";
+      });
+    });
+  }
+
 
   @override
   Widget build(BuildContext context) {
@@ -72,7 +150,24 @@ class _SignupState extends State<Signup> {
                 ),
               ),
             ),
-            const SizedBox(height: 50),
+            const SizedBox(height:50),
+            const Text("UserName", style: TextStyle(fontWeight: FontWeight.bold)),
+            const SizedBox(height: 8),
+            TextField(
+              controller: userNameController,
+              decoration: InputDecoration(
+                prefixIcon: Icon(Icons.person),
+                border: OutlineInputBorder(),
+                hintText: 'Enter your username',
+              ),
+            ),
+            const SizedBox(height: 8),
+            Text(
+              usernameStatusMessage,
+              style: TextStyle(
+                color: isUsernameAvailable ? Colors.green : Colors.red,fontSize: 13,)
+            ),
+            const SizedBox(height: 20),
             const Text("Email", style: TextStyle(fontWeight: FontWeight.bold)),
             const SizedBox(height: 8),
             TextField(
@@ -134,5 +229,14 @@ class _SignupState extends State<Signup> {
         ),
       ),
     );
+  }
+  @override
+  void dispose() {
+    userNameController.removeListener(_checkUsernameAvailability);
+    userNameController.dispose();
+    emailController.dispose();
+    passwordController.dispose();
+    confirmPasswordController.dispose();
+    super.dispose();
   }
 }
