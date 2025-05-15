@@ -98,8 +98,7 @@ class _SignupState extends State<Signup> {
   }
 
   bool isValidPassword(String password) {
-    if (password.length < 4) return false;
-    final numberRegex = RegExp(r'[0-9]');
+    final numberRegex = RegExp(r'^(?=.*[A-Za-z])(?=.*\d).{5,}$');
     return numberRegex.hasMatch(password);
   }
 
@@ -120,8 +119,14 @@ class _SignupState extends State<Signup> {
       Get.snackbar("Error", "Invalid email address");
       return;
     }
-    if(!isPasswordValid){
-      Get.snackbar("Error", "Password must be at least 4 characters long and contain at least one number");
+    if(!isValidPassword(password)){
+      setState(() {
+        passwordError ="Password must contain letters and numbers";
+      });
+      return;
+    }
+    if (password != confirmPassword) {
+      Get.snackbar("Error", "Passwords do not match");
       return;
     }
 
@@ -264,6 +269,15 @@ class _SignupState extends State<Signup> {
             TextField(
               controller: passwordController,
               obscureText: true,
+              onChanged: (value){
+                setState(() {
+                  if (!isValidPassword(value)) {
+                    passwordError = "❌ Use letters and numbers (e.g., avfe@12)";
+                  } else {
+                    passwordError = "✅ Strong password";
+                  }
+                });
+              },
               decoration: InputDecoration(
                 prefixIcon: Icon(Icons.lock),
                 border: OutlineInputBorder(),
@@ -294,8 +308,7 @@ class _SignupState extends State<Signup> {
                 style: TextStyle(
                   color: isUsernameAvailable ? Colors.green : Colors.red,fontSize: 13,)
             ),
-            const SizedBox(height: 4),
-            const SizedBox(height: 20),
+            const SizedBox(height: 25),
             SizedBox(
               width: double.infinity,
               child: ElevatedButton(
