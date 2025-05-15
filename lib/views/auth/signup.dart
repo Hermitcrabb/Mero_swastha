@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'login.dart';
 import 'verify.dart';
 
+
 class Signup extends StatefulWidget {
   const Signup({super.key});
 
@@ -12,6 +13,7 @@ class Signup extends StatefulWidget {
 }
 
 class _SignupState extends State<Signup> {
+
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   final confirmPasswordController = TextEditingController();
@@ -19,9 +21,15 @@ class _SignupState extends State<Signup> {
   bool isLoading = false;
 
   void signup() async {
+
     final email = emailController.text.trim();
     final password = passwordController.text.trim();
     final confirmPassword = confirmPasswordController.text.trim();
+
+    if (email.isEmpty || password.isEmpty || confirmPassword.isEmpty) {
+      Get.snackbar("Error", "All fields are required");
+      return;
+    }
 
     if (password != confirmPassword) {
       Get.snackbar("Error", "Passwords do not match");

@@ -128,6 +128,15 @@ class _BmiPageState extends State<BmiPage> {
             // Updated Calculate button
             ElevatedButton(
               onPressed: calculate,
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.deepPurple,
+                padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 40),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(30),
+                ),
+                elevation: 5,
+                shadowColor: Colors.deepPurple.withAlpha((0.5 * 255).round()),
+              ),
               child: const Text(
                 'Calculate',
                 style: TextStyle(
@@ -136,16 +145,8 @@ class _BmiPageState extends State<BmiPage> {
                   color: Colors.white,
                 ),
               ),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.deepPurple, // Set the main color of the button
-                padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 40), // More padding for a larger button
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30), // Rounded corners
-                ),
-                elevation: 5, // Add shadow for better depth
-                shadowColor: Colors.deepPurple.withOpacity(0.5), // Soft shadow color
-              ),
             ),
+
 
             // Display BMI and TDEE results
             if (resultMessage.isNotEmpty)
