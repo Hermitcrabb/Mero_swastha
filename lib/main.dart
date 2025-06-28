@@ -2,7 +2,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'views/models/user_controller.dart';
-import 'views/setup/startup_screen.dart'; // ✅ Import the startup screen
+import './views/auth/login.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -40,7 +40,7 @@ class MeroSwastha extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: const StartupScreen(), // ✅ This handles login/profile setup/home
+      home: const Login(), // ✅ This handles login/profile setup/home
     );
   }
 }
