@@ -7,6 +7,7 @@ import 'views/diet/diet_page.dart';
 import 'views/bmi/bmi_page.dart';
 import 'views/auth/login.dart';
 import 'homeDashboard.dart';
+import 'views/models/user_controller.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -16,40 +17,52 @@ class Homepage extends StatefulWidget {
 }
 
 class _HomepageState extends State<Homepage> {
-  final user = FirebaseAuth.instance.currentUser!;
+  final UserController userController = Get.find<UserController>(); // Inject controller
+
   int _currentIndex = 0;
 
-  // Placeholder widgets for each page
   final List<Widget> _pages = [
-    HomeDashboard(), // Home Section
-    ProfilePage(),   // Profile Section
+    HomeDashboard(),
+    ProfilePage(),
     ExercisePage(),
     DietPage(),
     BmiPage(),
   ];
 
-  // Logout functionality
   void _signOut() async {
     await FirebaseAuth.instance.signOut();
     Get.snackbar("Logged Out", "You have been logged out successfully.",
         snackPosition: SnackPosition.BOTTOM);
-    Get.offAll(() => const Login()); // Redirect to login page
+    Get.offAll(() => const Login());
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Mero Swastha"),
+        title: Obx(() {
+          final user = userController.userModel.value;
+          if (user == null) {
+            return const SizedBox(
+              width: 20,
+              height: 20,
+              child: CircularProgressIndicator(
+                color: Colors.white,
+                strokeWidth: 2,
+              ),
+            );
+          }
+          return Text("Welcome, ${user.name}");
+        }),
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
-            onPressed: _signOut, // Logout functionality
+            onPressed: _signOut,
             tooltip: 'Logout',
           ),
         ],
       ),
-      body: _pages[_currentIndex], // Display current page based on bottom nav selection
+      body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         selectedItemColor: Colors.deepPurple,

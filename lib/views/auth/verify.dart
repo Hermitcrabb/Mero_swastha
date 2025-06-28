@@ -1,7 +1,8 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mero_swastha/wrapper.dart';
+import '../setup/startup_screen.dart';
+import 'login.dart';
 
 class Verify extends StatefulWidget {
   const Verify({super.key});
@@ -13,90 +14,106 @@ class Verify extends StatefulWidget {
 class _VerifyState extends State<Verify> {
   bool isLoading = false;
 
-  Future<void> sendVerifyLink() async {
-    final user = FirebaseAuth.instance.currentUser!;
-    await user.sendEmailVerification();
-    Get.snackbar(
-      "Email Sent",
-      "A verification link has been sent to your email.",
-      snackPosition: SnackPosition.BOTTOM,
-      margin: const EdgeInsets.all(10),
-    );
+  void sendVerifyLink() async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user != null && !user.emailVerified) {
+      try {
+        await user.sendEmailVerification();
+        Get.snackbar(
+          "Email Sent",
+          "Verification email has been sent to ${user.email}",
+          snackPosition: SnackPosition.BOTTOM,
+          margin: const EdgeInsets.all(10),
+        );
+      } catch (e) {
+        Get.snackbar("Error", "Could not send email. Try again later.");
+      }
+    } else {
+      Get.snackbar("Error", "User not found or already verified");
+    }
   }
 
-  Future<void> reloadAndCheck() async {
+  void reloadAndCheck() async {
     setState(() => isLoading = true);
-    await FirebaseAuth.instance.currentUser!.reload();
-    final updatedUser = FirebaseAuth.instance.currentUser;
+
+    try {
+      await FirebaseAuth.instance.currentUser?.reload();
+      final updatedUser = FirebaseAuth.instance.currentUser;
+
+      if (updatedUser != null && updatedUser.emailVerified) {
+        Get.offAll(() => const StartupScreen());
+      } else {
+        Get.snackbar(
+          "Still Not Verified",
+          "Please check your email and click the link.",
+          snackPosition: SnackPosition.BOTTOM,
+          margin: const EdgeInsets.all(10),
+        );
+      }
+    } catch (e) {
+      Get.snackbar("Error", "Something went wrong. Try again.");
+    }
 
     setState(() => isLoading = false);
-
-    if (updatedUser != null && updatedUser.emailVerified) {
-      Get.snackbar(
-        "Verified",
-        "Email verified successfully!",
-        snackPosition: SnackPosition.BOTTOM,
-        margin: const EdgeInsets.all(10),
-      );
-      Get.offAll(() => const Wrapper());
-    } else {
-      Get.snackbar(
-        "Not Verified",
-        "Please check your email and click the verification link.",
-        snackPosition: SnackPosition.BOTTOM,
-        margin: const EdgeInsets.all(10),
-      );
-    }
   }
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
       appBar: AppBar(
         title: const Text("Email Verification"),
         backgroundColor: Colors.deepPurple,
       ),
-      body: isLoading
-          ? const Center(child: CircularProgressIndicator())
-          : SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 60),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: [
-            Icon(Icons.email_outlined, size: 100, color: Colors.deepPurple),
-            const SizedBox(height: 20),
-            const Text(
-              'Please verify your email address.',
-              style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 20),
-            const Text(
-              'Check your inbox for a verification link. Once done, press the refresh button below.',
-              style: TextStyle(fontSize: 16),
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 40),
-            SizedBox(
-              width: double.infinity,
-              child: ElevatedButton.icon(
+      body: Padding(
+        padding: const EdgeInsets.all(28.0),
+        child: Center(
+          child: isLoading
+              ? const CircularProgressIndicator()
+              : Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              const Icon(Icons.email_outlined, size: 100, color: Colors.deepPurple),
+              const SizedBox(height: 20),
+              const Text(
+                'A verification email has been sent to your registered email address.\n\nPlease check your inbox or spam folder.',
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 16),
+              ),
+              const SizedBox(height: 30),
+              ElevatedButton.icon(
                 onPressed: sendVerifyLink,
                 icon: const Icon(Icons.send),
-                label: const Text("Resend Verification Email"),
+                label: const Text("Resend Email"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.deepPurple,
-                  padding: const EdgeInsets.symmetric(vertical: 16),
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
                 ),
               ),
-            ),
-          ],
+              const SizedBox(height: 20),
+              ElevatedButton.icon(
+                onPressed: reloadAndCheck,
+                icon: const Icon(Icons.refresh),
+                label: const Text("Reload and Continue"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.green,
+                  padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 14),
+                ),
+              ),
+              ElevatedButton(
+                onPressed: () {
+                  // Clear user session here if needed
+                  Navigator.pushAndRemoveUntil(
+                    context,
+                    MaterialPageRoute(builder: (context) => Login()),
+                        (route) => false,
+                  );
+                },
+                child: Text('Logout'),
+              )
+
+            ],
+          ),
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: reloadAndCheck,
-        backgroundColor: Colors.deepPurple,
-        child: const Icon(Icons.refresh),
       ),
     );
   }

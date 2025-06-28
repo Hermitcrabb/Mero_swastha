@@ -1,106 +1,147 @@
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import '../auth/login.dart'; // Make sure you import the login page
+import '../models/user_controller.dart';
 
-class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+class ProfilePage extends StatelessWidget {
+  final userController = Get.find<UserController>();
 
-  @override
-  State<ProfilePage> createState() => _ProfilePageState();
-}
-
-class _ProfilePageState extends State<ProfilePage> {
-  final user = FirebaseAuth.instance.currentUser!;
-  final TextEditingController _nameController = TextEditingController();
-  bool _isEditing = false;
-
-  // Function to update the user's name in Firebase
-  Future<void> _updateName() async {
-    try {
-      await user.updateDisplayName(_nameController.text.trim());
-      await user.reload();
-      setState(() {
-        _isEditing = false;
-      });
-    } catch (e) {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("Error updating name: $e")),
-      );
-    }
-  }
-
-  // Function to handle logout and redirect to login page
-  void _logout() async {
-    await FirebaseAuth.instance.signOut();
-    Get.offAll(() => const Login()); // Navigate to the login page after logout
-  }
+  ProfilePage({super.key});
 
   @override
   Widget build(BuildContext context) {
+    final user = userController.userModel.value;
+    final name = user?.name ?? "User";
+    final email = user?.email ?? "Email not found";
+    final gender = user?.gender ?? "N/A";
+    final age = user?.age.toString() ?? "N/A";
+    final height = user?.height.toString() ?? "N/A";
+    final weight = user?.weight.toString() ?? "N/A";
+    final activity = user?.activityLevel ?? "N/A";
+
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Profile"),
-        backgroundColor: Colors.deepPurple,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: _logout, // Ensure this triggers the logout functionality
-            tooltip: 'Logout',
-          ),
-        ],
+        title: const Text("My Profile"),
+        centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
+      body: SingleChildScrollView(
+        padding: const EdgeInsets.all(20),
         child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // Avatar + Name
             CircleAvatar(
-              radius: 50,
-              backgroundImage: NetworkImage(user.photoURL ?? ''),
-              child: user.photoURL == null
-                  ? const Icon(Icons.person, size: 50)
-                  : null,
-            ),
-            const SizedBox(height: 20),
-            _isEditing
-                ? TextField(
-              controller: _nameController,
-              decoration: const InputDecoration(
-                labelText: 'Update Name',
-                border: OutlineInputBorder(),
+              radius: 45,
+              backgroundColor: Colors.deepPurple.shade100,
+              child: Text(
+                name.isNotEmpty ? name[0].toUpperCase() : '?',
+                style: const TextStyle(fontSize: 40, color: Colors.deepPurple),
               ),
-            )
-                : Text(
-              user.displayName ?? 'No Name Set',
-              style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
-            _isEditing
-                ? ElevatedButton(
-              onPressed: _updateName,
-              child: const Text('Save'),
-            )
-                : TextButton(
-              onPressed: () {
-                _nameController.text = user.displayName ?? '';
-                setState(() {
-                  _isEditing = true;
-                });
-              },
-              child: const Text('Edit Name'),
+            Text(name, style: Theme.of(context).textTheme.titleLarge),
+            Text(email, style: Theme.of(context).textTheme.bodyMedium),
+
+            const SizedBox(height: 30),
+
+            // Enhanced Health Profile Card
+            Container(
+              decoration: BoxDecoration(
+                color: Colors.deepPurple.shade50,
+                borderRadius: BorderRadius.circular(20),
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.deepPurple.shade100.withOpacity(0.6),
+                    blurRadius: 12,
+                    offset: const Offset(0, 6),
+                  ),
+                ],
+              ),
+              padding: const EdgeInsets.symmetric(vertical: 24, horizontal: 20),
+              child: Column(
+                children: [
+                  Text(
+                    "Health Profile",
+                    style: TextStyle(
+                      fontSize: 22,
+                      fontWeight: FontWeight.w700,
+                      color: Colors.deepPurple.shade700,
+                      letterSpacing: 1.2,
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      _coloredStatTile("Age", age, Colors.deepPurple),
+                      _coloredStatTile("Gender", gender, Colors.purpleAccent),
+                      _coloredStatTile("Activity", activity, Colors.deepPurpleAccent),
+                    ],
+                  ),
+                  const SizedBox(height: 20),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
+                    children: [
+                      _coloredStatTile("Height", "$height cm", Colors.indigo),
+                      _coloredStatTile("Weight", "$weight kg", Colors.deepPurple),
+                    ],
+                  ),
+                ],
+              ),
             ),
-            const SizedBox(height: 20),
-            Card(
-              elevation: 5,
-              child: ListTile(
-                title: const Text("Email"),
-                subtitle: Text(user.email ?? 'No Email Set'),
+
+            const SizedBox(height: 30),
+
+            // Edit Profile Button
+            OutlinedButton.icon(
+              onPressed: () {
+                Get.toNamed('/profile-setup');
+              },
+              icon: const Icon(Icons.edit),
+              label: const Text("Edit Profile"),
+              style: OutlinedButton.styleFrom(
+                side: BorderSide(color: Colors.deepPurple),
+                foregroundColor: Colors.deepPurple,
+                padding: const EdgeInsets.symmetric(vertical: 12, horizontal: 24),
+                textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
               ),
             ),
           ],
         ),
       ),
+    );
+  }
+
+  Widget _coloredStatTile(String label, String value, Color color) {
+    return Column(
+      children: [
+        Container(
+          padding: const EdgeInsets.symmetric(vertical: 8, horizontal: 16),
+          decoration: BoxDecoration(
+            color: color.withOpacity(0.15),
+            borderRadius: BorderRadius.circular(12),
+          ),
+          child: Text(
+            value,
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 18,
+              color: color,
+            ),
+          ),
+        ),
+        const SizedBox(height: 6),
+        Text(
+          label,
+          style: TextStyle(
+            color: Colors.deepPurple.shade300,
+            fontSize: 14,
+            fontWeight: FontWeight.w600,
+            letterSpacing: 0.8,
+          ),
+        ),
+      ],
     );
   }
 }

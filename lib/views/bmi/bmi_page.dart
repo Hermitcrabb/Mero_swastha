@@ -128,14 +128,6 @@ class _BmiPageState extends State<BmiPage> {
             // Updated Calculate button
             ElevatedButton(
               onPressed: calculate,
-              child: const Text(
-                'Calculate',
-                style: TextStyle(
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold,
-                  color: Colors.white,
-                ),
-              ),
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.deepPurple, // Set the main color of the button
                 padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 40), // More padding for a larger button
@@ -144,6 +136,14 @@ class _BmiPageState extends State<BmiPage> {
                 ),
                 elevation: 5, // Add shadow for better depth
                 shadowColor: Colors.deepPurple.withOpacity(0.5), // Soft shadow color
+              ),
+              child: const Text(
+                'Calculate',
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.bold,
+                  color: Colors.white,
+                ),
               ),
             ),
 
@@ -187,7 +187,8 @@ class _BmiPageState extends State<BmiPage> {
                         fontWeight: FontWeight.w500,
                         color: bmi < 18.5
                             ? Colors.orange
-                            : (bmi < 25 ? Colors.green : Colors.redAccent),
+                            : (bmi < 25 ? Colors.green
+                            : Colors.redAccent),
                       ),
                     ),
                     const SizedBox(height: 10),

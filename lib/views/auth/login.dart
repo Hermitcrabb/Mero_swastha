@@ -5,6 +5,7 @@ import '../../homepage.dart';
 import 'signup.dart';
 import '../../forgot.dart';
 import 'verify.dart';
+import '../setup/startup_screen.dart';
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -19,21 +20,33 @@ class _LoginState extends State<Login> {
   bool isLoading = false;
 
   void login() async {
+    final email = emailController.text.trim();
+    final password = passwordController.text;
+
+    if (email.isEmpty || password.isEmpty) {
+      Get.snackbar("Missing Info", "Email and password cannot be empty");
+      return;
+    }
+
     setState(() => isLoading = true);
+
     try {
       final credential = await FirebaseAuth.instance.signInWithEmailAndPassword(
-        email: emailController.text.trim(),
-        password: passwordController.text,
+        email: email,
+        password: password,
       );
 
-      if (!credential.user!.emailVerified) {
+      final user = credential.user;
+      if (user != null && !user.emailVerified) {
         Get.offAll(() => const Verify());
       } else {
-        Get.offAll(() => const Homepage());
+        Get.offAll(() => const StartupScreen());
       }
+
     } on FirebaseAuthException catch (e) {
       Get.snackbar("Login Failed", e.message ?? "Unknown error");
     }
+
     setState(() => isLoading = false);
   }
 
