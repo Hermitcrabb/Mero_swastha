@@ -46,7 +46,6 @@ class Wrapper extends StatelessWidget {
             return const Verify();
           }
         }
-
         // No user - show login
         return const Login();
       },

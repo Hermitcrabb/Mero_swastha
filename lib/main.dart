@@ -2,13 +2,16 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'views/models/user_controller.dart';
-import './views/auth/login.dart';
+import 'route.dart'; // ✅ make sure this exports your `appRoutes`
+import 'views/setup/startup_screen.dart'; // wherever your StartupScreen is
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+
   // Inject the UserController globally using GetX
   Get.put(UserController());
+
   runApp(const MeroSwastha());
 }
 
@@ -40,7 +43,10 @@ class MeroSwastha extends StatelessWidget {
           foregroundColor: Colors.white,
         ),
       ),
-      home: const Login(), // ✅ This handles login/profile setup/home
+
+      // ✅ Use GetX routing system
+      initialRoute: '/login',
+      getPages: appRoutes, // ✅ from route.dart
     );
   }
 }

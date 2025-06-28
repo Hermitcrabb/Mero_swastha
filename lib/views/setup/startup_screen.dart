@@ -16,31 +16,29 @@ class StartupScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     final UserController userController = Get.find<UserController>();
 
-    return FutureBuilder(
-      future: userController.fetchUser(),
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return const Scaffold(
-            body: Center(child: CircularProgressIndicator()),
-          );
-        }
+    final user = FirebaseAuth.instance.currentUser;
 
-        final user = FirebaseAuth.instance.currentUser;
+    return Obx(() {
+      // Still show loading if userModel is null but user is logged in
+      if (user != null && userController.userModel.value == null) {
+        return const Scaffold(
+          body: Center(child: CircularProgressIndicator()),
+        );
+      }
 
-        if (user == null) {
-          return const Login(); // Not logged in
-        }
+      if (user == null) {
+        return const Login(); // Not logged in
+      }
 
-        if (!user.emailVerified) {
-          return const Verify(); // Not verified
-        }
+      if (!user.emailVerified) {
+        return const Verify(); // Not verified
+      }
 
-        if (userController.userModel.value == null || userController.userModel.value!.name.isEmpty) {
-          return const ProfileSetupPage(); // Profile missing
-        }
+      if (userController.userModel.value == null || userController.userModel.value!.name.isEmpty) {
+        return const ProfileSetupPage(); // Profile missing
+      }
 
-        return const Homepage(); // All set up
-      },
-    );
+      return const Homepage(); // All set up
+    });
   }
 }

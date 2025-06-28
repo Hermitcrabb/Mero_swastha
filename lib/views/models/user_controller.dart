@@ -2,27 +2,23 @@ import 'package:get/get.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'user_model.dart';
-
 class UserController extends GetxController {
   var userModel = Rxn<UserModel>();
 
-  Future<void> fetchUser() async {
+  @override
+  void onInit() {
+    super.onInit();
     final uid = FirebaseAuth.instance.currentUser?.uid;
-    if (uid == null) return;
-
-    final doc = await FirebaseFirestore.instance.collection('users').doc(uid).get();
-    if (doc.exists) {
-      userModel.value = UserModel.fromMap(doc.data()!);
-    }
-  }
-
-  Future<void> loadUserData() async {
-    final user = FirebaseAuth.instance.currentUser;
-    if (user != null) {
-      final doc = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
-      if (doc.exists) {
-        userModel.value = UserModel.fromMap(doc.data()!);
-      }
+    if (uid != null) {
+      FirebaseFirestore.instance
+          .collection('users')
+          .doc(uid)
+          .snapshots()
+          .listen((doc) {
+        if (doc.exists) {
+          userModel.value = UserModel.fromMap(doc.data()!);
+        }
+      });
     }
   }
 
@@ -31,8 +27,7 @@ class UserController extends GetxController {
         .collection('users')
         .doc(updatedUser.uid)
         .set(updatedUser.toMap());
-
-    userModel.value = updatedUser;
+    // userModel.value will update automatically via listener
   }
 
   void clearUser() {
