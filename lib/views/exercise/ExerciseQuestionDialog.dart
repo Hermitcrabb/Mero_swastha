@@ -18,9 +18,9 @@ class _ExerciseQuestionDialogState extends State<ExerciseQuestionDialog> {
   String experience = 'beginner';
   String workoutLocation = 'home';
   List<String> selectedEquipment = [];
-  int workoutDaysPerWeek = 3;
+  int workoutDaysPerWeek = 5;
 
-  final equipmentOptions = ['Dumbbells', 'Resistance Bands', 'Yoga Mat', 'Pull-up Bar'];
+  final equipmentOptions = ['Dumbbells', 'Resistance Bands', 'Yoga Mat', 'Pull-up Bar','Barbell','Weight Plates','Kettle bells','Medicine Ball'];
 
   bool isSaving = false;
 
@@ -131,7 +131,7 @@ class _ExerciseQuestionDialogState extends State<ExerciseQuestionDialog> {
                   decoration: const InputDecoration(labelText: "Workout Days per Week"),
                   keyboardType: TextInputType.number,
                   onSaved: (val) {
-                    workoutDaysPerWeek = int.tryParse(val ?? '') ?? 3;
+                    workoutDaysPerWeek = int.tryParse(val ?? '') ?? 4;
                   },
                 ),
 
