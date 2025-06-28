@@ -1,117 +1,60 @@
 import 'package:flutter/material.dart';
+import 'ExerciseQuestionDialog.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'ExercisePlanView.dart';
 
-class ExercisePage extends StatelessWidget {
+class ExercisePage extends StatefulWidget {
   const ExercisePage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: SingleChildScrollView(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            const Text(
-              "Exercise Routines",
-              style: TextStyle(
-                fontSize: 28,
-                fontWeight: FontWeight.bold,
-                color: Colors.deepPurple,
-              ),
-            ),
-            const SizedBox(height: 10),
-            const Text(
-              "Stay active with these personalized routines based on your level.",
-              style: TextStyle(fontSize: 16),
-            ),
-            const SizedBox(height: 20),
+  State<ExercisePage> createState() => _ExercisePageState();
+}
 
-            _buildRoutineCard(
-              title: "Beginner Level",
-              description:
-              "Perfect for those starting their fitness journey. These exercises help build foundation strength and endurance.",
-              exercises: [
-                "• 15-minute walk",
-                "• Bodyweight squats (3x10)",
-                "• Push-ups (3x5)",
-                "• Plank (3x20 seconds)",
-              ],
-              icon: Icons.directions_walk,
-            ),
+class _ExercisePageState extends State<ExercisePage> {
+  bool isLoading = true;
+  bool hasExerciseProfile = false;
+  Map<String, dynamic>? exerciseData;
 
-            const SizedBox(height: 20),
-
-            _buildRoutineCard(
-              title: "Intermediate Level",
-              description:
-              "For regular exercisers. These routines focus on increasing strength and stamina.",
-              exercises: [
-                "• 5-min warm-up jog",
-                "• Lunges (3x10 each leg)",
-                "• Push-ups (3x10)",
-                "• Mountain climbers (3x20 seconds)",
-                "• Plank (3x30 seconds)",
-              ],
-              icon: Icons.fitness_center,
-            ),
-
-            const SizedBox(height: 20),
-
-            _buildRoutineCard(
-              title: "Advanced Level",
-              description:
-              "High-intensity workouts for experienced individuals to boost muscle and endurance.",
-              exercises: [
-                "• 10-min run",
-                "• Jump squats (3x12)",
-                "• Burpees (3x10)",
-                "• Push-ups (4x15)",
-                "• Plank (4x45 seconds)",
-              ],
-              icon: Icons.flash_on,
-            ),
-          ],
-        ),
-      ),
-    );
+  @override
+  void initState() {
+    super.initState();
+    checkExerciseProfile();
   }
 
-  Widget _buildRoutineCard({
-    required String title,
-    required String description,
-    required List<String> exercises,
-    required IconData icon,
-  }) {
-    return Card(
-      elevation: 4,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-      child: Padding(
-        padding: const EdgeInsets.all(16),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Icon(icon, size: 32, color: Colors.deepPurple),
-                const SizedBox(width: 10),
-                Expanded(
-                  child: Text(
-                    title,
-                    style: const TextStyle(
-                      fontSize: 22,
-                      fontWeight: FontWeight.w600,
-                    ),
-                  ),
-                )
-              ],
-            ),
-            const SizedBox(height: 10),
-            Text(description, style: const TextStyle(fontSize: 15)),
-            const SizedBox(height: 10),
-            ...exercises.map((e) => Text(e, style: const TextStyle(fontSize: 14))),
-          ],
-        ),
-      ),
+  Future<void> checkExerciseProfile() async {
+    final user = FirebaseAuth.instance.currentUser;
+    if (user == null) return;
+
+    final doc = await FirebaseFirestore.instance.collection('users').doc(user.uid).get();
+    final data = doc.data();
+
+    if (data?['exerciseProfile'] != null) {
+      hasExerciseProfile = true;
+      exerciseData = data!['exerciseProfile'];
+    } else {
+      await showDialog(
+        context: context,
+        barrierDismissible: false,
+        builder: (_) => ExerciseQuestionDialog(uid: user.uid),
+      );
+      await checkExerciseProfile(); // recheck after submission
+    }
+
+    setState(() => isLoading = false);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    if (isLoading) {
+      return const Scaffold(body: Center(child: CircularProgressIndicator()));
+    }
+
+    return Scaffold(
+      appBar: AppBar(title: const Text("Your Exercise Plan")),
+      body: hasExerciseProfile
+          ? ExercisePlanView(data: exerciseData!) // Custom widget to show plan
+          : const Center(child: Text("No profile found.")),
     );
   }
 }
