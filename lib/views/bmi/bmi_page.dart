@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 
 class BmiPage extends StatefulWidget {
-  const BmiPage({super.key});
+  final bool returnGoal;
+
+  const BmiPage({super.key, this.returnGoal = false}); // default = false
 
   @override
   State<BmiPage> createState() => _BmiPageState();
@@ -196,6 +198,32 @@ class _BmiPageState extends State<BmiPage> {
                       '👉 Tip: Use these numbers to follow your goal. Our app can help you pick the right meals and workouts!',
                       style: TextStyle(fontSize: 14, fontStyle: FontStyle.italic),
                     ),
+                    if (widget.returnGoal && resultMessage.isNotEmpty)
+                      ElevatedButton(
+                        onPressed: () {
+                          calculate();  // Make sure bmi and tdee are calculated
+
+                          if (bmi > 0 && tdee > 0) {
+                            String suggestedGoal;
+                            if (bmi < 18.5) {
+                              suggestedGoal = 'Gain Muscle';
+                            } else if (bmi < 24.9) {
+                              suggestedGoal = 'Maintain Weight';
+                            } else {
+                              suggestedGoal = 'Lose Weight';
+                            }
+
+                            Navigator.pop(context, {
+                              'goal': suggestedGoal,
+                              'bmi': bmi,
+                              'tdee': tdee,
+                            });
+                          }
+                        },
+                        child: const Text('Calculate and Set Goal'),
+                      ),
+
+
                   ],
                 ),
               ),
