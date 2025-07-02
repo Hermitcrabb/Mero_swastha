@@ -1,5 +1,6 @@
+// TODO Implement this library.class FoodProduct {
 class FoodProduct {
-  final String name;
+final String name;
   final double calories;
   final double protein;
   final double fat;

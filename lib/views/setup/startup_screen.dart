@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+
 import 'package:get/get.dart';
 
 import '../auth/login.dart';
 import 'profile_setup.dart';
 import '../../homepage.dart';
-import '../models/user_model.dart';
+
 import '../models/user_controller.dart';
 import '../auth/verify.dart';
 class StartupScreen extends StatelessWidget {
