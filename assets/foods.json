@@ -1,0 +1,1227 @@
+[
+  {
+    "name": "Lapsi Candy",
+    "calories": 220,
+    "protein": 0.3,
+    "fat": 0.2,
+    "carbs": 55
+  },
+  {
+    "name": "Til ko laddu",
+    "calories": 290,
+    "protein": 5.0,
+    "fat": 15.0,
+    "carbs": 32
+  },
+  {
+    "name": "Khir (rice pudding)",
+    "calories": 180,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 30
+  },
+  {
+    "name": "Juju dhau",
+    "calories": 90,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 12
+  },
+  {
+    "name": "Raksi (homemade alcohol)",
+    "calories": 120,
+    "protein": 0.0,
+    "fat": 0.0,
+    "carbs": 0.0
+  },
+  {
+    "name": "Gundruk ko jhol",
+    "calories": 80,
+    "protein": 3.0,
+    "fat": 1.0,
+    "carbs": 15
+  },
+  {
+    "name": "Phulaura (besan fritters)",
+    "calories": 210,
+    "protein": 6.0,
+    "fat": 12.0,
+    "carbs": 18
+  },
+  {
+    "name": "Tama Aloo",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 6.0,
+    "carbs": 18
+  },
+  {
+    "name": "Khasiko masu",
+    "calories": 250,
+    "protein": 24.0,
+    "fat": 18.0,
+    "carbs": 2
+  },
+  {
+    "name": "Sukuti",
+    "calories": 300,
+    "protein": 28.0,
+    "fat": 20.0,
+    "carbs": 1
+  },
+  {
+    "name": "Bhuteko Makai",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 22
+  },
+  {
+    "name": "Palu roti",
+    "calories": 200,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 34
+  },
+  {
+    "name": "Makai sadheko",
+    "calories": 150,
+    "protein": 4.0,
+    "fat": 6.0,
+    "carbs": 18
+  },
+  {
+    "name": "Chukauni",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 14
+  },
+  {
+    "name": "Kodo ko roti",
+    "calories": 180,
+    "protein": 4.0,
+    "fat": 1.0,
+    "carbs": 35
+  },
+  {
+    "name": "Fini roti",
+    "calories": 400,
+    "protein": 6.0,
+    "fat": 20.0,
+    "carbs": 48
+  },
+  {
+    "name": "Titaura (spicy fruit snack)",
+    "calories": 240,
+    "protein": 1.0,
+    "fat": 0.5,
+    "carbs": 60
+  },
+  {
+    "name": "Pakhala Bhat",
+    "calories": 140,
+    "protein": 3.0,
+    "fat": 1.0,
+    "carbs": 28
+  },
+  {
+    "name": "Chaurasi Bhog item",
+    "calories": 350,
+    "protein": 10.0,
+    "fat": 15.0,
+    "carbs": 45
+  },
+  {
+    "name": "Mung dal tarkari",
+    "calories": 130,
+    "protein": 9.0,
+    "fat": 2.0,
+    "carbs": 18
+  },
+  {
+    "name": "Bhuteko Bhat 1",
+    "calories": 120,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 15
+  },
+  {
+    "name": "Tarkari mix 1",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 17
+  },
+  {
+    "name": "Matar Tarkari 1",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 19
+  },
+  {
+    "name": "Kakro ko achar 1",
+    "calories": 150,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 21
+  },
+  {
+    "name": "Golbheda achar 1",
+    "calories": 160,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 23
+  },
+  {
+    "name": "Karela bhujuri 1",
+    "calories": 120,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 25
+  },
+  {
+    "name": "Pharsi Tarkari 1",
+    "calories": 130,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 27
+  },
+  {
+    "name": "Chana ko tarkari 1",
+    "calories": 140,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 15
+  },
+  {
+    "name": "Simikot roti 1",
+    "calories": 150,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 17
+  },
+  {
+    "name": "Chyau fry 1",
+    "calories": 160,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 19
+  },
+  {
+    "name": "Masu bhutuwa 1",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 21
+  },
+  {
+    "name": "Khasiko Sukuti 1",
+    "calories": 130,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 23
+  },
+  {
+    "name": "Rayo saag 1",
+    "calories": 140,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 25
+  },
+  {
+    "name": "Tori saag 1",
+    "calories": 150,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 27
+  },
+  {
+    "name": "Palungo saag 1",
+    "calories": 160,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 15
+  },
+  {
+    "name": "Aloo tama 1",
+    "calories": 120,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 17
+  },
+  {
+    "name": "Bandhakopi tarkari 1",
+    "calories": 130,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 19
+  },
+  {
+    "name": "Kakro salad 1",
+    "calories": 140,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 21
+  },
+  {
+    "name": "Chana sadeko 1",
+    "calories": 150,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 23
+  },
+  {
+    "name": "Chutney (tomato) 1",
+    "calories": 160,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 25
+  },
+  {
+    "name": "Bhuteko Bhat 2",
+    "calories": 120,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 27
+  },
+  {
+    "name": "Tarkari mix 2",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 15
+  },
+  {
+    "name": "Matar Tarkari 2",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 17
+  },
+  {
+    "name": "Kakro ko achar 2",
+    "calories": 150,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 19
+  },
+  {
+    "name": "Golbheda achar 2",
+    "calories": 160,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 21
+  },
+  {
+    "name": "Karela bhujuri 2",
+    "calories": 120,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 23
+  },
+  {
+    "name": "Pharsi Tarkari 2",
+    "calories": 130,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 25
+  },
+  {
+    "name": "Chana ko tarkari 2",
+    "calories": 140,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 27
+  },
+  {
+    "name": "Simikot roti 2",
+    "calories": 150,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 15
+  },
+  {
+    "name": "Chyau fry 2",
+    "calories": 160,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 17
+  },
+  {
+    "name": "Masu bhutuwa 2",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 19
+  },
+  {
+    "name": "Khasiko Sukuti 2",
+    "calories": 130,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 21
+  },
+  {
+    "name": "Rayo saag 2",
+    "calories": 140,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 23
+  },
+  {
+    "name": "Tori saag 2",
+    "calories": 150,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 25
+  },
+  {
+    "name": "Palungo saag 2",
+    "calories": 160,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 27
+  },
+  {
+    "name": "Aloo tama 2",
+    "calories": 120,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 15
+  },
+  {
+    "name": "Bandhakopi tarkari 2",
+    "calories": 130,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 17
+  },
+  {
+    "name": "Kakro salad 2",
+    "calories": 140,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 19
+  },
+  {
+    "name": "Chana sadeko 2",
+    "calories": 150,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 21
+  },
+  {
+    "name": "Chutney (tomato) 2",
+    "calories": 160,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 23
+  },
+  {
+    "name": "Bhuteko Bhat 3",
+    "calories": 120,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 25
+  },
+  {
+    "name": "Tarkari mix 3",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 27
+  },
+  {
+    "name": "Matar Tarkari 3",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 15
+  },
+  {
+    "name": "Kakro ko achar 3",
+    "calories": 150,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 17
+  },
+  {
+    "name": "Golbheda achar 3",
+    "calories": 160,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 19
+  },
+  {
+    "name": "Karela bhujuri 3",
+    "calories": 120,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 21
+  },
+  {
+    "name": "Pharsi Tarkari 3",
+    "calories": 130,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 23
+  },
+  {
+    "name": "Chana ko tarkari 3",
+    "calories": 140,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 25
+  },
+  {
+    "name": "Simikot roti 3",
+    "calories": 150,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 27
+  },
+  {
+    "name": "Chyau fry 3",
+    "calories": 160,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 15
+  },
+  {
+    "name": "Masu bhutuwa 3",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 17
+  },
+  {
+    "name": "Khasiko Sukuti 3",
+    "calories": 130,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 19
+  },
+  {
+    "name": "Rayo saag 3",
+    "calories": 140,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 21
+  },
+  {
+    "name": "Tori saag 3",
+    "calories": 150,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 23
+  },
+  {
+    "name": "Palungo saag 3",
+    "calories": 160,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 25
+  },
+  {
+    "name": "Aloo tama 3",
+    "calories": 120,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 27
+  },
+  {
+    "name": "Bandhakopi tarkari 3",
+    "calories": 130,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 15
+  },
+  {
+    "name": "Kakro salad 3",
+    "calories": 140,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 17
+  },
+  {
+    "name": "Chana sadeko 3",
+    "calories": 150,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 19
+  },
+  {
+    "name": "Chutney (tomato) 3",
+    "calories": 160,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 21
+  },
+  {
+    "name": "Bhuteko Bhat 4",
+    "calories": 120,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 23
+  },
+  {
+    "name": "Tarkari mix 4",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 25
+  },
+  {
+    "name": "Matar Tarkari 4",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 27
+  },
+  {
+    "name": "Kakro ko achar 4",
+    "calories": 150,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 15
+  },
+  {
+    "name": "Golbheda achar 4",
+    "calories": 160,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 17
+  },
+  {
+    "name": "Karela bhujuri 4",
+    "calories": 120,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 19
+  },
+  {
+    "name": "Pharsi Tarkari 4",
+    "calories": 130,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 21
+  },
+  {
+    "name": "Chana ko tarkari 4",
+    "calories": 140,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 23
+  },
+  {
+    "name": "Simikot roti 4",
+    "calories": 150,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 25
+  },
+  {
+    "name": "Chyau fry 4",
+    "calories": 160,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 27
+  },
+  {
+    "name": "Masu bhutuwa 4",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 15
+  },
+  {
+    "name": "Khasiko Sukuti 4",
+    "calories": 130,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 17
+  },
+  {
+    "name": "Rayo saag 4",
+    "calories": 140,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 19
+  },
+  {
+    "name": "Tori saag 4",
+    "calories": 150,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 21
+  },
+  {
+    "name": "Palungo saag 4",
+    "calories": 160,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 23
+  },
+  {
+    "name": "Aloo tama 4",
+    "calories": 120,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 25
+  },
+  {
+    "name": "Bandhakopi tarkari 4",
+    "calories": 130,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 27
+  },
+  {
+    "name": "Kakro salad 4",
+    "calories": 140,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 15
+  },
+  {
+    "name": "Chana sadeko 4",
+    "calories": 150,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 17
+  },
+  {
+    "name": "Chutney (tomato) 4",
+    "calories": 160,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 19
+  },
+  {
+    "name": "Bhuteko Bhat 5",
+    "calories": 120,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 21
+  },
+  {
+    "name": "Tarkari mix 5",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 23
+  },
+  {
+    "name": "Matar Tarkari 5",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 25
+  },
+  {
+    "name": "Kakro ko achar 5",
+    "calories": 150,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 27
+  },
+  {
+    "name": "Golbheda achar 5",
+    "calories": 160,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 15
+  },
+  {
+    "name": "Karela bhujuri 5",
+    "calories": 120,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 17
+  },
+  {
+    "name": "Pharsi Tarkari 5",
+    "calories": 130,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 19
+  },
+  {
+    "name": "Chana ko tarkari 5",
+    "calories": 140,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 21
+  },
+  {
+    "name": "Simikot roti 5",
+    "calories": 150,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 23
+  },
+  {
+    "name": "Chyau fry 5",
+    "calories": 160,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 25
+  },
+  {
+    "name": "Masu bhutuwa 5",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 27
+  },
+  {
+    "name": "Khasiko Sukuti 5",
+    "calories": 130,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 15
+  },
+  {
+    "name": "Rayo saag 5",
+    "calories": 140,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 17
+  },
+  {
+    "name": "Tori saag 5",
+    "calories": 150,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 19
+  },
+  {
+    "name": "Palungo saag 5",
+    "calories": 160,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 21
+  },
+  {
+    "name": "Aloo tama 5",
+    "calories": 120,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 23
+  },
+  {
+    "name": "Bandhakopi tarkari 5",
+    "calories": 130,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 25
+  },
+  {
+    "name": "Kakro salad 5",
+    "calories": 140,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 27
+  },
+  {
+    "name": "Chana sadeko 5",
+    "calories": 150,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 15
+  },
+  {
+    "name": "Chutney (tomato) 5",
+    "calories": 160,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 17
+  },
+  {
+    "name": "Bhuteko Bhat 6",
+    "calories": 120,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 19
+  },
+  {
+    "name": "Tarkari mix 6",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 21
+  },
+  {
+    "name": "Matar Tarkari 6",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 23
+  },
+  {
+    "name": "Kakro ko achar 6",
+    "calories": 150,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 25
+  },
+  {
+    "name": "Golbheda achar 6",
+    "calories": 160,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 27
+  },
+  {
+    "name": "Karela bhujuri 6",
+    "calories": 120,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 15
+  },
+  {
+    "name": "Pharsi Tarkari 6",
+    "calories": 130,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 17
+  },
+  {
+    "name": "Chana ko tarkari 6",
+    "calories": 140,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 19
+  },
+  {
+    "name": "Simikot roti 6",
+    "calories": 150,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 21
+  },
+  {
+    "name": "Chyau fry 6",
+    "calories": 160,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 23
+  },
+  {
+    "name": "Masu bhutuwa 6",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 25
+  },
+  {
+    "name": "Khasiko Sukuti 6",
+    "calories": 130,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 27
+  },
+  {
+    "name": "Rayo saag 6",
+    "calories": 140,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 15
+  },
+  {
+    "name": "Tori saag 6",
+    "calories": 150,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 17
+  },
+  {
+    "name": "Palungo saag 6",
+    "calories": 160,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 19
+  },
+  {
+    "name": "Aloo tama 6",
+    "calories": 120,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 21
+  },
+  {
+    "name": "Bandhakopi tarkari 6",
+    "calories": 130,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 23
+  },
+  {
+    "name": "Kakro salad 6",
+    "calories": 140,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 25
+  },
+  {
+    "name": "Chana sadeko 6",
+    "calories": 150,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 27
+  },
+  {
+    "name": "Chutney (tomato) 6",
+    "calories": 160,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 15
+  },
+  {
+    "name": "Bhuteko Bhat 7",
+    "calories": 120,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 17
+  },
+  {
+    "name": "Tarkari mix 7",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 19
+  },
+  {
+    "name": "Matar Tarkari 7",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 21
+  },
+  {
+    "name": "Kakro ko achar 7",
+    "calories": 150,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 23
+  },
+  {
+    "name": "Golbheda achar 7",
+    "calories": 160,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 25
+  },
+  {
+    "name": "Karela bhujuri 7",
+    "calories": 120,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 27
+  },
+  {
+    "name": "Pharsi Tarkari 7",
+    "calories": 130,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 15
+  },
+  {
+    "name": "Chana ko tarkari 7",
+    "calories": 140,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 17
+  },
+  {
+    "name": "Simikot roti 7",
+    "calories": 150,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 19
+  },
+  {
+    "name": "Chyau fry 7",
+    "calories": 160,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 21
+  },
+  {
+    "name": "Masu bhutuwa 7",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 23
+  },
+  {
+    "name": "Khasiko Sukuti 7",
+    "calories": 130,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 25
+  },
+  {
+    "name": "Rayo saag 7",
+    "calories": 140,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 27
+  },
+  {
+    "name": "Tori saag 7",
+    "calories": 150,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 15
+  },
+  {
+    "name": "Palungo saag 7",
+    "calories": 160,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 17
+  },
+  {
+    "name": "Aloo tama 7",
+    "calories": 120,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 19
+  },
+  {
+    "name": "Bandhakopi tarkari 7",
+    "calories": 130,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 21
+  },
+  {
+    "name": "Kakro salad 7",
+    "calories": 140,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 23
+  },
+  {
+    "name": "Chana sadeko 7",
+    "calories": 150,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 25
+  },
+  {
+    "name": "Chutney (tomato) 7",
+    "calories": 160,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 27
+  },
+  {
+    "name": "Bhuteko Bhat 8",
+    "calories": 120,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 15
+  },
+  {
+    "name": "Tarkari mix 8",
+    "calories": 130,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 17
+  },
+  {
+    "name": "Matar Tarkari 8",
+    "calories": 140,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 19
+  },
+  {
+    "name": "Kakro ko achar 8",
+    "calories": 150,
+    "protein": 5.0,
+    "fat": 5.0,
+    "carbs": 21
+  },
+  {
+    "name": "Golbheda achar 8",
+    "calories": 160,
+    "protein": 2.0,
+    "fat": 3.0,
+    "carbs": 23
+  },
+  {
+    "name": "Karela bhujuri 8",
+    "calories": 120,
+    "protein": 3.0,
+    "fat": 4.0,
+    "carbs": 25
+  },
+  {
+    "name": "Pharsi Tarkari 8",
+    "calories": 130,
+    "protein": 4.0,
+    "fat": 5.0,
+    "carbs": 27
+  },
+  {
+    "name": "Chana ko tarkari 8",
+    "calories": 140,
+    "protein": 5.0,
+    "fat": 3.0,
+    "carbs": 15
+  },
+  {
+    "name": "Simikot roti 8",
+    "calories": 150,
+    "protein": 2.0,
+    "fat": 4.0,
+    "carbs": 17
+  },
+  {
+    "name": "Chyau fry 8",
+    "calories": 160,
+    "protein": 3.0,
+    "fat": 5.0,
+    "carbs": 19
+  },
+  {
+    "name": "Masu bhutuwa 8",
+    "calories": 120,
+    "protein": 4.0,
+    "fat": 3.0,
+    "carbs": 21
+  },
+  {
+    "name": "Khasiko Sukuti 8",
+    "calories": 130,
+    "protein": 5.0,
+    "fat": 4.0,
+    "carbs": 23
+  },
+  {
+    "name": "Rayo saag 8",
+    "calories": 140,
+    "protein": 2.0,
+    "fat": 5.0,
+    "carbs": 25
+  },
+  {
+    "name": "Tori saag 8",
+    "calories": 150,
+    "protein": 3.0,
+    "fat": 3.0,
+    "carbs": 27
+  },
+  {
+    "name": "Palungo saag 8",
+    "calories": 160,
+    "protein": 4.0,
+    "fat": 4.0,
+    "carbs": 15
+  }
+]

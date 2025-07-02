@@ -35,9 +35,10 @@ dependencies:
   cupertino_icons: ^1.0.8
   firebase_core: ^3.13.0
   firebase_auth: ^5.5.3
-  youtube_player_flutter: ^9.1.1
   get: ^4.7.2
   google_sign_in: ^6.3.0
+  video_player: ^2.10.0
+  chewie: ^1.12.1
 
 
 
@@ -65,7 +66,66 @@ flutter:
   # the material Icons class.
   uses-material-design: true
   assets:
-  - images/
+    - images/
+    - videos/45_degree_knee_to_elbow.mp4
+    - videos/45_degree_side_bend.mp4
+    - videos/abdominal_crunches.mp4
+    - videos/archer_pushups.mp4
+    - videos/arm_to_side.mp4
+    - videos/badic_hyperextension.mp4
+    - videos/barbell_chestpress.mp4
+    - videos/Barbell_Clean_press.mp4
+    - videos/Barbell_rows.mp4
+    - videos/barbell_split_sqauts.mp4
+    - videos/barbell_squats.mp4
+    - videos/bench_squats.mp4
+    - videos/Biceps_curl.mp4
+    - videos/Biceps_curl_ropes.mp4
+    - videos/Burpees.mp4
+    - videos/cable_overhead_extension.mp4
+    - videos/chair_dips.mp4
+    - videos/chin_up.mp4
+    - videos/crossover_squat.mp4
+    - videos/crunches.mp4
+    - videos/curtesy_lunges.mp4
+    - videos/Dips.mp4
+    - videos/dumbbell_burpees.mp4
+    - videos/dumbbell_forearm.mp4
+    - videos/dumbbell_hip_extension.mp4
+    - videos/dumbbell_low_windmill.mp4
+    - videos/dumbbell_overhead_walk.mp4
+    - videos/dumbbell_press.mp4
+    - videos/dumbbell_press_extension.mp4
+    - videos/glute_bridge.mp4
+    - videos/hamstringcurl_puch.mp4
+    - videos/horizontal_punch.mp4
+    - videos/Hyperextension.mp4
+    - videos/incline_pushups.mp4
+    - videos/iron_crush.mp4
+    - videos/jump_ropes.mp4
+    - videos/kettlebell_squats.mp4
+    - videos/knee_pull.mp4
+    - videos/Layeral_Raises.mp4
+    - videos/laying_abdominal_crunches.mp4
+    - videos/Leg_raises.mp4
+    - videos/oneorm_cable.mp4
+    - videos/one_arm_wrist_extension.mp4
+    - videos/overhead_lunges.mp4
+    - videos/pushups.mp4
+    - videos/seatedback _shoulder.mp4
+    - videos/setbox_squats.mp4
+    - videos/shoulder_press.mp4
+    - videos/shoulder_press_cable.mp4
+    - videos/skull_crusher.mp4
+    - videos/split_sqaut.mp4
+    - videos/squat_shoulder.mp4
+    - videos/standing_toe_touch.mp4
+    - videos/star_jump.mp4
+    - videos/streatching.mp4
+    - videos/sumo_deadlift.mp4
+    - videos/sumo_squats_dumbbell.mp4
+    - videos/Tricep_extension.mp4
+    - videos/vertical_air_punches.mp4
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see
