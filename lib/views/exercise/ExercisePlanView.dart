@@ -23,7 +23,7 @@ class ExercisePlanView extends StatelessWidget {
 
   // Local exercise database
   static const Map<String, List<Exercise>> exerciseDatabase = {
-    'Build-muscle-beginner-home': [
+    'muscle_gain-beginner-home': [
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -75,7 +75,7 @@ class ExercisePlanView extends StatelessWidget {
       ),
       // Add more exercises
     ],
-    'Build-muscle-intermediate-home':[
+    'muscle_gain-intermediate-home':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -118,7 +118,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Build-muscle-advanced-home':[
+    'muscle_gain-advanced-home':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -162,7 +162,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: ['Dumbbells'],
       ),
     ],
-    'Build-muscle-beginner-gym': [
+    'muscle_gain-beginner-gym': [
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -207,7 +207,7 @@ class ExercisePlanView extends StatelessWidget {
       ),
       // Add more exercises
     ],
-    'Build-muscle-intermediate-gym':[
+    'muscle_gain-intermediate-gym':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -265,7 +265,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Build-muscle-advanced-gym':[
+    'muscle_gain-advanced-gym':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -330,7 +330,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Build-muscle-Outdoor/Public-Spaces-beginner':[
+    'muscle_gain-beginner-outdoor':[
       Exercise(
         name: 'Incline push-ups',
         videoPath: 'assets/videos/incline_pushups.mp4',
@@ -367,7 +367,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       )
     ],
-    'Build-muscle-Outdoor/Public-Spaces-intermediate':[
+    'muscle_gain-intermediate-outdoor':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -404,7 +404,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: ['Dumbbells'],
       ),
     ],
-    'Build-muscle-Outdoor/Public-Spaces-advanced':[
+    'muscle_gain-advanced-outdoor':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -448,7 +448,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Lose-weight-home-beginner':[
+    'weight_loss-beginner-home':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -497,7 +497,7 @@ class ExercisePlanView extends StatelessWidget {
         instructions: '3 sets of 30 reps',
       ),
     ],
-    'Lose-weight-home-intermediate':[
+    'weight_loss-intermediate-home':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -546,7 +546,7 @@ class ExercisePlanView extends StatelessWidget {
         instructions: '3 sets of 30 reps',
       ),
     ],
-    'Lose-weight-home-advanced':[
+    'weight_loss-advanced-home':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -618,7 +618,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Lose-weight-gym-beginner':[
+    'weight_loss-beginner-gym':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -668,7 +668,7 @@ class ExercisePlanView extends StatelessWidget {
         instructions: '3 set for 10 reps',
       ),
     ],
-    'Lose-weight-gym-intermediate':[
+    'weight_loss-intermediate-gym':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -727,7 +727,7 @@ class ExercisePlanView extends StatelessWidget {
       ),
 
     ],
-    'Lose-weight-gym-advanced':[
+    'weight_loss-advanced-gym':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -799,7 +799,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: ['Dumbbells'],
       ),
     ],
-    'Lose-weight-Outdoor/Public-Spaces-beginner':[
+    'weight_loss-beginner-outdoor':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -843,7 +843,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Lose-weight-Outdoor/Public-Spaces-intermediate':[
+    'weight_loss-intermediate-outdoor':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -887,7 +887,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: ['Dumbbells'],
       ),
     ],
-    'Lose-weight-Outdoor/Public-Spaces-advanced':[
+    'weight_loss-advanced-outdoor':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -931,7 +931,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Stay-fit-gym-beginner':[
+    'maintenance-beginner-gym':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -975,7 +975,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Stay-fit-gym-intermediate':[
+    'maintenance-intermediate-gym':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -1019,7 +1019,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Stay-fit-gym-advanced':[
+    'maintenance-advanced-gym':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -1071,7 +1071,7 @@ class ExercisePlanView extends StatelessWidget {
       ),
 
     ],
-    'Stay-fit-home-beginner':[
+    'maintenance-beginner-home':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -1108,7 +1108,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Stay-fit-home-intermediate':[
+    'maintenance-intermediate-home':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -1138,7 +1138,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: ['Biceps_curl'],
       ),
     ],
-    'Stay-fit-home-advanced':[
+    'maintenance-advanced-home':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -1175,7 +1175,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: ['Barbell'],
       ),
     ],
-    'Stay-fit-Outdoor/Public-Spaces-beginner':[
+    'maintenance-beginner-outdoor':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -1205,7 +1205,7 @@ class ExercisePlanView extends StatelessWidget {
         requiredEquipment: [],
       ),
     ],
-    'Stay-fit-Outdoor/Public-Spaces-intermediate':[
+    'maintenance-intermediate-outdoor':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
@@ -1213,8 +1213,43 @@ class ExercisePlanView extends StatelessWidget {
         instructions: 'Stretch your body for at least 5 minutes',
         requiredEquipment: [],
       ),
+      Exercise(
+        name: 'Triceps extension',
+        videoPath: 'assets/videos/Tricep_extension.mp4',
+        caloriesPerMinute: 3.5,
+        instructions: '3 sets for 10 reps',
+        requiredEquipment: [],
+      ),
+      Exercise(
+        name: 'Star jump',
+        videoPath: 'assets/videos/star_jump.mp4',
+        caloriesPerMinute: 3,
+        instructions: '3 sets for 10 reps',
+        requiredEquipment: [],
+      ),
+      Exercise(
+        name: 'Iron crush',
+        videoPath: 'assets/videos/iron_crush.mp4',
+        caloriesPerMinute: 4,
+        instructions: '3 sets for 10 reps',
+        requiredEquipment: ['Dumbbells'],
+      ),
+      Exercise(
+        name: 'Dumbbell press',
+        videoPath: 'assets/videos/dumbbell_press.mp4',
+        caloriesPerMinute: 4,
+        instructions: '3 sets for 10 reps',
+        requiredEquipment: ['Dumbbells'],
+      ),
+      Exercise(
+        name: 'Pull ups',
+        videoPath: 'assets/videos/chin_up.mp4',
+        caloriesPerMinute: 10,
+        instructions: '3 set for 10 reps',
+        requiredEquipment: [],
+      ),
     ],
-    'Stay-fit-Outdoor/Public-Spaces-advanced':[
+    'maintenance-advanced-outdoor':[
       Exercise(
         name: 'Stretching',
         videoPath: 'assets/videos/streatching.mp4',
