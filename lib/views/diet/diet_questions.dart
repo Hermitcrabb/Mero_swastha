@@ -25,13 +25,13 @@ class _DietQuestionsState extends State<DietQuestions> {
 
   final List<String> nepaliStapleFoods = [
     "Rice",
-    "Dal (Lentils)",
+    "Dal",
     "Vegetables",
     "Milk",
     "Yogurt",
-    "Roti (Flatbread)",
+    "Roti",
     "Curry",
-    "Pickle (Achar)",
+    "Pickle",
     "Ghee",
     "Egg",
     "Chicken",

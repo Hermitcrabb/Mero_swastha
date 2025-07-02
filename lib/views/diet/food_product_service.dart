@@ -19,7 +19,7 @@ class FoodProductService {
         }
 
         String query = 'search_terms=$food$labelFilter&json=true&page_size=10';
-        final url = Uri.parse('https://world.openfoodfacts.org/cgi/search.pl?$query');
+        final url = Uri.parse('https://world.openfoodfacts.org/cgi/search.pl?$query&lc=en');
 
         print("Fetching: $url"); // ✅ Add logging
 
@@ -28,12 +28,16 @@ class FoodProductService {
           final jsonData = jsonDecode(response.body);
           final productsJson = jsonData['products'] as List<dynamic>;
 
-          final products = productsJson
-              .map((p) => FoodProduct.fromJson(p))
-              .where((product) => product.calories > 0)
-              .toList();
+          final products = productsJson.map((p) {
+            try {
+              return FoodProduct.fromJson(p);
+            } catch (_) {
+              return null; // skip invalid/unwanted products gracefully
+            }
+          }).whereType<FoodProduct>().toList();
 
           allProducts.addAll(products);
+
         } else {
           print("API Error for $food: ${response.statusCode}");
         }
@@ -62,5 +66,26 @@ class FoodProductService {
     }
 
     return meal;
+  }
+  static Future<List<FoodProduct>> searchFoodByName(String query) async {
+    final response = await http.get(Uri.parse(
+        'https://world.openfoodfacts.org/cgi/search.pl?search_terms=$query&search_simple=1&action=process&json=true&page_size=10'));
+
+    if (response.statusCode == 200) {
+      final data = jsonDecode(response.body);
+      final products = (data['products'] as List)
+          .map((json) {
+        try {
+          return FoodProduct.fromJson(json);
+        } catch (_) {
+          return null;
+        }
+      })
+          .whereType<FoodProduct>()
+          .toList();
+      return products;
+    } else {
+      throw Exception('Failed to search for food');
+    }
   }
 }

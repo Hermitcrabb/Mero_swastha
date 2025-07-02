@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'diet_questions.dart';  // your questionnaire page
-import 'diet_plan_result.dart'; // your diet plan result page
+import 'diet_questions.dart';
+import 'diet_plan_result.dart';
+import 'food_product.dart';
 
 class DietPage extends StatelessWidget {
   const DietPage({super.key});
@@ -34,15 +35,44 @@ class DietPage extends StatelessWidget {
 
         final data = snapshot.data!.data() as Map<String, dynamic>?;
 
-        // Check if dietPreferences exist and are valid
         if (data == null || data['dietPreferences'] == null) {
-          // No preferences saved yet -> show questionnaire
           return const DietQuestions();
+        }
+
+        final preferences = Map<String, dynamic>.from(data['dietPreferences']);
+        final cachedPlan = data['generatedDietPlan'] as Map<String, dynamic>?;
+
+        if (cachedPlan != null && cachedPlan.isNotEmpty) {
+          // ✅ Pass cached diet plan to the result page
+          return DietPlanResult(
+            data: preferences,
+            cachedMealPlan: _convertStoredPlanToMap(cachedPlan),
+          );
         } else {
-          // Show diet plan result with latest data
-          return DietPlanResult(data: Map<String, dynamic>.from(data['dietPreferences']));
+          // No cache yet → regenerate
+          return DietPlanResult(data: preferences);
         }
       },
     );
+  }
+
+  /// 🔄 Helper: Convert raw Firestore map to proper Map<String, List<FoodProduct>>
+  Map<String, List<FoodProduct>> _convertStoredPlanToMap(Map<String, dynamic> raw) {
+    final Map<String, List<FoodProduct>> result = {};
+
+    raw.forEach((mealName, productList) {
+      final products = (productList as List<dynamic>).map((p) {
+        return FoodProduct(
+          name: p['name'] ?? 'Unnamed',
+          calories: (p['calories'] as num).toDouble(),
+          protein: (p['protein'] as num).toDouble(),
+          fat: (p['fat'] as num).toDouble(),
+          carbs: (p['carbs'] as num).toDouble(),
+        );
+      }).toList();
+      result[mealName] = products;
+    });
+
+    return result;
   }
 }

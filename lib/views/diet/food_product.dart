@@ -1,3 +1,5 @@
+// food_product.dart
+
 class FoodProduct {
   final String name;
   final double calories;
@@ -23,12 +25,40 @@ class FoodProduct {
       return 0.0;
     }
 
+    final name = json['product_name'] ?? '';
+
+    final lowerName = name.toLowerCase();
+
+    if (name.isEmpty ||
+        lowerName.contains("wicked") ||
+        lowerName.contains("soygurt") ||
+        lowerName.contains("ready meal") ||
+        lowerName.contains("steak") ||
+        name.contains(',') ||
+        name.contains(';') ||
+        name.length > 40) {
+      throw FormatException("Unwanted product: $name");
+    }
+
+    final calories = parseToDouble(nutriments['energy-kcal']);
+    if (calories <= 0) {
+      throw FormatException("Invalid calorie value for product: $name");
+    }
+
     return FoodProduct(
-      name: json['product_name'] ?? 'Unnamed',
-      calories: parseToDouble(nutriments['energy-kcal']),
+      name: name,
+      calories: calories,
       protein: parseToDouble(nutriments['proteins']),
       fat: parseToDouble(nutriments['fat']),
       carbs: parseToDouble(nutriments['carbohydrates']),
     );
   }
+
+  Map<String, dynamic> toJson() => {
+    'name': name,
+    'calories': calories,
+    'protein': protein,
+    'fat': fat,
+    'carbs': carbs,
+  };
 }
