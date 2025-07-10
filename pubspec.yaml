@@ -38,7 +38,9 @@ dependencies:
   get: ^4.7.2
   google_sign_in: ^6.3.0
   video_player: ^2.10.0
-  chewie: ^1.12.1
+  chewie: ^1.7.5
+  khalti: ^2.0.0
+  khalti_flutter: ^3.0.0
 
 
 
