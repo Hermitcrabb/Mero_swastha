@@ -22,6 +22,19 @@ class UserController extends GetxController {
     }
   }
 
+
+  Future<void> loadUser() async {
+    final uid = FirebaseAuth.instance.currentUser?.uid;
+    if (uid == null) return;
+
+    final doc = await FirebaseFirestore.instance.collection('users').doc(uid).get();
+    if (doc.exists) {
+      userModel.value = UserModel.fromMap(doc.data()!);
+    } else {
+      userModel.value = null;
+    }
+  }
+
   Future<void> updateUser(UserModel updatedUser) async {
     await FirebaseFirestore.instance
         .collection('users')

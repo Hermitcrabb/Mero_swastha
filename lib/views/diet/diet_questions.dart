@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import '../bmi/bmi_page.dart';
@@ -71,10 +70,8 @@ class _DietQuestionsState extends State<DietQuestions> {
       isLoading = false;
     });
   }
-
   void _submit() async {
     if (_formKey.currentState!.validate()) {
-      // save preferences to Firestore
       final user = FirebaseAuth.instance.currentUser;
       if (user == null) return;
 
@@ -84,17 +81,21 @@ class _DietQuestionsState extends State<DietQuestions> {
           'dietType': dietType,
           'selectedStapleFoods': selectedStapleFoods,
           'mealsPerDay': mealsPerDay,
-          'bmi': bmi ?? 0,  // store 0 if null to avoid null issues
+          'bmi': bmi ?? 0,
           'tdee': tdee ?? 0,
           'timestamp': FieldValue.serverTimestamp(),
-        }
+        },
+        'generatedDietPlan': FieldValue.delete(), // ❗ invalidate old plan
       });
 
-      // pop back (no need to send result now)
-      Navigator.pop(context);
+
+      // ✅ Make sure the widget is still mounted before using context
+      if (!mounted) return;
+
+      Navigator.pushReplacementNamed(context, '/diet_page');
+
     }
   }
-
 
   Widget _buildStapleFoodChips() {
     return Wrap(
@@ -167,14 +168,24 @@ class _DietQuestionsState extends State<DietQuestions> {
                         ? TextFormField(
                       enabled: false,
                       initialValue: goal,
-                      decoration: InputDecoration(
+                      decoration: const InputDecoration(
                         labelText: "Fitness Goal (calculated via BMI)",
                         border: OutlineInputBorder(),
                       ),
                     )
-                        : Text(
-                      "Please calculate your fitness goal using BMI",
-                      style: TextStyle(color: Colors.red, fontWeight: FontWeight.bold),
+                        : Container(
+                      padding: const EdgeInsets.symmetric(vertical: 12),
+                      decoration: BoxDecoration(
+                        border: Border.all(color: Colors.red),
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: const Text(
+                        "Please calculate your fitness goal using BMI",
+                        style: TextStyle(
+                          color: Colors.red,
+                          fontWeight: FontWeight.bold,
+                        ),
+                      ),
                     ),
                   ),
                   IconButton(

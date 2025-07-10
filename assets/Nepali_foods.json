@@ -1,0 +1,4083 @@
+
+{
+"breakfast":[
+    {
+        "name": "Sel Roti",
+        "protein": 10.2,
+        "carbs": 34.6,
+        "fat": 12.2,
+        "calories": 405.0
+    },
+    {
+        "name": "Puri Tarkari",
+        "protein": 4.9,
+        "carbs": 49.0,
+        "fat": 11.7,
+        "calories": 447.0
+    },
+    {
+        "name": "Aloo Tama",
+        "protein": 14.6,
+        "carbs": 36.7,
+        "fat": 8.7,
+        "calories": 115.0
+    },
+    {
+        "name": "Chiya with Milk",
+        "protein": 9.0,
+        "carbs": 57.7,
+        "fat": 16.2,
+        "calories": 407.0
+    },
+    {
+        "name": "Masala Omelette",
+        "protein": 6.0,
+        "carbs": 35.6,
+        "fat": 3.8,
+        "calories": 467.0
+    },
+    {
+        "name": "Gundruk ko Soup",
+        "protein": 6.0,
+        "carbs": 45.7,
+        "fat": 15.9,
+        "calories": 261.0
+    },
+    {
+        "name": "Juju Dhau (Curd)",
+        "protein": 13.5,
+        "carbs": 39.1,
+        "fat": 23.4,
+        "calories": 379.0
+    },
+    {
+        "name": "Vegetable Samosa",
+        "protein": 11.3,
+        "carbs": 37.9,
+        "fat": 17.9,
+        "calories": 437.0
+    },
+    {
+        "name": "Aloo Paratha",
+        "protein": 5.8,
+        "carbs": 19.6,
+        "fat": 18.6,
+        "calories": 161.0
+    },
+    {
+        "name": "Mo:Mo (Steamed Dumplings)",
+        "protein": 14.3,
+        "carbs": 52.9,
+        "fat": 21.9,
+        "calories": 153.0
+    },
+    {
+        "name": "Dhido",
+        "protein": 13.6,
+        "carbs": 55.8,
+        "fat": 16.6,
+        "calories": 106.0
+    },
+    {
+        "name": "Kwati (Mixed Beans Soup)",
+        "protein": 2.3,
+        "carbs": 27.8,
+        "fat": 11.8,
+        "calories": 361.0
+    },
+    {
+        "name": "Bara (Lentil Pancake)",
+        "protein": 1.5,
+        "carbs": 57.2,
+        "fat": 19.6,
+        "calories": 210.0
+    },
+    {
+        "name": "Masala Chai",
+        "protein": 9.5,
+        "carbs": 42.1,
+        "fat": 1.5,
+        "calories": 288.0
+    },
+    {
+        "name": "Aloo Chop",
+        "protein": 9.9,
+        "carbs": 56.1,
+        "fat": 14.0,
+        "calories": 245.0
+    },
+    {
+        "name": "Chana Dal Puri",
+        "protein": 4.8,
+        "carbs": 50.3,
+        "fat": 16.5,
+        "calories": 416.0
+    },
+    {
+        "name": "Sikarni (Sweet Yogurt)",
+        "protein": 3.8,
+        "carbs": 38.1,
+        "fat": 3.8,
+        "calories": 434.0
+    },
+    {
+        "name": "Pakora",
+        "protein": 7.7,
+        "carbs": 51.1,
+        "fat": 24.8,
+        "calories": 405.0
+    },
+    {
+        "name": "Mula Ko Achar (Radish Pickle)",
+        "protein": 8.4,
+        "carbs": 53.8,
+        "fat": 13.3,
+        "calories": 215.0
+    },
+    {
+        "name": "Chira (Beaten Rice) with Yogurt",
+        "protein": 11.3,
+        "carbs": 50.3,
+        "fat": 12.0,
+        "calories": 413.0
+    },
+    {
+        "name": "Milk Porridge",
+        "protein": 10.1,
+        "carbs": 12.5,
+        "fat": 4.5,
+        "calories": 359.0
+    },
+    {
+        "name": "Egg Curry with Roti",
+        "protein": 6.0,
+        "carbs": 37.6,
+        "fat": 16.2,
+        "calories": 238.0
+    },
+    {
+        "name": "Vegetable Pakora",
+        "protein": 5.3,
+        "carbs": 16.5,
+        "fat": 2.3,
+        "calories": 157.0
+    },
+    {
+        "name": "Fish Curry with Rice",
+        "protein": 2.3,
+        "carbs": 35.5,
+        "fat": 14.3,
+        "calories": 355.0
+    },
+    {
+        "name": "Momo Soup",
+        "protein": 14.1,
+        "carbs": 48.5,
+        "fat": 14.6,
+        "calories": 154.0
+    },
+    {
+        "name": "Sukuti (Dried Meat)",
+        "protein": 6.5,
+        "carbs": 39.9,
+        "fat": 0.6,
+        "calories": 306.0
+    },
+    {
+        "name": "Dahi Bhat (Curd and Rice)",
+        "protein": 9.8,
+        "carbs": 19.2,
+        "fat": 7.8,
+        "calories": 234.0
+    },
+    {
+        "name": "Tomato Achar",
+        "protein": 12.1,
+        "carbs": 49.0,
+        "fat": 6.4,
+        "calories": 424.0
+    },
+    {
+        "name": "Spinach Tarkari",
+        "protein": 9.0,
+        "carbs": 56.2,
+        "fat": 23.1,
+        "calories": 139.0
+    },
+    {
+        "name": "Sattu Drink",
+        "protein": 7.1,
+        "carbs": 37.2,
+        "fat": 11.0,
+        "calories": 431.0
+    },
+    {
+        "name": "Chawal (Steamed Rice)",
+        "protein": 6.9,
+        "carbs": 25.5,
+        "fat": 15.2,
+        "calories": 416.0
+    },
+    {
+        "name": "Cornflakes with Milk",
+        "protein": 2.3,
+        "carbs": 43.7,
+        "fat": 20.9,
+        "calories": 129.0
+    },
+    {
+        "name": "Lito (Buckwheat Porridge)",
+        "protein": 4.2,
+        "carbs": 38.9,
+        "fat": 23.6,
+        "calories": 237.0
+    },
+    {
+        "name": "Roti with Ghee",
+        "protein": 12.8,
+        "carbs": 32.0,
+        "fat": 11.1,
+        "calories": 337.0
+    },
+    {
+        "name": "Fresh Fruit Salad",
+        "protein": 1.7,
+        "carbs": 16.0,
+        "fat": 9.5,
+        "calories": 448.0
+    },
+    {
+        "name": "Beetroot Tarkari",
+        "protein": 6.7,
+        "carbs": 24.9,
+        "fat": 19.1,
+        "calories": 300.0
+    },
+    {
+        "name": "Vegetable Soup",
+        "protein": 3.6,
+        "carbs": 46.6,
+        "fat": 17.4,
+        "calories": 462.0
+    },
+    {
+        "name": "Masala Bread Toast",
+        "protein": 4.0,
+        "carbs": 20.8,
+        "fat": 21.6,
+        "calories": 397.0
+    },
+    {
+        "name": "Tandoori Roti",
+        "protein": 7.7,
+        "carbs": 45.3,
+        "fat": 14.4,
+        "calories": 214.0
+    },
+    {
+        "name": "Khaja Set (Snacks combo)",
+        "protein": 12.6,
+        "carbs": 26.3,
+        "fat": 14.9,
+        "calories": 176.0
+    },
+    {
+        "name": "Egg Bhujia",
+        "protein": 14.7,
+        "carbs": 44.8,
+        "fat": 18.3,
+        "calories": 306.0
+    },
+    {
+        "name": "Lentil Soup",
+        "protein": 8.9,
+        "carbs": 10.5,
+        "fat": 21.1,
+        "calories": 175.0
+    },
+    {
+        "name": "Pumpkin Curry",
+        "protein": 12.8,
+        "carbs": 31.0,
+        "fat": 20.8,
+        "calories": 464.0
+    },
+    {
+        "name": "Bhindi Tarkari (Okra)",
+        "protein": 7.9,
+        "carbs": 17.0,
+        "fat": 8.4,
+        "calories": 399.0
+    },
+    {
+        "name": "Spinach Omelette",
+        "protein": 1.3,
+        "carbs": 43.5,
+        "fat": 2.9,
+        "calories": 346.0
+    },
+    {
+        "name": "Kodo Ko Roti (Millet bread)",
+        "protein": 10.8,
+        "carbs": 59.0,
+        "fat": 7.7,
+        "calories": 103.0
+    },
+    {
+        "name": "Sweet Potato Curry",
+        "protein": 2.0,
+        "carbs": 25.8,
+        "fat": 14.8,
+        "calories": 410.0
+    },
+    {
+        "name": "Rice Porridge",
+        "protein": 10.2,
+        "carbs": 38.6,
+        "fat": 22.9,
+        "calories": 319.0
+    },
+    {
+        "name": "Mula Tarkari",
+        "protein": 1.6,
+        "carbs": 41.0,
+        "fat": 9.1,
+        "calories": 297.0
+    },
+    {
+        "name": "Cowpea Curry",
+        "protein": 8.6,
+        "carbs": 26.9,
+        "fat": 20.2,
+        "calories": 329.0
+    },
+    {
+        "name": "Maasu (Meat) Soup",
+        "protein": 2.3,
+        "carbs": 50.9,
+        "fat": 1.7,
+        "calories": 368.0
+    },
+    {
+        "name": "Fried Rice",
+        "protein": 12.8,
+        "carbs": 54.4,
+        "fat": 8.1,
+        "calories": 216.0
+    },
+    {
+        "name": "Green Gram Soup",
+        "protein": 7.0,
+        "carbs": 57.9,
+        "fat": 6.0,
+        "calories": 222.0
+    },
+    {
+        "name": "Chickpea Curry",
+        "protein": 5.9,
+        "carbs": 15.6,
+        "fat": 8.0,
+        "calories": 271.0
+    },
+    {
+        "name": "Lemon Tea",
+        "protein": 13.7,
+        "carbs": 35.1,
+        "fat": 2.8,
+        "calories": 156.0
+    },
+    {
+        "name": "Masala Toast",
+        "protein": 7.0,
+        "carbs": 30.5,
+        "fat": 16.2,
+        "calories": 259.0
+    },
+    {
+        "name": "Vegetable Fried Noodles",
+        "protein": 2.6,
+        "carbs": 45.1,
+        "fat": 11.1,
+        "calories": 161.0
+    },
+    {
+        "name": "Paneer Bhurji",
+        "protein": 4.1,
+        "carbs": 10.9,
+        "fat": 0.6,
+        "calories": 297.0
+    },
+    {
+        "name": "Vegetable Upma",
+        "protein": 12.8,
+        "carbs": 31.9,
+        "fat": 21.8,
+        "calories": 362.0
+    },
+    {
+        "name": "Scrambled Eggs with Veggies",
+        "protein": 1.6,
+        "carbs": 56.9,
+        "fat": 21.8,
+        "calories": 163.0
+    },
+    {
+        "name": "Mixed Vegetable Curry",
+        "protein": 1.2,
+        "carbs": 58.0,
+        "fat": 3.9,
+        "calories": 349.0
+    },
+    {
+        "name": "Beetroot Salad",
+        "protein": 8.1,
+        "carbs": 29.0,
+        "fat": 4.2,
+        "calories": 297.0
+    },
+    {
+        "name": "Tomato Soup",
+        "protein": 5.4,
+        "carbs": 20.4,
+        "fat": 16.1,
+        "calories": 184.0
+    },
+    {
+        "name": "Potato Cutlets",
+        "protein": 8.7,
+        "carbs": 36.7,
+        "fat": 2.6,
+        "calories": 173.0
+    },
+    {
+        "name": "Milk Tea with Spices",
+        "protein": 11.0,
+        "carbs": 12.3,
+        "fat": 17.4,
+        "calories": 201.0
+    },
+    {
+        "name": "Egg Sandwich",
+        "protein": 8.1,
+        "carbs": 59.1,
+        "fat": 24.5,
+        "calories": 114.0
+    },
+    {
+        "name": "Dal Soup",
+        "protein": 12.3,
+        "carbs": 17.6,
+        "fat": 22.0,
+        "calories": 485.0
+    },
+    {
+        "name": "Cheese Paratha",
+        "protein": 1.0,
+        "carbs": 34.4,
+        "fat": 23.9,
+        "calories": 149.0
+    },
+    {
+        "name": "Butter Toast",
+        "protein": 6.5,
+        "carbs": 40.1,
+        "fat": 11.4,
+        "calories": 407.0
+    },
+    {
+        "name": "Jeri (Sweet Fried Dough)",
+        "protein": 13.1,
+        "carbs": 24.5,
+        "fat": 16.7,
+        "calories": 273.0
+    },
+    {
+        "name": "Chickpea Soup",
+        "protein": 5.5,
+        "carbs": 32.1,
+        "fat": 17.0,
+        "calories": 208.0
+    },
+    {
+        "name": "Fish Fry",
+        "protein": 7.0,
+        "carbs": 13.7,
+        "fat": 14.6,
+        "calories": 290.0
+    },
+    {
+        "name": "Corn Curry",
+        "protein": 5.6,
+        "carbs": 42.6,
+        "fat": 19.3,
+        "calories": 117.0
+    },
+    {
+        "name": "Sweet Corn Soup",
+        "protein": 10.2,
+        "carbs": 10.2,
+        "fat": 6.2,
+        "calories": 381.0
+    },
+    {
+        "name": "Millet Porridge",
+        "protein": 1.2,
+        "carbs": 41.9,
+        "fat": 17.7,
+        "calories": 458.0
+    },
+    {
+        "name": "Jackfruit Curry",
+        "protein": 14.6,
+        "carbs": 56.1,
+        "fat": 2.0,
+        "calories": 457.0
+    },
+    {
+        "name": "Coconut Ladoo",
+        "protein": 2.7,
+        "carbs": 45.1,
+        "fat": 21.3,
+        "calories": 488.0
+    },
+    {
+        "name": "Mixed Fruit Juice",
+        "protein": 14.4,
+        "carbs": 54.1,
+        "fat": 9.5,
+        "calories": 256.0
+    },
+    {
+        "name": "Milkshake",
+        "protein": 3.9,
+        "carbs": 53.3,
+        "fat": 24.9,
+        "calories": 449.0
+    },
+    {
+        "name": "Rice Pancakes",
+        "protein": 3.0,
+        "carbs": 22.1,
+        "fat": 15.3,
+        "calories": 460.0
+    },
+    {
+        "name": "Masala Idli",
+        "protein": 3.7,
+        "carbs": 37.6,
+        "fat": 9.8,
+        "calories": 112.0
+    },
+    {
+        "name": "Samosa Chaat",
+        "protein": 12.1,
+        "carbs": 13.6,
+        "fat": 7.9,
+        "calories": 478.0
+    },
+    {
+        "name": "Mixed Dal",
+        "protein": 8.7,
+        "carbs": 20.6,
+        "fat": 14.4,
+        "calories": 398.0
+    },
+    {
+        "name": "Fried Lentil Balls",
+        "protein": 13.2,
+        "carbs": 13.9,
+        "fat": 15.7,
+        "calories": 436.0
+    },
+    {
+        "name": "Potato Bharta",
+        "protein": 5.0,
+        "carbs": 51.0,
+        "fat": 11.2,
+        "calories": 206.0
+    },
+    {
+        "name": "Tomato Omelette",
+        "protein": 5.5,
+        "carbs": 16.5,
+        "fat": 9.0,
+        "calories": 323.0
+    },
+    {
+        "name": "Cornflakes Porridge",
+        "protein": 4.5,
+        "carbs": 57.4,
+        "fat": 9.5,
+        "calories": 238.0
+    },
+    {
+        "name": "Ghee Rice",
+        "protein": 13.1,
+        "carbs": 19.8,
+        "fat": 8.3,
+        "calories": 369.0
+    },
+    {
+        "name": "Peanut Curry",
+        "protein": 13.1,
+        "carbs": 46.3,
+        "fat": 9.3,
+        "calories": 484.0
+    },
+    {
+        "name": "Egg Roll",
+        "protein": 4.6,
+        "carbs": 44.3,
+        "fat": 15.9,
+        "calories": 442.0
+    },
+    {
+        "name": "Curd Rice",
+        "protein": 5.3,
+        "carbs": 18.5,
+        "fat": 16.1,
+        "calories": 498.0
+    },
+    {
+        "name": "Vegetable Pakoda",
+        "protein": 7.5,
+        "carbs": 58.7,
+        "fat": 4.3,
+        "calories": 107.0
+    },
+    {
+        "name": "Mixed Vegetable Soup",
+        "protein": 13.0,
+        "carbs": 13.4,
+        "fat": 1.5,
+        "calories": 317.0
+    },
+    {
+        "name": "Spiced Milk",
+        "protein": 7.1,
+        "carbs": 56.5,
+        "fat": 23.2,
+        "calories": 461.0
+    },
+    {
+        "name": "Wheat Porridge",
+        "protein": 4.7,
+        "carbs": 31.2,
+        "fat": 13.8,
+        "calories": 145.0
+    },
+    {
+        "name": "Fried Mo:Mo",
+        "protein": 12.5,
+        "carbs": 49.3,
+        "fat": 19.0,
+        "calories": 185.0
+    },
+    {
+        "name": "Sesame Ladoos",
+        "protein": 10.7,
+        "carbs": 51.3,
+        "fat": 19.4,
+        "calories": 392.0
+    },
+    {
+        "name": "Chickpea Salad",
+        "protein": 5.4,
+        "carbs": 41.8,
+        "fat": 13.2,
+        "calories": 189.0
+    },
+    {
+        "name": "Sweet Potato Chips",
+        "protein": 2.4,
+        "carbs": 10.2,
+        "fat": 15.3,
+        "calories": 223.0
+    },
+    {
+        "name": "Vegetable Cutlets",
+        "protein": 3.1,
+        "carbs": 53.8,
+        "fat": 5.3,
+        "calories": 321.0
+    },
+    {
+        "name": "Mutton Curry",
+        "protein": 5.5,
+        "carbs": 37.5,
+        "fat": 6.7,
+        "calories": 226.0
+    },
+    {
+        "name": "Lentil Pancakes",
+        "protein": 11.6,
+        "carbs": 45.1,
+        "fat": 11.8,
+        "calories": 356.0
+    },
+    {
+        "name": "Eggplant Curry",
+        "protein": 3.6,
+        "carbs": 11.7,
+        "fat": 18.1,
+        "calories": 445.0
+    },
+    {
+        "name": "Milk Rice",
+        "protein": 12.9,
+        "carbs": 24.8,
+        "fat": 16.5,
+        "calories": 331.0
+    },
+    {
+        "name": "Vegetable Dal",
+        "protein": 3.5,
+        "carbs": 27.7,
+        "fat": 10.5,
+        "calories": 142.0
+    },
+    {
+        "name": "Pumpkin Soup",
+        "protein": 13.6,
+        "carbs": 48.9,
+        "fat": 17.1,
+        "calories": 275.0
+    },
+    {
+        "name": "Chicken Soup",
+        "protein": 11.3,
+        "carbs": 44.4,
+        "fat": 23.3,
+        "calories": 171.0
+    },
+    {
+        "name": "Curd with Honey",
+        "protein": 8.9,
+        "carbs": 35.7,
+        "fat": 19.8,
+        "calories": 144.0
+    },
+    {
+        "name": "Vegetable Sandwich",
+        "protein": 4.0,
+        "carbs": 26.0,
+        "fat": 6.7,
+        "calories": 277.0
+    },
+    {
+        "name": "Potato Samosa",
+        "protein": 10.9,
+        "carbs": 17.0,
+        "fat": 8.6,
+        "calories": 151.0
+    },
+    {
+        "name": "Spinach Soup",
+        "protein": 1.2,
+        "carbs": 43.0,
+        "fat": 13.0,
+        "calories": 155.0
+    },
+    {
+        "name": "Masala Dosa",
+        "protein": 11.5,
+        "carbs": 20.8,
+        "fat": 15.9,
+        "calories": 397.0
+    },
+    {
+        "name": "Roasted Corn",
+        "protein": 7.4,
+        "carbs": 10.1,
+        "fat": 7.0,
+        "calories": 303.0
+    },
+    {
+        "name": "Ginger Tea",
+        "protein": 2.9,
+        "carbs": 49.2,
+        "fat": 23.5,
+        "calories": 163.0
+    },
+    {
+        "name": "Mixed Nuts",
+        "protein": 10.0,
+        "carbs": 11.2,
+        "fat": 2.8,
+        "calories": 285.0
+    },
+    {
+        "name": "Egg Bhurji",
+        "protein": 1.7,
+        "carbs": 22.7,
+        "fat": 0.5,
+        "calories": 405.0
+    },
+    {
+        "name": "Fruit Yogurt",
+        "protein": 8.9,
+        "carbs": 23.4,
+        "fat": 5.5,
+        "calories": 219.0
+    },
+    {
+        "name": "Tofu Stir Fry",
+        "protein": 2.3,
+        "carbs": 33.7,
+        "fat": 5.7,
+        "calories": 246.0
+    },
+    {
+        "name": "Tomato Chutney",
+        "protein": 14.4,
+        "carbs": 39.6,
+        "fat": 11.2,
+        "calories": 262.0
+    },
+    {
+        "name": "Green Peas Curry",
+        "protein": 3.1,
+        "carbs": 46.9,
+        "fat": 5.2,
+        "calories": 231.0
+    },
+    {
+        "name": "Chickpea Fritters",
+        "protein": 3.5,
+        "carbs": 16.2,
+        "fat": 1.4,
+        "calories": 195.0
+    },
+    {
+        "name": "Vegetable Paratha",
+        "protein": 7.6,
+        "carbs": 21.5,
+        "fat": 2.4,
+        "calories": 486.0
+    },
+    {
+        "name": "Cucumber Salad",
+        "protein": 12.7,
+        "carbs": 22.2,
+        "fat": 23.9,
+        "calories": 454.0
+    },
+    {
+        "name": "Vegetable Porridge",
+        "protein": 5.5,
+        "carbs": 34.9,
+        "fat": 4.9,
+        "calories": 123.0
+    },
+    {
+        "name": "Spiced Lentils",
+        "protein": 4.4,
+        "carbs": 13.9,
+        "fat": 13.9,
+        "calories": 404.0
+    },
+    {
+        "name": "Sweet Rice",
+        "protein": 4.0,
+        "carbs": 43.3,
+        "fat": 14.0,
+        "calories": 118.0
+    },
+    {
+        "name": "Mo:Mo Salad",
+        "protein": 3.4,
+        "carbs": 55.7,
+        "fat": 8.0,
+        "calories": 344.0
+    },
+    {
+        "name": "Fish Curry",
+        "protein": 12.4,
+        "carbs": 59.2,
+        "fat": 11.7,
+        "calories": 304.0
+    },
+    {
+        "name": "Carrot Curry",
+        "protein": 11.6,
+        "carbs": 35.6,
+        "fat": 18.2,
+        "calories": 188.0
+    },
+    {
+        "name": "Tomato Rice",
+        "protein": 9.6,
+        "carbs": 48.2,
+        "fat": 7.2,
+        "calories": 340.0
+    },
+    {
+        "name": "Apple Juice",
+        "protein": 12.7,
+        "carbs": 11.7,
+        "fat": 4.7,
+        "calories": 219.0
+    },
+    {
+        "name": "Peanut Butter Toast",
+        "protein": 14.6,
+        "carbs": 26.9,
+        "fat": 18.4,
+        "calories": 174.0
+    },
+    {
+        "name": "Masala Milk",
+        "protein": 7.0,
+        "carbs": 15.4,
+        "fat": 22.5,
+        "calories": 352.0
+    },
+    {
+        "name": "Vegetable Kebabs",
+        "protein": 9.5,
+        "carbs": 30.2,
+        "fat": 9.0,
+        "calories": 318.0
+    },
+    {
+        "name": "Egg Curry",
+        "protein": 8.8,
+        "carbs": 40.3,
+        "fat": 16.1,
+        "calories": 358.0
+    },
+    {
+        "name": "Potato Soup",
+        "protein": 1.4,
+        "carbs": 12.7,
+        "fat": 12.3,
+        "calories": 419.0
+    },
+    {
+        "name": "Mixed Bean Curry",
+        "protein": 9.3,
+        "carbs": 19.7,
+        "fat": 22.9,
+        "calories": 217.0
+    },
+    {
+        "name": "Wheat Roti",
+        "protein": 12.6,
+        "carbs": 23.9,
+        "fat": 5.9,
+        "calories": 411.0
+    },
+    {
+        "name": "Lemon Water",
+        "protein": 7.7,
+        "carbs": 26.0,
+        "fat": 15.6,
+        "calories": 286.0
+    },
+    {
+        "name": "Dal Bhat",
+        "protein": 11.2,
+        "carbs": 26.5,
+        "fat": 12.1,
+        "calories": 275.0
+    },
+    {
+        "name": "Curd Salad",
+        "protein": 6.8,
+        "carbs": 45.4,
+        "fat": 5.6,
+        "calories": 166.0
+    },
+    {
+        "name": "Rice Flour Pancakes",
+        "protein": 9.8,
+        "carbs": 11.0,
+        "fat": 4.9,
+        "calories": 158.0
+    },
+    {
+        "name": "Boiled Eggs",
+        "protein": 11.0,
+        "carbs": 26.0,
+        "fat": 14.1,
+        "calories": 233.0
+    },
+    {
+        "name": "Vegetable Stir Fry",
+        "protein": 8.6,
+        "carbs": 32.4,
+        "fat": 6.2,
+        "calories": 467.0
+    },
+    {
+        "name": "Sweet Potato Soup",
+        "protein": 15.0,
+        "carbs": 22.1,
+        "fat": 6.2,
+        "calories": 234.0
+    },
+    {
+        "name": "Carrot Salad",
+        "protein": 7.4,
+        "carbs": 40.7,
+        "fat": 2.5,
+        "calories": 436.0
+    },
+    {
+        "name": "Pumpkin Paratha",
+        "protein": 13.1,
+        "carbs": 57.9,
+        "fat": 7.2,
+        "calories": 224.0
+    },
+    {
+        "name": "Milk Pudding",
+        "protein": 12.3,
+        "carbs": 40.4,
+        "fat": 11.0,
+        "calories": 285.0
+    },
+    {
+        "name": "Chia Seed Pudding",
+        "protein": 12.6,
+        "carbs": 11.1,
+        "fat": 5.7,
+        "calories": 416.0
+    },
+    {
+        "name": "Black Lentil Soup",
+        "protein": 8.2,
+        "carbs": 26.6,
+        "fat": 2.0,
+        "calories": 496.0
+    },
+    {
+        "name": "Rice with Pickle",
+        "protein": 3.0,
+        "carbs": 42.1,
+        "fat": 4.4,
+        "calories": 152.0
+    },
+    {
+        "name": "Vegetable Salad",
+        "protein": 14.4,
+        "carbs": 17.7,
+        "fat": 13.3,
+        "calories": 144.0
+    },
+    {
+        "name": "Spinach Paratha",
+        "protein": 3.7,
+        "carbs": 14.5,
+        "fat": 10.4,
+        "calories": 347.0
+    },
+    {
+        "name": "Green Tea",
+        "protein": 4.4,
+        "carbs": 32.8,
+        "fat": 11.0,
+        "calories": 454.0
+    },
+    {
+        "name": "Lentil Fritters",
+        "protein": 4.6,
+        "carbs": 19.8,
+        "fat": 15.0,
+        "calories": 207.0
+    },
+    {
+        "name": "Paneer Curry",
+        "protein": 7.5,
+        "carbs": 48.3,
+        "fat": 9.8,
+        "calories": 436.0
+    },
+    {
+        "name": "Vegetable Saut\u00e9",
+        "protein": 14.1,
+        "carbs": 18.8,
+        "fat": 21.2,
+        "calories": 457.0
+    },
+    {
+        "name": "Fruit Smoothie",
+        "protein": 13.2,
+        "carbs": 12.6,
+        "fat": 6.8,
+        "calories": 340.0
+    },
+    {
+        "name": "Corn Porridge",
+        "protein": 10.5,
+        "carbs": 11.1,
+        "fat": 19.9,
+        "calories": 409.0
+    },
+    {
+        "name": "Wheat Porridge",
+        "protein": 7.4,
+        "carbs": 45.3,
+        "fat": 17.3,
+        "calories": 114.0
+    },
+    {
+        "name": "Egg Salad",
+        "protein": 10.4,
+        "carbs": 26.1,
+        "fat": 11.6,
+        "calories": 378.0
+    },
+    {
+        "name": "Peanut Curry",
+        "protein": 13.4,
+        "carbs": 23.5,
+        "fat": 13.1,
+        "calories": 167.0
+    },
+    {
+        "name": "Sweet Corn Salad",
+        "protein": 13.7,
+        "carbs": 57.7,
+        "fat": 4.4,
+        "calories": 424.0
+    },
+    {
+        "name": "Rice Soup",
+        "protein": 14.7,
+        "carbs": 54.1,
+        "fat": 16.1,
+        "calories": 320.0
+    },
+    {
+        "name": "Masala Chutney",
+        "protein": 14.2,
+        "carbs": 44.6,
+        "fat": 8.0,
+        "calories": 227.0
+    },
+    {
+        "name": "Fried Rice Balls",
+        "protein": 7.6,
+        "carbs": 31.1,
+        "fat": 18.2,
+        "calories": 235.0
+    },
+    {
+        "name": "Vegetable Dosa",
+        "protein": 6.0,
+        "carbs": 32.2,
+        "fat": 9.4,
+        "calories": 433.0
+    },
+    {
+        "name": "Lentil Salad",
+        "protein": 2.2,
+        "carbs": 19.3,
+        "fat": 20.3,
+        "calories": 175.0
+    },
+    {
+        "name": "Fruit Chaat",
+        "protein": 13.9,
+        "carbs": 15.3,
+        "fat": 7.3,
+        "calories": 381.0
+    },
+    {
+        "name": "Chickpea Curry",
+        "protein": 13.9,
+        "carbs": 11.5,
+        "fat": 15.3,
+        "calories": 237.0
+    },
+    {
+        "name": "Potato Bhaji",
+        "protein": 13.2,
+        "carbs": 24.5,
+        "fat": 3.5,
+        "calories": 134.0
+    },
+    {
+        "name": "Egg Masala",
+        "protein": 6.9,
+        "carbs": 35.1,
+        "fat": 19.5,
+        "calories": 188.0
+    },
+    {
+        "name": "Rice Idli",
+        "protein": 6.6,
+        "carbs": 11.4,
+        "fat": 17.8,
+        "calories": 227.0
+    },
+    {
+        "name": "Pumpkin Soup",
+        "protein": 10.9,
+        "carbs": 13.6,
+        "fat": 7.5,
+        "calories": 486.0
+    },
+    {
+        "name": "Milk Tea",
+        "protein": 5.5,
+        "carbs": 34.2,
+        "fat": 0.9,
+        "calories": 481.0
+    },
+    {
+        "name": "Lentil Stew",
+        "protein": 8.2,
+        "carbs": 54.6,
+        "fat": 2.6,
+        "calories": 377.0
+    },
+    {
+        "name": "Cucumber Raita",
+        "protein": 13.4,
+        "carbs": 28.4,
+        "fat": 15.5,
+        "calories": 146.0
+    },
+    {
+        "name": "Chicken Fry",
+        "protein": 7.1,
+        "carbs": 39.2,
+        "fat": 19.9,
+        "calories": 405.0
+    },
+    {
+        "name": "Tomato Rice",
+        "protein": 11.4,
+        "carbs": 11.2,
+        "fat": 16.3,
+        "calories": 151.0
+    },
+    {
+        "name": "Vegetable Pakora",
+        "protein": 1.2,
+        "carbs": 25.7,
+        "fat": 17.8,
+        "calories": 104.0
+    },
+    {
+        "name": "Lentil Soup",
+        "protein": 3.2,
+        "carbs": 46.1,
+        "fat": 12.9,
+        "calories": 219.0
+    },
+    {
+        "name": "Vegetable Kheer",
+        "protein": 4.3,
+        "carbs": 46.2,
+        "fat": 19.7,
+        "calories": 384.0
+    },
+    {
+        "name": "Fried Potato",
+        "protein": 1.3,
+        "carbs": 28.6,
+        "fat": 19.3,
+        "calories": 365.0
+    },
+    {
+        "name": "Green Gram Curry",
+        "protein": 5.5,
+        "carbs": 32.2,
+        "fat": 23.7,
+        "calories": 353.0
+    },
+    {
+        "name": "Vegetable Paratha",
+        "protein": 11.5,
+        "carbs": 45.9,
+        "fat": 5.5,
+        "calories": 187.0
+    },
+    {
+        "name": "Rice Porridge",
+        "protein": 2.9,
+        "carbs": 54.2,
+        "fat": 9.5,
+        "calories": 487.0
+    },
+    {
+        "name": "Spiced Lentils",
+        "protein": 12.2,
+        "carbs": 39.1,
+        "fat": 21.5,
+        "calories": 247.0
+    },
+    {
+        "name": "Pumpkin Curry",
+        "protein": 1.1,
+        "carbs": 18.8,
+        "fat": 5.3,
+        "calories": 162.0
+    },
+    {
+        "name": "Mixed Vegetable Soup",
+        "protein": 4.2,
+        "carbs": 13.6,
+        "fat": 19.2,
+        "calories": 362.0
+    },
+    {
+        "name": "Egg Curry",
+        "protein": 8.4,
+        "carbs": 13.4,
+        "fat": 8.0,
+        "calories": 490.0
+    },
+    {
+        "name": "Chicken Soup",
+        "protein": 7.0,
+        "carbs": 57.8,
+        "fat": 24.4,
+        "calories": 244.0
+    },
+    {
+        "name": "Vegetable Soup",
+        "protein": 7.7,
+        "carbs": 39.0,
+        "fat": 2.2,
+        "calories": 230.0
+    },
+    {
+        "name": "Mo:Mo (Fried)",
+        "protein": 14.9,
+        "carbs": 59.2,
+        "fat": 24.0,
+        "calories": 107.0
+    },
+    {
+        "name": "Tomato Chutney",
+        "protein": 4.6,
+        "carbs": 48.9,
+        "fat": 9.7,
+        "calories": 339.0
+    },
+    {
+        "name": "Vegetable Biryani",
+        "protein": 14.3,
+        "carbs": 19.3,
+        "fat": 17.7,
+        "calories": 181.0
+    },
+    {
+        "name": "Spinach Curry",
+        "protein": 9.1,
+        "carbs": 55.9,
+        "fat": 7.8,
+        "calories": 312.0
+    },
+    {
+        "name": "Aloo Tama",
+        "protein": 14.1,
+        "carbs": 23.9,
+        "fat": 24.0,
+        "calories": 143.0
+    },
+    {
+        "name": "Dal Soup",
+        "protein": 5.8,
+        "carbs": 31.9,
+        "fat": 13.7,
+        "calories": 157.0
+    },
+    {
+        "name": "Lentil Pancakes",
+        "protein": 2.0,
+        "carbs": 29.7,
+        "fat": 14.3,
+        "calories": 233.0
+    },
+    {
+        "name": "Vegetable Stew",
+        "protein": 6.9,
+        "carbs": 35.2,
+        "fat": 23.0,
+        "calories": 137.0
+    }
+],
+"dinner": [
+    {
+    "name": "Chicken Sekuwa",
+    "protein": 25,
+    "carbs": 5,
+    "fat": 12,
+    "calories": 220
+  },
+  {
+    "name": "Lamb Sekuwa",
+    "protein": 22,
+    "carbs": 3,
+    "fat": 18,
+    "calories": 260
+  },
+  {
+    "name": "Fish Sekuwa",
+    "protein": 20,
+    "carbs": 2,
+    "fat": 10,
+    "calories": 180
+  },
+  {
+    "name": "Grilled Momo",
+    "protein": 15,
+    "carbs": 25,
+    "fat": 8,
+    "calories": 220
+  },
+  {
+    "name": "Fried Chicken",
+    "protein": 23,
+    "carbs": 10,
+    "fat": 15,
+    "calories": 280
+  },
+  {
+    "name": "Tandoori Fish",
+    "protein": 22,
+    "carbs": 5,
+    "fat": 12,
+    "calories": 210
+  },
+  {
+    "name": "Bhuteko Masu (Fried Meat)",
+    "protein": 24,
+    "carbs": 4,
+    "fat": 16,
+    "calories": 250
+  },
+  {
+    "name": "Chatamari (Nepali Rice Crepe)",
+    "protein": 5,
+    "carbs": 35,
+    "fat": 6,
+    "calories": 200
+  },
+  {
+    "name": "Masu Curry with Spinach",
+    "protein": 18,
+    "carbs": 12,
+    "fat": 14,
+    "calories": 240
+  },
+  {
+    "name": "Vegetable Sekuwa",
+    "protein": 8,
+    "carbs": 20,
+    "fat": 10,
+    "calories": 190
+  },
+  {
+    "name": "Tandoori Chicken",
+    "protein": 26,
+    "carbs": 6,
+    "fat": 12,
+    "calories": 230
+  },
+  {
+    "name": "Aloo Chatamari",
+    "protein": 6,
+    "carbs": 40,
+    "fat": 8,
+    "calories": 240
+  },
+  {
+    "name": "Masu Sekuwa with Rice",
+    "protein": 22,
+    "carbs": 35,
+    "fat": 14,
+    "calories": 350
+  },
+  {
+    "name": "Paneer Tikka",
+    "protein": 14,
+    "carbs": 10,
+    "fat": 16,
+    "calories": 220
+  },
+  {
+    "name": "Vegetable Biryani",
+    "protein": 8,
+    "carbs": 45,
+    "fat": 12,
+    "calories": 300
+  },
+  {
+    "name": "Mixed Grill Platter",
+    "protein": 30,
+    "carbs": 15,
+    "fat": 20,
+    "calories": 380
+  },
+  {
+    "name": "Bhuteko Bhindi (Fried Okra)",
+    "protein": 4,
+    "carbs": 12,
+    "fat": 10,
+    "calories": 150
+  },
+  {
+    "name": "Fried Fish with Tarkari",
+    "protein": 20,
+    "carbs": 15,
+    "fat": 14,
+    "calories": 260
+  },
+  {
+    "name": "Lamb Curry with Rice",
+    "protein": 24,
+    "carbs": 40,
+    "fat": 18,
+    "calories": 400
+  },
+  {
+    "name": "Chicken Curry with Spinach",
+    "protein": 22,
+    "carbs": 12,
+    "fat": 16,
+    "calories": 280
+  },
+  {
+    "name": "Fish Curry with Mustard Seeds",
+    "protein": 21,
+    "carbs": 10,
+    "fat": 14,
+    "calories": 240
+  },
+  {
+    "name": "Chicken Tikka Masala",
+    "protein": 25,
+    "carbs": 18,
+    "fat": 20,
+    "calories": 340
+  },
+  {
+    "name": "Spicy Mutton Curry",
+    "protein": 26,
+    "carbs": 12,
+    "fat": 22,
+    "calories": 350
+  },
+  {
+    "name": "Fried Paneer",
+    "protein": 12,
+    "carbs": 8,
+    "fat": 18,
+    "calories": 240
+  },
+  {
+    "name": "Vegetable Pakora",
+    "protein": 6,
+    "carbs": 25,
+    "fat": 14,
+    "calories": 240
+  },
+  {
+    "name": "Spinach and Potato Curry",
+    "protein": 7,
+    "carbs": 30,
+    "fat": 10,
+    "calories": 220
+  },
+  {
+    "name": "Tandoori Roti",
+    "protein": 5,
+    "carbs": 35,
+    "fat": 4,
+    "calories": 180
+  },
+  {
+    "name": "Rice with Mutton Soup",
+    "protein": 20,
+    "carbs": 45,
+    "fat": 16,
+    "calories": 380
+  },
+  {
+    "name": "Masu Soup",
+    "protein": 18,
+    "carbs": 8,
+    "fat": 12,
+    "calories": 200
+  },
+  {
+    "name": "Spiced Roasted Chicken",
+    "protein": 28,
+    "carbs": 6,
+    "fat": 18,
+    "calories": 300
+  },
+  {
+    "name": "Stir Fried Vegetables",
+    "protein": 6,
+    "carbs": 20,
+    "fat": 10,
+    "calories": 180
+  },
+  {
+    "name": "Mushroom Sekuwa",
+    "protein": 10,
+    "carbs": 12,
+    "fat": 8,
+    "calories": 160
+  },
+  {
+    "name": "Bhuteko Cauliflower",
+    "protein": 5,
+    "carbs": 15,
+    "fat": 12,
+    "calories": 170
+  },
+  {
+    "name": "Chicken Biryani",
+    "protein": 24,
+    "carbs": 50,
+    "fat": 16,
+    "calories": 420
+  },
+  {
+    "name": "Lamb Stew with Vegetables",
+    "protein": 22,
+    "carbs": 25,
+    "fat": 18,
+    "calories": 340
+  },
+  {
+    "name": "Dal Bhat with Fried Fish",
+    "protein": 25,
+    "carbs": 60,
+    "fat": 20,
+    "calories": 500
+  },
+  {
+    "name": "Boiled Vegetables with Grilled Chicken",
+    "protein": 30,
+    "carbs": 20,
+    "fat": 12,
+    "calories": 300
+  },
+  {
+    "name": "Choyela with Rice",
+    "protein": 20,
+    "carbs": 40,
+    "fat": 15,
+    "calories": 350
+  },
+  {
+    "name": "Masu Sekuwa with Vegetable Curry",
+    "protein": 25,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Vegetable Soup with Momo",
+    "protein": 12,
+    "carbs": 35,
+    "fat": 10,
+    "calories": 260
+  },
+  {
+    "name": "Fried Potato with Chicken Curry",
+    "protein": 18,
+    "carbs": 35,
+    "fat": 14,
+    "calories": 320
+  },
+  {
+    "name": "Fish Fry with Tomato Curry",
+    "protein": 22,
+    "carbs": 15,
+    "fat": 16,
+    "calories": 280
+  },
+  {
+    "name": "Masala Grilled Chicken",
+    "protein": 28,
+    "carbs": 8,
+    "fat": 16,
+    "calories": 280
+  },
+  {
+    "name": "Lamb Curry with Lentils",
+    "protein": 26,
+    "carbs": 30,
+    "fat": 20,
+    "calories": 400
+  },
+  {
+    "name": "Chicken Soup with Vegetables",
+    "protein": 20,
+    "carbs": 15,
+    "fat": 10,
+    "calories": 220
+  },
+  {
+    "name": "Spinach Soup with Dal",
+    "protein": 12,
+    "carbs": 25,
+    "fat": 8,
+    "calories": 200
+  },
+  {
+    "name": "Fried Momo with Chutney",
+    "protein": 14,
+    "carbs": 30,
+    "fat": 14,
+    "calories": 280
+  },
+  {
+    "name": "Chicken Korma",
+    "protein": 24,
+    "carbs": 20,
+    "fat": 22,
+    "calories": 360
+  },
+  {
+    "name": "Lamb Biryani",
+    "protein": 26,
+    "carbs": 55,
+    "fat": 20,
+    "calories": 480
+  },
+  {
+    "name": "Fried Rice with Chicken",
+    "protein": 22,
+    "carbs": 50,
+    "fat": 14,
+    "calories": 400
+  },
+  {
+    "name": "Stir Fry Chicken with Veggies",
+    "protein": 25,
+    "carbs": 20,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Masu Curry with Lentils",
+    "protein": 24,
+    "carbs": 30,
+    "fat": 18,
+    "calories": 380
+  },
+  {
+    "name": "Grilled Tofu with Curry",
+    "protein": 16,
+    "carbs": 15,
+    "fat": 12,
+    "calories": 220
+  },
+  {
+    "name": "Vegetable Pulao",
+    "protein": 8,
+    "carbs": 45,
+    "fat": 10,
+    "calories": 280
+  },
+  {
+    "name": "Roasted Lamb with Spices",
+    "protein": 28,
+    "carbs": 10,
+    "fat": 22,
+    "calories": 350
+  },
+  {
+    "name": "Paneer Curry with Rice",
+    "protein": 14,
+    "carbs": 40,
+    "fat": 18,
+    "calories": 350
+  },
+  {
+    "name": "Chicken Fry with Rice",
+    "protein": 24,
+    "carbs": 45,
+    "fat": 16,
+    "calories": 400
+  },
+  {
+    "name": "Mixed Vegetable Stew",
+    "protein": 8,
+    "carbs": 25,
+    "fat": 10,
+    "calories": 210
+  },
+  {
+    "name": "Vegetable Korma with Roti",
+    "protein": 10,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Lentil Soup with Masu",
+    "protein": 22,
+    "carbs": 25,
+    "fat": 14,
+    "calories": 320
+  },
+  {
+    "name": "Spinach and Potato Soup",
+    "protein": 7,
+    "carbs": 30,
+    "fat": 8,
+    "calories": 200
+  },
+  {
+    "name": "Chicken Curry with Mustard Seeds",
+    "protein": 24,
+    "carbs": 15,
+    "fat": 18,
+    "calories": 300
+  },
+  {
+    "name": "Grilled Fish with Lemon",
+    "protein": 22,
+    "carbs": 5,
+    "fat": 10,
+    "calories": 190
+  },
+  {
+    "name": "Fried Pumpkin Curry",
+    "protein": 4,
+    "carbs": 20,
+    "fat": 10,
+    "calories": 170
+  },
+  {
+    "name": "Bhuteko Beans",
+    "protein": 6,
+    "carbs": 18,
+    "fat": 10,
+    "calories": 170
+  },
+  {
+    "name": "Chicken Tikka with Salad",
+    "protein": 26,
+    "carbs": 10,
+    "fat": 14,
+    "calories": 260
+  },
+  {
+    "name": "Mixed Grill with Roti",
+    "protein": 30,
+    "carbs": 25,
+    "fat": 20,
+    "calories": 400
+  },
+  {
+    "name": "Roasted Vegetables with Curry",
+    "protein": 8,
+    "carbs": 30,
+    "fat": 12,
+    "calories": 240
+  },
+  {
+    "name": "Masu Curry with Spinach Soup",
+    "protein": 22,
+    "carbs": 20,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Fried Fish with Rice",
+    "protein": 22,
+    "carbs": 45,
+    "fat": 16,
+    "calories": 400
+  },
+  {
+    "name": "Chicken Curry with Mashed Potato",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 18,
+    "calories": 380
+  },
+  {
+    "name": "Vegetable Soup with Paneer",
+    "protein": 12,
+    "carbs": 20,
+    "fat": 14,
+    "calories": 240
+  },
+  {
+    "name": "Lentil Soup with Rice",
+    "protein": 14,
+    "carbs": 40,
+    "fat": 8,
+    "calories": 280
+  },
+  {
+    "name": "Spinach Dal with Roti",
+    "protein": 12,
+    "carbs": 35,
+    "fat": 10,
+    "calories": 260
+  },
+  {
+    "name": "Chicken Soup with Dal",
+    "protein": 20,
+    "carbs": 25,
+    "fat": 12,
+    "calories": 280
+  },
+  {
+    "name": "Fried Paneer with Tomato Sauce",
+    "protein": 14,
+    "carbs": 15,
+    "fat": 18,
+    "calories": 260
+  },
+  {
+    "name": "Chicken Biryani with Raita",
+    "protein": 24,
+    "carbs": 55,
+    "fat": 18,
+    "calories": 450
+  },
+  {
+    "name": "Lamb Curry with Pumpkin",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 20,
+    "calories": 360
+  },
+  {
+    "name": "Grilled Fish Curry",
+    "protein": 22,
+    "carbs": 15,
+    "fat": 14,
+    "calories": 270
+  },
+  {
+    "name": "Vegetable Stew with Lentils",
+    "protein": 10,
+    "carbs": 30,
+    "fat": 12,
+    "calories": 250
+  },
+  {
+    "name": "Chicken Curry with Mixed Vegetables",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Tandoori Fish with Rice",
+    "protein": 24,
+    "carbs": 45,
+    "fat": 14,
+    "calories": 390
+  },
+  {
+    "name": "Vegetable Curry with Rice",
+    "protein": 8,
+    "carbs": 50,
+    "fat": 12,
+    "calories": 300
+  },
+  {
+    "name": "Masu Sekuwa with Lentils",
+    "protein": 26,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 350
+  },
+  {
+    "name": "Fried Fish Curry with Spinach",
+    "protein": 22,
+    "carbs": 20,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Chicken Soup with Vegetable Stir Fry",
+    "protein": 20,
+    "carbs": 20,
+    "fat": 12,
+    "calories": 260
+  },
+  {
+    "name": "Masu Curry with Rice and Dal",
+    "protein": 24,
+    "carbs": 50,
+    "fat": 16,
+    "calories": 420
+  },
+  {
+    "name": "Grilled Chicken with Potato Curry",
+    "protein": 28,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 380
+  },
+  {
+    "name": "Lamb Soup with Vegetables",
+    "protein": 22,
+    "carbs": 20,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Vegetable Korma with Lentils",
+    "protein": 12,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Fried Paneer with Dal",
+    "protein": 16,
+    "carbs": 25,
+    "fat": 18,
+    "calories": 300
+  },
+  {
+    "name": "Chicken Curry with Lentil Soup",
+    "protein": 24,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 350
+  },
+  {
+    "name": "Grilled Fish with Vegetable Curry",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 14,
+    "calories": 320
+  },
+  {
+    "name": "Masu Sekuwa with Pumpkin Curry",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Spinach Soup with Chicken",
+    "protein": 20,
+    "carbs": 15,
+    "fat": 12,
+    "calories": 240
+  },
+  {
+    "name": "Vegetable Soup with Chicken Curry",
+    "protein": 18,
+    "carbs": 25,
+    "fat": 14,
+    "calories": 280
+  },
+  {
+    "name": "Fried Rice with Vegetables and Chicken",
+    "protein": 22,
+    "carbs": 50,
+    "fat": 14,
+    "calories": 400
+  },
+  {
+    "name": "Lamb Curry with Mixed Vegetables",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 20,
+    "calories": 360
+  },
+  {
+    "name": "Grilled Chicken with Lentils",
+    "protein": 28,
+    "carbs": 30,
+    "fat": 14,
+    "calories": 380
+  },
+  {
+    "name": "Masu Curry with Vegetable Soup",
+    "protein": 22,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Fish Curry with Potato Curry",
+    "protein": 22,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Chicken Curry with Roasted Vegetables",
+    "protein": 26,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Vegetable Soup with Roasted Lamb",
+    "protein": 22,
+    "carbs": 20,
+    "fat": 18,
+    "calories": 320
+  },
+  {
+    "name": "Lentil Soup with Fried Fish",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Spinach Curry with Chicken",
+    "protein": 24,
+    "carbs": 15,
+    "fat": 16,
+    "calories": 280
+  },
+  {
+    "name": "Fried Pumpkin Curry with Dal",
+    "protein": 8,
+    "carbs": 30,
+    "fat": 12,
+    "calories": 240
+  },
+  {
+    "name": "Chicken Curry with Pumpkin Soup",
+    "protein": 22,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Vegetable Stir Fry with Chicken",
+    "protein": 24,
+    "carbs": 20,
+    "fat": 14,
+    "calories": 300
+  },
+  {
+    "name": "Grilled Paneer with Vegetable Curry",
+    "protein": 16,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 290
+  },
+  {
+    "name": "Masu Curry with Rice and Vegetables",
+    "protein": 24,
+    "carbs": 45,
+    "fat": 16,
+    "calories": 400
+  },
+  {
+    "name": "Fried Fish with Lentil Soup",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Chicken Soup with Spinach Dal",
+    "protein": 20,
+    "carbs": 25,
+    "fat": 12,
+    "calories": 280
+  },
+  {
+    "name": "Vegetable Korma with Lentil Soup",
+    "protein": 12,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Roasted Chicken with Pumpkin Curry",
+    "protein": 26,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Lamb Curry with Mashed Potato",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 20,
+    "calories": 400
+  },
+  {
+    "name": "Grilled Fish Curry with Lentils",
+    "protein": 24,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 360
+  },
+  {
+    "name": "Chicken Curry with Mixed Dal",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 380
+  },
+  {
+    "name": "Fried Rice with Chicken and Vegetables",
+    "protein": 22,
+    "carbs": 50,
+    "fat": 14,
+    "calories": 400
+  },
+  {
+    "name": "Vegetable Soup with Masu Curry",
+    "protein": 20,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Lentil Soup with Vegetable Curry",
+    "protein": 12,
+    "carbs": 35,
+    "fat": 12,
+    "calories": 280
+  },
+  {
+    "name": "Spinach Dal with Chicken Curry",
+    "protein": 22,
+    "carbs": 30,
+    "fat": 14,
+    "calories": 340
+  },
+  {
+    "name": "Fried Fish with Pumpkin Curry",
+    "protein": 22,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Chicken Curry with Lentil and Vegetable Soup",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 380
+  },
+  {
+    "name": "Masu Sekuwa with Spinach Dal",
+    "protein": 26,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 350
+  },
+  {
+    "name": "Vegetable Stir Fry with Lentil Soup",
+    "protein": 12,
+    "carbs": 30,
+    "fat": 12,
+    "calories": 260
+  },
+  {
+    "name": "Grilled Chicken with Vegetable Soup",
+    "protein": 26,
+    "carbs": 20,
+    "fat": 14,
+    "calories": 300
+  },
+  {
+    "name": "Fried Paneer Curry with Rice",
+    "protein": 16,
+    "carbs": 45,
+    "fat": 18,
+    "calories": 380
+  },
+  {
+    "name": "Lamb Curry with Vegetable Soup",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 18,
+    "calories": 340
+  },
+  {
+    "name": "Chicken Curry with Pumpkin and Lentils",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 380
+  },
+  {
+    "name": "Fish Curry with Lentil Soup",
+    "protein": 24,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 360
+  },
+  {
+    "name": "Vegetable Soup with Pumpkin Curry",
+    "protein": 8,
+    "carbs": 30,
+    "fat": 12,
+    "calories": 240
+  },
+  {
+    "name": "Fried Rice with Vegetables and Masu",
+    "protein": 24,
+    "carbs": 50,
+    "fat": 16,
+    "calories": 420
+  },
+  {
+    "name": "Chicken Curry with Lentil Soup and Rice",
+    "protein": 24,
+    "carbs": 50,
+    "fat": 16,
+    "calories": 420
+  },
+  {
+    "name": "Masu Sekuwa with Pumpkin Soup",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Spinach Curry with Vegetable Soup",
+    "protein": 10,
+    "carbs": 25,
+    "fat": 12,
+    "calories": 230
+  },
+  {
+    "name": "Grilled Fish with Lentil Curry",
+    "protein": 24,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 360
+  },
+  {
+    "name": "Chicken Curry with Vegetable Stew",
+    "protein": 24,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 360
+  },
+  {
+    "name": "Vegetable Soup with Fried Chicken",
+    "protein": 22,
+    "carbs": 20,
+    "fat": 16,
+    "calories": 300
+  },
+  {
+    "name": "Lentil Soup with Masu Sekuwa",
+    "protein": 26,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 350
+  },
+  {
+    "name": "Fried Rice with Chicken and Lentils",
+    "protein": 24,
+    "carbs": 50,
+    "fat": 16,
+    "calories": 420
+  },
+  {
+    "name": "Masu Curry with Vegetable Stew",
+    "protein": 22,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Chicken Soup with Pumpkin Curry",
+    "protein": 20,
+    "carbs": 25,
+    "fat": 14,
+    "calories": 300
+  },
+  {
+    "name": "Grilled Paneer with Lentil Soup",
+    "protein": 18,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Vegetable Curry with Chicken Curry",
+    "protein": 22,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Fried Fish Curry with Lentils and Rice",
+    "protein": 26,
+    "carbs": 50,
+    "fat": 18,
+    "calories": 450
+  },
+  {
+    "name": "Chicken Curry with Masu Sekuwa",
+    "protein": 30,
+    "carbs": 20,
+    "fat": 20,
+    "calories": 400
+  },
+  {
+    "name": "Lentil Soup with Vegetable Stir Fry",
+    "protein": 12,
+    "carbs": 30,
+    "fat": 12,
+    "calories": 260
+  },
+  {
+    "name": "Spinach Dal with Fried Fish",
+    "protein": 22,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Masu Curry with Vegetable Stir Fry",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Chicken Soup with Vegetable Korma",
+    "protein": 18,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Vegetable Stew with Chicken Curry",
+    "protein": 22,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Fried Rice with Lentils and Vegetables",
+    "protein": 14,
+    "carbs": 50,
+    "fat": 14,
+    "calories": 370
+  },
+  {
+    "name": "Grilled Chicken with Vegetable Stir Fry",
+    "protein": 28,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 360
+  },
+  {
+    "name": "Lamb Curry with Vegetable Stew",
+    "protein": 24,
+    "carbs": 30,
+    "fat": 20,
+    "calories": 400
+  },
+  {
+    "name": "Masu Curry with Pumpkin and Lentils",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 18,
+    "calories": 400
+  },
+  {
+    "name": "Chicken Curry with Lentils and Pumpkin Soup",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 380
+  },
+  {
+    "name": "Vegetable Soup with Fried Fish Curry",
+    "protein": 22,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 320
+  },
+  {
+    "name": "Fried Rice with Vegetable Curry and Chicken",
+    "protein": 24,
+    "carbs": 50,
+    "fat": 16,
+    "calories": 420
+  },
+  {
+    "name": "Masu Sekuwa with Vegetable Stew",
+    "protein": 26,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 350
+  },
+  {
+    "name": "Chicken Curry with Spinach and Lentil Soup",
+    "protein": 26,
+    "carbs": 30,
+    "fat": 16,
+    "calories": 360
+  },
+  {
+    "name": "Fried Paneer Curry with Vegetable Soup",
+    "protein": 16,
+    "carbs": 25,
+    "fat": 18,
+    "calories": 300
+  },
+  {
+    "name": "Vegetable Curry with Masu Sekuwa",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Chicken Soup with Lentil and Vegetable Stew",
+    "protein": 22,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 360
+  },
+  {
+    "name": "Fried Rice with Chicken Curry and Lentils",
+    "protein": 26,
+    "carbs": 55,
+    "fat": 18,
+    "calories": 470
+  },
+  {
+    "name": "Masu Curry with Vegetable Stir Fry and Lentils",
+    "protein": 26,
+    "carbs": 35,
+    "fat": 18,
+    "calories": 400
+  },
+  {
+    "name": "Grilled Fish Curry with Vegetable Soup",
+    "protein": 24,
+    "carbs": 25,
+    "fat": 16,
+    "calories": 340
+  },
+  {
+    "name": "Chicken Curry with Lentil Soup and Vegetable Stew",
+    "protein": 26,
+    "carbs": 40,
+    "fat": 18,
+    "calories": 420
+  },
+  {
+    "name": "Vegetable Soup with Fried Chicken Curry",
+    "protein": 22,
+    "carbs": 25,
+    "fat": 18,
+    "calories": 340
+  },
+  {
+    "name": "Lentil Soup with Masu Curry and Vegetable Stir Fry",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 380
+  },
+  {
+    "name": "Fried Rice with Chicken and Vegetable Stew",
+    "protein": 24,
+    "carbs": 50,
+    "fat": 16,
+    "calories": 420
+  },
+  {
+    "name": "Masu Curry with Lentil Soup and Vegetable Stew",
+    "protein": 26,
+    "carbs": 40,
+    "fat": 18,
+    "calories": 420
+  },
+  {
+    "name": "Chicken Soup with Vegetable Stir Fry and Lentil Soup",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 360
+  },
+  {
+    "name": "Vegetable Stew with Fried Chicken Curry",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 18,
+    "calories": 380
+  },
+  {
+    "name": "Fried Rice with Lentil Soup and Vegetable Curry",
+    "protein": 16,
+    "carbs": 55,
+    "fat": 16,
+    "calories": 400
+  },
+  {
+    "name": "Grilled Chicken with Vegetable Curry and Lentil Soup",
+    "protein": 30,
+    "carbs": 35,
+    "fat": 18,
+    "calories": 420
+  },
+  {
+    "name": "Lamb Curry with Chicken Soup and Vegetable Stir Fry",
+    "protein": 32,
+    "carbs": 30,
+    "fat": 22,
+    "calories": 460
+  },
+  {
+    "name": "Chicken Curry with Vegetable Stew and Lentil Soup",
+    "protein": 28,
+    "carbs": 40,
+    "fat": 18,
+    "calories": 440
+  },
+  {
+    "name": "Vegetable Soup with Fried Chicken Curry and Lentil Soup",
+    "protein": 24,
+    "carbs": 30,
+    "fat": 18,
+    "calories": 380
+  },
+  {
+    "name": "Lentil Soup with Masu Curry and Chicken Curry",
+    "protein": 26,
+    "carbs": 40,
+    "fat": 16,
+    "calories": 400
+  },
+  {
+    "name": "Fried Rice with Vegetable Stew and Lentil Soup",
+    "protein": 16,
+    "carbs": 55,
+    "fat": 16,
+    "calories": 400
+  },
+  {
+    "name": "Masu Curry with Vegetable Stir Fry and Chicken Curry",
+    "protein": 30,
+    "carbs": 35,
+    "fat": 20,
+    "calories": 440
+  },
+  {
+    "name": "Chicken Soup with Lentil Soup and Vegetable Stir Fry",
+    "protein": 24,
+    "carbs": 35,
+    "fat": 16,
+    "calories": 360
+  }
+],
+"lunch":[
+    {
+        "name": "Dal Bhat",
+        "protein": 11.7,
+        "carbs": 32.1,
+        "fat": 5.1,
+        "calories": 309.0
+    },
+    {
+        "name": "Aloo Tama",
+        "protein": 5.9,
+        "carbs": 12.8,
+        "fat": 16.2,
+        "calories": 424.0
+    },
+    {
+        "name": "Gundruk ko Jhol",
+        "protein": 4.6,
+        "carbs": 55.3,
+        "fat": 9.2,
+        "calories": 406.0
+    },
+    {
+        "name": "Sekuwa",
+        "protein": 1.5,
+        "carbs": 27.2,
+        "fat": 16.4,
+        "calories": 390.0
+    },
+    {
+        "name": "Kwati",
+        "protein": 6.2,
+        "carbs": 16.9,
+        "fat": 11.2,
+        "calories": 188.0
+    },
+    {
+        "name": "Chicken Curry",
+        "protein": 8.5,
+        "carbs": 19.3,
+        "fat": 18.8,
+        "calories": 359.0
+    },
+    {
+        "name": "Mutton Curry",
+        "protein": 3.3,
+        "carbs": 20.5,
+        "fat": 19.9,
+        "calories": 122.0
+    },
+    {
+        "name": "Fish Curry",
+        "protein": 14.2,
+        "carbs": 29.2,
+        "fat": 2.1,
+        "calories": 191.0
+    },
+    {
+        "name": "Bhuteko Tarkari",
+        "protein": 12.9,
+        "carbs": 23.7,
+        "fat": 22.2,
+        "calories": 285.0
+    },
+    {
+        "name": "Tarkari ko Jhol",
+        "protein": 8.4,
+        "carbs": 50.5,
+        "fat": 14.6,
+        "calories": 321.0
+    },
+    {
+        "name": "Chana Masala",
+        "protein": 9.1,
+        "carbs": 34.4,
+        "fat": 5.2,
+        "calories": 282.0
+    },
+    {
+        "name": "Sikari Aloo",
+        "protein": 12.2,
+        "carbs": 53.3,
+        "fat": 0.8,
+        "calories": 238.0
+    },
+    {
+        "name": "Bhindi Masala",
+        "protein": 1.3,
+        "carbs": 50.7,
+        "fat": 19.4,
+        "calories": 233.0
+    },
+    {
+        "name": "Palungo Tarkari (Spinach curry)",
+        "protein": 6.4,
+        "carbs": 51.2,
+        "fat": 7.4,
+        "calories": 382.0
+    },
+    {
+        "name": "Curd Rice",
+        "protein": 9.6,
+        "carbs": 31.9,
+        "fat": 22.6,
+        "calories": 420.0
+    },
+    {
+        "name": "Pulao",
+        "protein": 8.9,
+        "carbs": 27.9,
+        "fat": 15.6,
+        "calories": 486.0
+    },
+    {
+        "name": "Vegetable Biryani",
+        "protein": 14.6,
+        "carbs": 48.7,
+        "fat": 19.6,
+        "calories": 274.0
+    },
+    {
+        "name": "Kukhura ko Jhol (Chicken soup)",
+        "protein": 6.5,
+        "carbs": 38.1,
+        "fat": 11.8,
+        "calories": 147.0
+    },
+    {
+        "name": "Masu Sekuwa (Grilled meat)",
+        "protein": 2.0,
+        "carbs": 20.3,
+        "fat": 5.6,
+        "calories": 219.0
+    },
+    {
+        "name": "Dal Tadka",
+        "protein": 3.6,
+        "carbs": 39.1,
+        "fat": 7.8,
+        "calories": 422.0
+    },
+    {
+        "name": "Lentil Soup",
+        "protein": 12.0,
+        "carbs": 11.7,
+        "fat": 8.6,
+        "calories": 376.0
+    },
+    {
+        "name": "Pumpkin Tarkari",
+        "protein": 11.9,
+        "carbs": 22.2,
+        "fat": 9.8,
+        "calories": 246.0
+    },
+    {
+        "name": "Tomato Tarkari",
+        "protein": 4.0,
+        "carbs": 59.4,
+        "fat": 4.9,
+        "calories": 225.0
+    },
+    {
+        "name": "Cabbage Tarkari",
+        "protein": 9.4,
+        "carbs": 28.6,
+        "fat": 25.0,
+        "calories": 301.0
+    },
+    {
+        "name": "Fish Fry",
+        "protein": 1.8,
+        "carbs": 42.9,
+        "fat": 11.3,
+        "calories": 470.0
+    },
+    {
+        "name": "Momo (Steamed)",
+        "protein": 8.3,
+        "carbs": 10.5,
+        "fat": 13.6,
+        "calories": 416.0
+    },
+    {
+        "name": "Fried Mo:Mo",
+        "protein": 3.9,
+        "carbs": 36.7,
+        "fat": 20.2,
+        "calories": 391.0
+    },
+    {
+        "name": "Vegetable Mo:Mo",
+        "protein": 11.4,
+        "carbs": 42.0,
+        "fat": 2.3,
+        "calories": 443.0
+    },
+    {
+        "name": "Choyela",
+        "protein": 10.7,
+        "carbs": 33.6,
+        "fat": 8.8,
+        "calories": 154.0
+    },
+    {
+        "name": "Black Lentil Dal",
+        "protein": 11.6,
+        "carbs": 59.4,
+        "fat": 6.8,
+        "calories": 317.0
+    },
+    {
+        "name": "Sinki ko Tarkari (fermented radish)",
+        "protein": 4.0,
+        "carbs": 15.0,
+        "fat": 17.9,
+        "calories": 361.0
+    },
+    {
+        "name": "Daal Bhaat (Brown Lentils)",
+        "protein": 1.2,
+        "carbs": 38.0,
+        "fat": 12.5,
+        "calories": 442.0
+    },
+    {
+        "name": "Rice and Dal",
+        "protein": 8.8,
+        "carbs": 38.9,
+        "fat": 0.8,
+        "calories": 446.0
+    },
+    {
+        "name": "Masala Tarkari",
+        "protein": 10.0,
+        "carbs": 54.6,
+        "fat": 15.3,
+        "calories": 374.0
+    },
+    {
+        "name": "Mixed Vegetable Curry",
+        "protein": 11.0,
+        "carbs": 35.5,
+        "fat": 24.8,
+        "calories": 483.0
+    },
+    {
+        "name": "Daal Fry",
+        "protein": 10.0,
+        "carbs": 55.9,
+        "fat": 4.1,
+        "calories": 179.0
+    },
+    {
+        "name": "Achaar (Pickle)",
+        "protein": 1.4,
+        "carbs": 34.7,
+        "fat": 2.6,
+        "calories": 130.0
+    },
+    {
+        "name": "Saag (Leafy greens)",
+        "protein": 4.7,
+        "carbs": 23.3,
+        "fat": 17.3,
+        "calories": 153.0
+    },
+    {
+        "name": "Egg Curry",
+        "protein": 7.9,
+        "carbs": 58.4,
+        "fat": 3.1,
+        "calories": 463.0
+    },
+    {
+        "name": "Potato Curry",
+        "protein": 3.5,
+        "carbs": 42.2,
+        "fat": 7.2,
+        "calories": 347.0
+    },
+    {
+        "name": "Mashed Potato with Dal",
+        "protein": 1.5,
+        "carbs": 40.5,
+        "fat": 21.1,
+        "calories": 428.0
+    },
+    {
+        "name": "Samosa (Lunch snack)",
+        "protein": 2.6,
+        "carbs": 32.1,
+        "fat": 24.9,
+        "calories": 411.0
+    },
+    {
+        "name": "Chicken Sekuwa",
+        "protein": 7.8,
+        "carbs": 40.8,
+        "fat": 10.5,
+        "calories": 137.0
+    },
+    {
+        "name": "Mutton Sekuwa",
+        "protein": 9.9,
+        "carbs": 53.9,
+        "fat": 9.4,
+        "calories": 229.0
+    },
+    {
+        "name": "Black Chickpeas Curry",
+        "protein": 8.8,
+        "carbs": 18.5,
+        "fat": 16.7,
+        "calories": 396.0
+    },
+    {
+        "name": "Chicken Biryani",
+        "protein": 14.8,
+        "carbs": 19.7,
+        "fat": 17.5,
+        "calories": 279.0
+    },
+    {
+        "name": "Vegetable Curry",
+        "protein": 11.9,
+        "carbs": 45.9,
+        "fat": 8.2,
+        "calories": 491.0
+    },
+    {
+        "name": "Tandoori Chicken",
+        "protein": 6.6,
+        "carbs": 13.6,
+        "fat": 4.6,
+        "calories": 438.0
+    },
+    {
+        "name": "Paneer Curry",
+        "protein": 2.4,
+        "carbs": 14.7,
+        "fat": 5.3,
+        "calories": 206.0
+    },
+    {
+        "name": "Tomato Achar",
+        "protein": 8.3,
+        "carbs": 37.3,
+        "fat": 12.0,
+        "calories": 333.0
+    },
+    {
+        "name": "Gurung Khana",
+        "protein": 8.1,
+        "carbs": 22.6,
+        "fat": 17.2,
+        "calories": 224.0
+    },
+    {
+        "name": "Lamb Curry",
+        "protein": 2.4,
+        "carbs": 58.5,
+        "fat": 18.3,
+        "calories": 151.0
+    },
+    {
+        "name": "Roti",
+        "protein": 11.2,
+        "carbs": 41.3,
+        "fat": 10.1,
+        "calories": 376.0
+    },
+    {
+        "name": "Kachila (Raw minced meat)",
+        "protein": 14.5,
+        "carbs": 56.4,
+        "fat": 23.2,
+        "calories": 408.0
+    },
+    {
+        "name": "Fish Curry with Rice",
+        "protein": 12.3,
+        "carbs": 46.6,
+        "fat": 5.6,
+        "calories": 190.0
+    },
+    {
+        "name": "Bharta (Mashed vegetables)",
+        "protein": 3.8,
+        "carbs": 14.1,
+        "fat": 1.8,
+        "calories": 204.0
+    },
+    {
+        "name": "Kukhura ko Sekuwa",
+        "protein": 8.4,
+        "carbs": 11.5,
+        "fat": 9.8,
+        "calories": 141.0
+    },
+    {
+        "name": "Vegetable Soup",
+        "protein": 6.1,
+        "carbs": 20.0,
+        "fat": 21.9,
+        "calories": 175.0
+    },
+    {
+        "name": "Tomato Soup",
+        "protein": 2.8,
+        "carbs": 29.9,
+        "fat": 24.6,
+        "calories": 215.0
+    },
+    {
+        "name": "Dal Makhani",
+        "protein": 5.2,
+        "carbs": 47.0,
+        "fat": 19.2,
+        "calories": 385.0
+    },
+    {
+        "name": "Spinach Dal",
+        "protein": 10.1,
+        "carbs": 23.7,
+        "fat": 4.7,
+        "calories": 364.0
+    },
+    {
+        "name": "Rice with Curry",
+        "protein": 1.8,
+        "carbs": 54.6,
+        "fat": 9.5,
+        "calories": 238.0
+    },
+    {
+        "name": "Chicken Soup",
+        "protein": 8.3,
+        "carbs": 52.3,
+        "fat": 0.8,
+        "calories": 130.0
+    },
+    {
+        "name": "Mutton Soup",
+        "protein": 14.9,
+        "carbs": 20.1,
+        "fat": 17.0,
+        "calories": 361.0
+    },
+    {
+        "name": "Pumpkin Soup",
+        "protein": 9.7,
+        "carbs": 21.8,
+        "fat": 2.2,
+        "calories": 341.0
+    },
+    {
+        "name": "Mixed Dal",
+        "protein": 13.0,
+        "carbs": 25.5,
+        "fat": 6.4,
+        "calories": 166.0
+    },
+    {
+        "name": "Boiled Vegetables",
+        "protein": 6.1,
+        "carbs": 14.1,
+        "fat": 24.1,
+        "calories": 488.0
+    },
+    {
+        "name": "Bhuteko Mula (Sauteed Radish)",
+        "protein": 5.8,
+        "carbs": 36.6,
+        "fat": 17.9,
+        "calories": 226.0
+    },
+    {
+        "name": "Curry Pakora",
+        "protein": 13.4,
+        "carbs": 37.7,
+        "fat": 1.7,
+        "calories": 391.0
+    },
+    {
+        "name": "Fried Rice",
+        "protein": 2.4,
+        "carbs": 40.6,
+        "fat": 16.2,
+        "calories": 211.0
+    },
+    {
+        "name": "Gorkhali Lamb Curry",
+        "protein": 7.5,
+        "carbs": 23.8,
+        "fat": 10.3,
+        "calories": 479.0
+    },
+    {
+        "name": "Chickpea Curry",
+        "protein": 1.9,
+        "carbs": 24.8,
+        "fat": 8.3,
+        "calories": 158.0
+    },
+    {
+        "name": "Chicken Korma",
+        "protein": 2.1,
+        "carbs": 49.1,
+        "fat": 13.6,
+        "calories": 225.0
+    },
+    {
+        "name": "Vegetable Korma",
+        "protein": 5.3,
+        "carbs": 40.3,
+        "fat": 3.7,
+        "calories": 406.0
+    },
+    {
+        "name": "Goat Meat Curry",
+        "protein": 11.6,
+        "carbs": 38.3,
+        "fat": 23.6,
+        "calories": 487.0
+    },
+    {
+        "name": "Fish Tikka",
+        "protein": 6.5,
+        "carbs": 58.7,
+        "fat": 7.5,
+        "calories": 316.0
+    },
+    {
+        "name": "Lamb Stew",
+        "protein": 2.3,
+        "carbs": 30.9,
+        "fat": 17.3,
+        "calories": 488.0
+    },
+    {
+        "name": "Prawn Curry",
+        "protein": 13.9,
+        "carbs": 12.8,
+        "fat": 21.3,
+        "calories": 270.0
+    },
+    {
+        "name": "Vegetable Pulao",
+        "protein": 9.9,
+        "carbs": 50.0,
+        "fat": 4.6,
+        "calories": 304.0
+    },
+    {
+        "name": "Eggplant Curry",
+        "protein": 1.3,
+        "carbs": 29.0,
+        "fat": 13.2,
+        "calories": 255.0
+    },
+    {
+        "name": "Mashed Potato",
+        "protein": 4.9,
+        "carbs": 29.3,
+        "fat": 6.8,
+        "calories": 468.0
+    },
+    {
+        "name": "Sattu Drink",
+        "protein": 1.1,
+        "carbs": 47.4,
+        "fat": 8.5,
+        "calories": 385.0
+    },
+    {
+        "name": "Green Peas Curry",
+        "protein": 7.1,
+        "carbs": 36.7,
+        "fat": 10.1,
+        "calories": 270.0
+    },
+    {
+        "name": "Roasted Vegetables",
+        "protein": 6.6,
+        "carbs": 17.6,
+        "fat": 10.0,
+        "calories": 396.0
+    },
+    {
+        "name": "Chicken Salad",
+        "protein": 8.2,
+        "carbs": 30.5,
+        "fat": 10.3,
+        "calories": 313.0
+    },
+    {
+        "name": "Beef Curry",
+        "protein": 3.1,
+        "carbs": 20.8,
+        "fat": 19.1,
+        "calories": 226.0
+    },
+    {
+        "name": "Mixed Meat Curry",
+        "protein": 2.8,
+        "carbs": 15.1,
+        "fat": 9.8,
+        "calories": 140.0
+    },
+    {
+        "name": "Dal Soup",
+        "protein": 9.2,
+        "carbs": 59.2,
+        "fat": 17.0,
+        "calories": 174.0
+    },
+    {
+        "name": "Rice Pilaf",
+        "protein": 3.4,
+        "carbs": 10.8,
+        "fat": 3.5,
+        "calories": 191.0
+    },
+    {
+        "name": "Lentil Pilaf",
+        "protein": 5.2,
+        "carbs": 50.8,
+        "fat": 25.0,
+        "calories": 147.0
+    },
+    {
+        "name": "Potato and Peas Curry",
+        "protein": 7.2,
+        "carbs": 54.6,
+        "fat": 17.2,
+        "calories": 140.0
+    },
+    {
+        "name": "Saag Paneer",
+        "protein": 3.9,
+        "carbs": 48.9,
+        "fat": 21.6,
+        "calories": 473.0
+    },
+    {
+        "name": "Kidney Bean Curry",
+        "protein": 10.7,
+        "carbs": 47.8,
+        "fat": 9.1,
+        "calories": 151.0
+    },
+    {
+        "name": "Chickpea Salad",
+        "protein": 11.5,
+        "carbs": 17.2,
+        "fat": 11.8,
+        "calories": 108.0
+    },
+    {
+        "name": "Vegetable Stir Fry",
+        "protein": 7.0,
+        "carbs": 26.6,
+        "fat": 23.5,
+        "calories": 132.0
+    },
+    {
+        "name": "Fried Tofu",
+        "protein": 9.2,
+        "carbs": 28.9,
+        "fat": 17.9,
+        "calories": 274.0
+    },
+    {
+        "name": "Pumpkin Curry",
+        "protein": 9.5,
+        "carbs": 25.9,
+        "fat": 7.9,
+        "calories": 364.0
+    },
+    {
+        "name": "Mixed Vegetable Soup",
+        "protein": 13.7,
+        "carbs": 50.4,
+        "fat": 12.7,
+        "calories": 443.0
+    },
+    {
+        "name": "Sweet Potato Curry",
+        "protein": 13.8,
+        "carbs": 20.0,
+        "fat": 13.8,
+        "calories": 366.0
+    },
+    {
+        "name": "Lentil Pancakes",
+        "protein": 6.1,
+        "carbs": 10.3,
+        "fat": 0.9,
+        "calories": 160.0
+    },
+    {
+        "name": "Tomato Rice",
+        "protein": 3.4,
+        "carbs": 39.4,
+        "fat": 6.3,
+        "calories": 122.0
+    },
+    {
+        "name": "Paneer Tikka",
+        "protein": 5.3,
+        "carbs": 22.2,
+        "fat": 4.1,
+        "calories": 374.0
+    },
+    {
+        "name": "Lamb Curry with Rice",
+        "protein": 9.2,
+        "carbs": 49.0,
+        "fat": 24.1,
+        "calories": 497.0
+    },
+    {
+        "name": "Fish Pakora",
+        "protein": 6.5,
+        "carbs": 30.1,
+        "fat": 12.0,
+        "calories": 220.0
+    },
+    {
+        "name": "Dal Bhat Tarkari",
+        "protein": 14.8,
+        "carbs": 40.7,
+        "fat": 8.9,
+        "calories": 265.0
+    },
+    {
+        "name": "Vegetable Fritters",
+        "protein": 14.5,
+        "carbs": 30.6,
+        "fat": 18.4,
+        "calories": 213.0
+    },
+    {
+        "name": "Fried Vegetables",
+        "protein": 9.8,
+        "carbs": 38.0,
+        "fat": 17.3,
+        "calories": 493.0
+    },
+    {
+        "name": "Boiled Lentils",
+        "protein": 14.3,
+        "carbs": 27.6,
+        "fat": 17.9,
+        "calories": 268.0
+    },
+    {
+        "name": "Chicken Tikka",
+        "protein": 13.5,
+        "carbs": 37.7,
+        "fat": 15.7,
+        "calories": 340.0
+    },
+    {
+        "name": "Mashed Pumpkin",
+        "protein": 14.4,
+        "carbs": 56.3,
+        "fat": 14.6,
+        "calories": 244.0
+    },
+    {
+        "name": "Spiced Lentils",
+        "protein": 12.8,
+        "carbs": 21.2,
+        "fat": 22.8,
+        "calories": 153.0
+    },
+    {
+        "name": "Vegetable Dal",
+        "protein": 5.1,
+        "carbs": 45.1,
+        "fat": 24.3,
+        "calories": 143.0
+    },
+    {
+        "name": "Lentil Soup with Spinach",
+        "protein": 5.0,
+        "carbs": 23.8,
+        "fat": 21.8,
+        "calories": 355.0
+    },
+    {
+        "name": "Tomato Chutney",
+        "protein": 4.0,
+        "carbs": 18.2,
+        "fat": 3.5,
+        "calories": 302.0
+    },
+    {
+        "name": "Chicken Fried Rice",
+        "protein": 7.6,
+        "carbs": 40.2,
+        "fat": 11.2,
+        "calories": 256.0
+    },
+    {
+        "name": "Mutton Fried Rice",
+        "protein": 4.6,
+        "carbs": 31.6,
+        "fat": 20.9,
+        "calories": 192.0
+    },
+    {
+        "name": "Vegetable Fried Rice",
+        "protein": 12.5,
+        "carbs": 43.6,
+        "fat": 21.9,
+        "calories": 255.0
+    },
+    {
+        "name": "Mixed Vegetable Curry",
+        "protein": 1.8,
+        "carbs": 32.1,
+        "fat": 9.7,
+        "calories": 435.0
+    },
+    {
+        "name": "Bhuteko Baigan (Fried Eggplant)",
+        "protein": 8.8,
+        "carbs": 13.2,
+        "fat": 5.1,
+        "calories": 238.0
+    },
+    {
+        "name": "Mushroom Curry",
+        "protein": 8.9,
+        "carbs": 57.0,
+        "fat": 24.1,
+        "calories": 384.0
+    },
+    {
+        "name": "Bhuteko Tarkari Mix",
+        "protein": 2.6,
+        "carbs": 30.8,
+        "fat": 24.3,
+        "calories": 372.0
+    },
+    {
+        "name": "Gorkhali Chicken Curry",
+        "protein": 8.2,
+        "carbs": 50.8,
+        "fat": 14.7,
+        "calories": 347.0
+    },
+    {
+        "name": "Prawn Fry",
+        "protein": 11.9,
+        "carbs": 31.3,
+        "fat": 20.2,
+        "calories": 195.0
+    },
+    {
+        "name": "Lentil Salad",
+        "protein": 9.7,
+        "carbs": 59.2,
+        "fat": 6.7,
+        "calories": 282.0
+    },
+    {
+        "name": "Mixed Bean Curry",
+        "protein": 3.3,
+        "carbs": 23.8,
+        "fat": 14.0,
+        "calories": 169.0
+    },
+    {
+        "name": "Beef Stew",
+        "protein": 7.8,
+        "carbs": 46.1,
+        "fat": 6.2,
+        "calories": 116.0
+    },
+    {
+        "name": "Boiled Rice",
+        "protein": 6.5,
+        "carbs": 42.1,
+        "fat": 11.1,
+        "calories": 211.0
+    },
+    {
+        "name": "Vegetable Stew",
+        "protein": 11.7,
+        "carbs": 12.3,
+        "fat": 24.4,
+        "calories": 451.0
+    },
+    {
+        "name": "Chicken Soup with Vegetables",
+        "protein": 8.9,
+        "carbs": 15.1,
+        "fat": 15.6,
+        "calories": 114.0
+    },
+    {
+        "name": "Potato and Spinach Curry",
+        "protein": 7.8,
+        "carbs": 15.8,
+        "fat": 0.8,
+        "calories": 484.0
+    },
+    {
+        "name": "Tofu Curry",
+        "protein": 10.2,
+        "carbs": 31.2,
+        "fat": 5.2,
+        "calories": 487.0
+    },
+    {
+        "name": "Lamb Curry with Spinach",
+        "protein": 10.7,
+        "carbs": 15.8,
+        "fat": 22.5,
+        "calories": 164.0
+    },
+    {
+        "name": "Fish Curry with Vegetables",
+        "protein": 10.1,
+        "carbs": 51.4,
+        "fat": 18.1,
+        "calories": 390.0
+    },
+    {
+        "name": "Chicken Curry with Potato",
+        "protein": 12.7,
+        "carbs": 10.2,
+        "fat": 15.2,
+        "calories": 397.0
+    },
+    {
+        "name": "Vegetable Soup with Lentils",
+        "protein": 7.8,
+        "carbs": 59.2,
+        "fat": 10.4,
+        "calories": 272.0
+    },
+    {
+        "name": "Mixed Dal Curry",
+        "protein": 4.2,
+        "carbs": 43.3,
+        "fat": 20.9,
+        "calories": 221.0
+    },
+    {
+        "name": "Pumpkin Stew",
+        "protein": 14.6,
+        "carbs": 42.7,
+        "fat": 14.1,
+        "calories": 357.0
+    },
+    {
+        "name": "Lentil Patties",
+        "protein": 11.4,
+        "carbs": 18.5,
+        "fat": 17.5,
+        "calories": 171.0
+    },
+    {
+        "name": "Fish Curry with Dal",
+        "protein": 6.8,
+        "carbs": 30.5,
+        "fat": 24.5,
+        "calories": 406.0
+    },
+    {
+        "name": "Vegetable Pakora",
+        "protein": 11.4,
+        "carbs": 49.8,
+        "fat": 2.6,
+        "calories": 194.0
+    },
+    {
+        "name": "Rice with Spinach Curry",
+        "protein": 3.6,
+        "carbs": 16.8,
+        "fat": 23.9,
+        "calories": 243.0
+    },
+    {
+        "name": "Boiled Vegetables with Dal",
+        "protein": 9.8,
+        "carbs": 20.6,
+        "fat": 23.0,
+        "calories": 446.0
+    },
+    {
+        "name": "Spiced Potato Curry",
+        "protein": 4.3,
+        "carbs": 26.5,
+        "fat": 14.3,
+        "calories": 469.0
+    },
+    {
+        "name": "Egg Curry with Rice",
+        "protein": 9.5,
+        "carbs": 27.6,
+        "fat": 22.4,
+        "calories": 323.0
+    },
+    {
+        "name": "Mixed Vegetable Curry with Lentils",
+        "protein": 7.6,
+        "carbs": 28.5,
+        "fat": 13.6,
+        "calories": 282.0
+    },
+    {
+        "name": "Chicken Curry with Rice",
+        "protein": 3.1,
+        "carbs": 54.4,
+        "fat": 2.8,
+        "calories": 473.0
+    },
+    {
+        "name": "Fried Chicken",
+        "protein": 3.0,
+        "carbs": 50.7,
+        "fat": 17.7,
+        "calories": 127.0
+    },
+    {
+        "name": "Vegetable Biryani with Raita",
+        "protein": 3.9,
+        "carbs": 17.5,
+        "fat": 12.5,
+        "calories": 220.0
+    },
+    {
+        "name": "Boiled Lentils with Spinach",
+        "protein": 5.3,
+        "carbs": 10.1,
+        "fat": 6.6,
+        "calories": 491.0
+    },
+    {
+        "name": "Fish Curry with Rice and Dal",
+        "protein": 11.3,
+        "carbs": 32.5,
+        "fat": 21.0,
+        "calories": 277.0
+    },
+    {
+        "name": "Chicken Curry with Vegetables",
+        "protein": 3.1,
+        "carbs": 27.3,
+        "fat": 14.3,
+        "calories": 141.0
+    },
+    {
+        "name": "Vegetable Curry with Rice",
+        "protein": 13.0,
+        "carbs": 40.4,
+        "fat": 15.0,
+        "calories": 276.0
+    },
+    {
+        "name": "Lentil Soup with Vegetables",
+        "protein": 7.6,
+        "carbs": 34.9,
+        "fat": 9.8,
+        "calories": 215.0
+    },
+    {
+        "name": "Fried Fish",
+        "protein": 8.8,
+        "carbs": 18.4,
+        "fat": 5.4,
+        "calories": 403.0
+    },
+    {
+        "name": "Potato and Peas Curry with Rice",
+        "protein": 2.3,
+        "carbs": 23.8,
+        "fat": 10.5,
+        "calories": 346.0
+    },
+    {
+        "name": "Dal Bhat with Chicken Curry",
+        "protein": 1.5,
+        "carbs": 27.9,
+        "fat": 21.7,
+        "calories": 442.0
+    },
+    {
+        "name": "Vegetable Stir Fry with Rice",
+        "protein": 14.7,
+        "carbs": 51.0,
+        "fat": 11.8,
+        "calories": 314.0
+    },
+    {
+        "name": "Chicken Curry with Lentils",
+        "protein": 8.3,
+        "carbs": 28.9,
+        "fat": 10.5,
+        "calories": 225.0
+    },
+    {
+        "name": "Mutton Curry with Rice",
+        "protein": 2.7,
+        "carbs": 20.7,
+        "fat": 6.9,
+        "calories": 249.0
+    },
+    {
+        "name": "Fish Curry with Lentils",
+        "protein": 1.8,
+        "carbs": 36.8,
+        "fat": 8.0,
+        "calories": 438.0
+    },
+    {
+        "name": "Chicken Biryani with Raita",
+        "protein": 1.0,
+        "carbs": 44.6,
+        "fat": 9.3,
+        "calories": 415.0
+    },
+    {
+        "name": "Mixed Vegetable Curry with Rice",
+        "protein": 13.6,
+        "carbs": 39.2,
+        "fat": 16.7,
+        "calories": 277.0
+    },
+    {
+        "name": "Lentil Soup with Rice",
+        "protein": 12.1,
+        "carbs": 23.7,
+        "fat": 9.5,
+        "calories": 278.0
+    },
+    {
+        "name": "Potato Curry with Dal",
+        "protein": 14.7,
+        "carbs": 22.4,
+        "fat": 5.0,
+        "calories": 381.0
+    },
+    {
+        "name": "Chicken Curry with Roti",
+        "protein": 11.7,
+        "carbs": 36.9,
+        "fat": 1.0,
+        "calories": 303.0
+    },
+    {
+        "name": "Mixed Lentil Curry",
+        "protein": 5.4,
+        "carbs": 32.8,
+        "fat": 19.9,
+        "calories": 316.0
+    },
+    {
+        "name": "Boiled Vegetables with Chicken Curry",
+        "protein": 3.8,
+        "carbs": 24.1,
+        "fat": 2.9,
+        "calories": 259.0
+    },
+    {
+        "name": "Fried Lentils",
+        "protein": 10.9,
+        "carbs": 35.2,
+        "fat": 9.5,
+        "calories": 367.0
+    },
+    {
+        "name": "Potato Curry with Spinach",
+        "protein": 6.6,
+        "carbs": 33.8,
+        "fat": 10.3,
+        "calories": 292.0
+    },
+    {
+        "name": "Egg Curry with Roti",
+        "protein": 9.5,
+        "carbs": 35.2,
+        "fat": 20.9,
+        "calories": 306.0
+    },
+    {
+        "name": "Vegetable Curry with Dal",
+        "protein": 9.5,
+        "carbs": 32.2,
+        "fat": 15.0,
+        "calories": 131.0
+    },
+    {
+        "name": "Dal Bhat with Fish Curry",
+        "protein": 11.3,
+        "carbs": 33.0,
+        "fat": 7.4,
+        "calories": 406.0
+    },
+    {
+        "name": "Chicken Curry with Vegetable Soup",
+        "protein": 11.2,
+        "carbs": 22.6,
+        "fat": 15.0,
+        "calories": 172.0
+    },
+    {
+        "name": "Mixed Lentil Soup",
+        "protein": 14.3,
+        "carbs": 48.0,
+        "fat": 4.0,
+        "calories": 240.0
+    },
+    {
+        "name": "Boiled Rice with Chicken Curry",
+        "protein": 12.5,
+        "carbs": 59.9,
+        "fat": 21.6,
+        "calories": 347.0
+    },
+    {
+        "name": "Lentil Curry with Vegetables",
+        "protein": 10.9,
+        "carbs": 15.6,
+        "fat": 11.9,
+        "calories": 286.0
+    },
+    {
+        "name": "Potato Curry with Lentil Soup",
+        "protein": 12.5,
+        "carbs": 50.5,
+        "fat": 24.9,
+        "calories": 496.0
+    },
+    {
+        "name": "Egg Curry with Dal",
+        "protein": 8.8,
+        "carbs": 49.4,
+        "fat": 20.2,
+        "calories": 479.0
+    },
+    {
+        "name": "Vegetable Soup with Rice",
+        "protein": 2.7,
+        "carbs": 44.8,
+        "fat": 14.2,
+        "calories": 385.0
+    },
+    {
+        "name": "Chicken Curry with Lentil Soup",
+        "protein": 8.6,
+        "carbs": 35.2,
+        "fat": 16.6,
+        "calories": 116.0
+    },
+    {
+        "name": "Fish Curry with Vegetable Soup",
+        "protein": 10.7,
+        "carbs": 59.7,
+        "fat": 15.5,
+        "calories": 192.0
+    },
+    {
+        "name": "Mixed Vegetable Curry with Lentils and Rice",
+        "protein": 9.7,
+        "carbs": 41.1,
+        "fat": 5.4,
+        "calories": 248.0
+    },
+    {
+        "name": "Lentil Soup with Chicken Curry",
+        "protein": 11.7,
+        "carbs": 34.5,
+        "fat": 5.6,
+        "calories": 454.0
+    },
+    {
+        "name": "Potato Curry with Vegetable Soup",
+        "protein": 3.3,
+        "carbs": 28.0,
+        "fat": 17.6,
+        "calories": 432.0
+    },
+    {
+        "name": "Egg Curry with Vegetable Soup",
+        "protein": 11.2,
+        "carbs": 14.6,
+        "fat": 10.9,
+        "calories": 317.0
+    },
+    {
+        "name": "Vegetable Curry with Chicken Curry",
+        "protein": 12.0,
+        "carbs": 23.1,
+        "fat": 20.3,
+        "calories": 259.0
+    },
+    {
+        "name": "Dal Bhat with Vegetable Curry",
+        "protein": 14.8,
+        "carbs": 33.2,
+        "fat": 24.1,
+        "calories": 104.0
+    },
+    {
+        "name": "Chicken Curry with Vegetable Stir Fry",
+        "protein": 13.3,
+        "carbs": 10.3,
+        "fat": 15.3,
+        "calories": 339.0
+    },
+    {
+        "name": "Mixed Vegetable Curry with Chicken Curry",
+        "protein": 1.5,
+        "carbs": 40.2,
+        "fat": 24.8,
+        "calories": 431.0
+    },
+    {
+        "name": "Lentil Soup with Vegetable Curry",
+        "protein": 3.7,
+        "carbs": 48.4,
+        "fat": 4.1,
+        "calories": 429.0
+    },
+    {
+        "name": "Potato Curry with Chicken Curry",
+        "protein": 4.3,
+        "carbs": 20.3,
+        "fat": 17.0,
+        "calories": 292.0
+    },
+    {
+        "name": "Egg Curry with Chicken Curry",
+        "protein": 14.1,
+        "carbs": 39.6,
+        "fat": 17.2,
+        "calories": 383.0
+    },
+    {
+        "name": "Vegetable Soup with Chicken Curry",
+        "protein": 6.5,
+        "carbs": 59.6,
+        "fat": 19.4,
+        "calories": 132.0
+    },
+    {
+        "name": "Chicken Curry with Vegetable Soup and Rice",
+        "protein": 3.2,
+        "carbs": 52.3,
+        "fat": 21.9,
+        "calories": 233.0
+    },
+    {
+        "name": "Fish Curry with Vegetable Soup and Rice",
+        "protein": 13.5,
+        "carbs": 52.6,
+        "fat": 5.3,
+        "calories": 246.0
+    },
+    {
+        "name": "Mixed Vegetable Curry with Chicken Curry and Rice",
+        "protein": 12.4,
+        "carbs": 42.5,
+        "fat": 4.2,
+        "calories": 145.0
+    },
+    {
+        "name": "Lentil Soup with Chicken Curry and Rice",
+        "protein": 12.0,
+        "carbs": 43.2,
+        "fat": 11.5,
+        "calories": 402.0
+    },
+    {
+        "name": "Potato Curry with Vegetable Soup and Rice",
+        "protein": 9.4,
+        "carbs": 43.7,
+        "fat": 18.0,
+        "calories": 114.0
+    },
+    {
+        "name": "Egg Curry with Vegetable Soup and Rice",
+        "protein": 13.2,
+        "carbs": 18.1,
+        "fat": 1.6,
+        "calories": 179.0
+    },
+    {
+        "name": "Vegetable Curry with Chicken Curry and Rice",
+        "protein": 4.5,
+        "carbs": 50.0,
+        "fat": 23.9,
+        "calories": 223.0
+    }
+]
+}

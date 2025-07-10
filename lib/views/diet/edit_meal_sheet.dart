@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'food_product.dart';
-import 'food_product_service.dart';
+import 'products/food_product.dart';
+import 'services/food_product_service.dart';
 class EditMealDialog extends StatefulWidget {
   final String mealName;
   final List<FoodProduct> currentFoods;

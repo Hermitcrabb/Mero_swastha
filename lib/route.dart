@@ -1,5 +1,6 @@
 
 import 'package:get/get.dart';
+import 'package:mero_swastha/views/diet/diet_plan_result.dart';
 import 'views/auth/login.dart';
 import 'views/auth/verify.dart';
 import 'views/setup/profile_setup.dart';

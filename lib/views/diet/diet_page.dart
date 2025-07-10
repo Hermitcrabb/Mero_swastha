@@ -3,7 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'diet_questions.dart';
 import 'diet_plan_result.dart';
-import 'food_product.dart';
+import 'products/food_product.dart';
 
 class DietPage extends StatelessWidget {
   const DietPage({super.key});

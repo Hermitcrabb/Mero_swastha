@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import '../../homepage.dart';
+import '../models/user_controller.dart';
 import 'signup.dart';
 import '../../forgot.dart';
 import 'verify.dart';
 import '../setup/startup_screen.dart';
+
 
 class Login extends StatefulWidget {
   const Login({super.key});
@@ -37,11 +38,20 @@ class _LoginState extends State<Login> {
       );
 
       final user = credential.user;
+      // if (user != null && !user.emailVerified) {
+      //   Get.offAll(() => const Verify());
+      // } else {
+      //   Get.offAll(() => const StartupScreen());
+      // }
+
       if (user != null && !user.emailVerified) {
         Get.offAll(() => const Verify());
       } else {
+        final userController = Get.find<UserController>();
+        await userController.loadUser(); // ✅ Load user data from Firestore
         Get.offAll(() => const StartupScreen());
       }
+
 
     } on FirebaseAuthException catch (e) {
       Get.snackbar("Login Failed", e.message ?? "Unknown error");

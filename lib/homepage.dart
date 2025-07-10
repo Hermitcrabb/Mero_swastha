@@ -8,6 +8,7 @@ import 'views/bmi/bmi_page.dart';
 import 'views/auth/login.dart';
 import 'homeDashboard.dart';
 import 'views/models/user_controller.dart';
+import 'views/auth/logout.dart';
 
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
@@ -55,11 +56,7 @@ class _HomepageState extends State<Homepage> {
           return Text("Welcome, ${user.name}");
         }),
         actions: [
-          IconButton(
-            icon: const Icon(Icons.logout),
-            onPressed: _signOut,
-            tooltip: 'Logout',
-          ),
+          LogoutButton(),
         ],
       ),
       body: _pages[_currentIndex],

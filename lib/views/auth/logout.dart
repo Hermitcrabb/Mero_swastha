@@ -3,10 +3,8 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../models/user_controller.dart';
 import 'package:get/get.dart';
 
-class logout extends StatelessWidget {
-  const logout({
-    super.key,
-  });
+class LogoutButton extends StatelessWidget {
+  const LogoutButton({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -14,9 +12,16 @@ class logout extends StatelessWidget {
       icon: const Icon(Icons.logout),
       onPressed: () async {
         final userController = Get.find<UserController>();
-        userController.clearUser(); // ✅ Clear cached user data
+        userController.clearUser(); // ✅ Clear user data from memory
         await FirebaseAuth.instance.signOut(); // ✅ Sign out from Firebase
-        Get.offAllNamed('/login'); // ✅ Navigate to login
+
+        Get.snackbar(
+          "Logged Out",
+          "You have been logged out successfully.",
+          snackPosition: SnackPosition.BOTTOM,
+        );
+
+        Get.offAllNamed('/login'); // ✅ Navigate to login page
       },
     );
   }

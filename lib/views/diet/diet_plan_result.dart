@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'calorie_intake_calculate.dart';
-import 'food_product.dart';
+import 'products/food_product.dart';
 import 'meal_plan_generator.dart';
 import 'edit_meal_sheet.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';

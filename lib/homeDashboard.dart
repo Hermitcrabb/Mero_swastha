@@ -10,7 +10,7 @@ class HomeDashboard extends StatelessWidget {
     final uid = FirebaseAuth.instance.currentUser?.uid;
     if (uid == null) return "Guest";
     final doc = await FirebaseFirestore.instance.collection('users').doc(uid).get();
-    return doc.exists ? (doc.data()?['name'] ?? 'User') : 'User';
+    return doc.exists ? (doc.data()?['username'] ?? 'User') : 'User';
   }
 
   @override

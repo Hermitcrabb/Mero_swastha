@@ -67,6 +67,7 @@ flutter:
   uses-material-design: true
   assets:
     - images/
+    - assets/Nepali_foods.json
     - videos/45_degree_knee_to_elbow.mp4
     - videos/45_degree_side_bend.mp4
     - videos/abdominal_crunches.mp4

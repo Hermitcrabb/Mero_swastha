@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
-import 'food_product.dart';
+import '../products/food_product.dart';
+import 'package:flutter/services.dart' show rootBundle;
+import '../products/meal_catagory.dart';
 
 class FoodProductService {
   static Future<List<FoodProduct>> fetchProductsByStapleAndDiet(
@@ -67,6 +69,8 @@ class FoodProductService {
 
     return meal;
   }
+
+
   static Future<List<FoodProduct>> searchFoodByName(String query) async {
     final response = await http.get(Uri.parse(
         'https://world.openfoodfacts.org/cgi/search.pl?search_terms=$query&search_simple=1&action=process&json=true&page_size=10'));
