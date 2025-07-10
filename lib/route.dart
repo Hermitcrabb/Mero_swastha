@@ -21,5 +21,8 @@ final List<GetPage> appRoutes = [
   GetPage(name: '/diet_questions', page: () => DietQuestions()),
   GetPage(name: '/diet_page', page: () => DietPage()),
   GetPage(name: '/bmi_page', page: () => BmiPage()),
+  GetPage(name: '/trainer_list', page: ()=>TrainerListPage()),
 ];
+
+
 
