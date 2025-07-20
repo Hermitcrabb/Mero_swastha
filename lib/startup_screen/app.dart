@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:khalti_flutter/khalti_flutter.dart';
-import 'views/models/user_controller.dart';
-import 'route.dart';
+import '../models/user/user_controller.dart';
+import '../routes/route.dart';
 
 class MeroSwasthaApp extends StatelessWidget {
   const MeroSwasthaApp({super.key});

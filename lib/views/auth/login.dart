@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import '../models/user_controller.dart';
+import '../../models/user/user_controller.dart';
 import 'signup.dart';
-import '../../forgot.dart';
+import 'forgot.dart';
 import 'verify.dart';
 import '../setup/startup_screen.dart';
 
@@ -39,6 +39,7 @@ class _LoginState extends State<Login> {
       );
 
       final user = credential.user;
+      print("user: $user");
       // if (user != null && !user.emailVerified) {
       //   Get.offAll(() => const Verify());
       // } else {
@@ -136,16 +137,16 @@ class _LoginState extends State<Login> {
                 )
               ],
             ),
-            ElevatedButton(
-              onPressed: () {
-                Get.toNamed('/trainer_page');
-              },
-              style: ElevatedButton.styleFrom(
-                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
-                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
-              ),
-              child: const Text("View Trainers"),
-            ),
+            // ElevatedButton(
+            //   onPressed: () {
+            //     Get.toNamed('/trainer_page');
+            //   },
+            //   style: ElevatedButton.styleFrom(
+            //     padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+            //     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+            //   ),
+            //   child: const Text("View Trainers"),
+            // ),
           ],
         ),
       ),

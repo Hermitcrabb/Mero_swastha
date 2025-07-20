@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
-import '/homepage.dart'; // or wherever your Homepage screen is
+import '../dashboard/dashboard.dart'; // or wherever your Homepage screen is
 
 class ProfileSetupPage extends StatefulWidget {
   const ProfileSetupPage({super.key});
@@ -49,7 +49,7 @@ class _ProfileSetupState extends State<ProfileSetupPage> {
         'createdAt': FieldValue.serverTimestamp(),
       });
 
-      Get.offAll(() => const Homepage());
+      Get.offAll(() => const Dashboard());
     } catch (e) {
       Get.snackbar("Error", "Failed to save profile");
     }

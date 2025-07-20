@@ -7,7 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
-import 'package:mero_swastha/app.dart';
+import 'package:mero_swastha/startup_screen/app.dart';
 
 import 'package:mero_swastha/main.dart';
 

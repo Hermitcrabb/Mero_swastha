@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import '../models/user_controller.dart';
+import '../../models/user/user_controller.dart';
 import 'package:get/get.dart';
 
 class LogoutButton extends StatelessWidget {

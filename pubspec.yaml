@@ -41,6 +41,7 @@ dependencies:
   chewie: ^1.7.5
   khalti: ^2.0.0
   khalti_flutter: ^3.0.0
+  image_picker: ^1.1.1
 
 
 

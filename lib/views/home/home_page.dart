@@ -2,10 +2,10 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'views/premium/payment_gateway.dart';
+import '../premium/payment_gateway.dart';
 
-class HomeDashboard extends StatelessWidget {
-  const HomeDashboard({super.key});
+class HomePage extends StatelessWidget {
+  const HomePage({super.key});
 
   Future<String> fetchUserName() async {
     final uid = FirebaseAuth.instance.currentUser?.uid;

@@ -1,13 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-
 import 'package:get/get.dart';
-
 import '../auth/login.dart';
 import 'profile_setup.dart';
-import '../../homepage.dart';
-
-import '../models/user_controller.dart';
+import '../dashboard/dashboard.dart';
+import '../../models/user/user_controller.dart';
 import '../auth/verify.dart';
 class StartupScreen extends StatelessWidget {
   const StartupScreen({super.key});
@@ -38,7 +35,7 @@ class StartupScreen extends StatelessWidget {
         return const ProfileSetupPage(); // Profile missing
       }
 
-      return const Homepage(); // All set up
+      return const Dashboard(); // All set up
     });
   }
 }
