@@ -114,6 +114,24 @@ class ProfilePage extends StatelessWidget {
                   ),
                 ),
               ),
+              const SizedBox(height: 20),
+
+              ElevatedButton.icon(
+                onPressed: () {
+                  Get.toNamed('/trainer_signup_page'); // You will create this route
+                },
+                icon: const Icon(Icons.app_registration),
+                label: const Text("Signup as Trainer"),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepPurple,
+                  foregroundColor: Colors.white,
+                  padding: const EdgeInsets.symmetric(vertical: 14, horizontal: 24),
+                  textStyle: const TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
+                ),
+              ),
             ],
           );
         }),

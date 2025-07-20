@@ -11,6 +11,7 @@ import 'views/diet/diet_questions.dart';
 import 'views/bmi/bmi_page.dart';
 import 'views/premium/trainer_list.dart';
 import 'views/trainer/trainers_page.dart';
+import 'views/auth/trainer_signup.dart';
 
 final List<GetPage> appRoutes = [
   GetPage(name: '/startup', page: () => const StartupScreen()),
@@ -24,6 +25,7 @@ final List<GetPage> appRoutes = [
   GetPage(name: '/bmi_page', page: () => BmiPage()),
   GetPage(name: '/trainer_list', page: ()=>TrainerListPage()),
   GetPage(name: '/trainer_page', page: ()=>TrainersPage()),
+  GetPage(name: '/trainer_signup_page', page: ()=>TrainerSignupPage()),
 ];
 
 
