@@ -8,6 +8,7 @@ import 'verify.dart';
 import '../setup/startup_screen.dart';
 
 
+
 class Login extends StatefulWidget {
   const Login({super.key});
 
@@ -134,7 +135,17 @@ class _LoginState extends State<Login> {
                   child: const Text("Sign up"),
                 )
               ],
-            )
+            ),
+            ElevatedButton(
+              onPressed: () {
+                Get.toNamed('/trainer_page');
+              },
+              style: ElevatedButton.styleFrom(
+                padding: const EdgeInsets.symmetric(horizontal: 24, vertical: 12),
+                shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(12)),
+              ),
+              child: const Text("View Trainers"),
+            ),
           ],
         ),
       ),
