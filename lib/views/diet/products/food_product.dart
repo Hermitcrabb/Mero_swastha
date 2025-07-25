@@ -15,44 +15,62 @@ class FoodProduct {
     required this.carbs,
   });
 
-  factory FoodProduct.fromJson(Map<String, dynamic> json) {
-    final nutriments = json['nutriments'] ?? {};
+  factory FoodProduct.fromFDCJson(Map<String, dynamic> json) {
+    final String name = json['description'] ?? 'Unknown';
 
-    double parseToDouble(dynamic value) {
-      if (value is double) return value;
-      if (value is int) return value.toDouble();
-      if (value is String) return double.tryParse(value) ?? 0.0;
-      return 0.0;
+    double calories = 0.0;
+    double protein = 0.0;
+    double fat = 0.0;
+    double carbs = 0.0;
+
+    if (json['foodNutrients'] != null) {
+      for (final nutrient in json['foodNutrients']) {
+        final String nutrientName = nutrient['nutrientName'] ?? '';
+        final unit = nutrient['unitName'] ?? '';
+
+        final value = nutrient['value'];
+        double parsedValue = (value is num) ? value.toDouble() : 0.0;
+
+        if (nutrientName.toLowerCase() == 'energy' && unit == 'KCAL') {
+          calories = parsedValue;
+        } else if (nutrientName.toLowerCase() == 'protein') {
+          protein = parsedValue;
+        } else if (nutrientName.toLowerCase() == 'total lipid (fat)') {
+          fat = parsedValue;
+        } else if (nutrientName.toLowerCase() == 'carbohydrate, by difference') {
+          carbs = parsedValue;
+        }
+      }
     }
 
-    final name = json['product_name'] ?? '';
-
-    final lowerName = name.toLowerCase();
-
-    if (name.isEmpty ||
-        lowerName.contains("wicked") ||
-        lowerName.contains("soygurt") ||
-        lowerName.contains("ready meal") ||
-        lowerName.contains("steak") ||
-        name.contains(',') ||
-        name.contains(';') ||
-        name.length > 40) {
-      throw FormatException("Unwanted product: $name");
-    }
-
-    final calories = parseToDouble(nutriments['energy-kcal']);
     if (calories <= 0) {
-      throw FormatException("Invalid calorie value for product: $name");
+      throw FormatException("Invalid or missing calories for $name");
     }
 
     return FoodProduct(
       name: name,
       calories: calories,
-      protein: parseToDouble(nutriments['proteins']),
-      fat: parseToDouble(nutriments['fat']),
-      carbs: parseToDouble(nutriments['carbohydrates']),
+      protein: protein,
+      fat: fat,
+      carbs: carbs,
     );
   }
+
+  FoodProduct copyWith({
+    double? calories,
+    double? protein,
+    double? fat,
+    double? carbs,
+  }) {
+    return FoodProduct(
+      name: name,
+      calories: calories ?? this.calories,
+      protein: protein ?? this.protein,
+      fat: fat ?? this.fat,
+      carbs: carbs ?? this.carbs,
+    );
+  }
+
 
   Map<String, dynamic> toJson() => {
     'name': name,

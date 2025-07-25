@@ -6,6 +6,8 @@ import 'package:image_picker/image_picker.dart';
 import 'package:http/http.dart' as http;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:image/image.dart' as img_lib;
+import 'dart:typed_data';
 
 class TrainerProfileSetupPage extends StatefulWidget {
   const TrainerProfileSetupPage({Key? key}) : super(key: key);
@@ -36,16 +38,35 @@ class _TrainerProfileSetupPageState extends State<TrainerProfileSetupPage> {
     const imgbbApiKey = '23ab4316f6de968c976bb88fb5fb1f79';
     final url = Uri.parse("https://api.imgbb.com/1/upload?key=$imgbbApiKey");
 
-    final base64Image = base64Encode(imageFile.readAsBytesSync());
-    final response = await http.post(url, body: {
-      'image': base64Image,
-    });
+    try {
+      // Load image and resize
+      final originalBytes = await imageFile.readAsBytes();
+      img_lib.Image? image = img_lib.decodeImage(originalBytes);
+      if (image == null) {
+        print('❌ Failed to decode image.');
+        return null;
+      }
 
-    if (response.statusCode == 200) {
-      final json = jsonDecode(response.body);
-      return json['data']['url'];
-    } else {
-      print('❌ Failed to upload image: ${response.body}');
+      // Resize image to width of 800px (or smaller if image is small)
+      final resizedImage = img_lib.copyResize(image, width: 800);
+
+      // Encode to JPEG with 75% quality
+      final jpgBytes = img_lib.encodeJpg(resizedImage, quality: 75);
+      final base64Image = base64Encode(Uint8List.fromList(jpgBytes));
+
+      final response = await http.post(url, body: {
+        'image': base64Image,
+      });
+
+      if (response.statusCode == 200) {
+        final json = jsonDecode(response.body);
+        return json['data']['url'];
+      } else {
+        print('❌ Failed to upload image: ${response.body}');
+        return null;
+      }
+    } catch (e) {
+      print('❌ Upload Error: $e');
       return null;
     }
   }
@@ -69,11 +90,19 @@ class _TrainerProfileSetupPageState extends State<TrainerProfileSetupPage> {
       'profileCompleted': true,
     };
 
-    await FirebaseFirestore.instance.collection('trainers').doc(user.uid).update(trainerData);
+    try {
+      await FirebaseFirestore.instance.collection('trainers').doc(user.uid).set(trainerData, SetOptions(merge: true));
+    } catch (e) {
+      print('❌ Firestore Error: $e');
+      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("❌ Failed to save profile. Please try again.")));
+      setState(() => _isSubmitting = false);
+      return;
+    }
+
 
     setState(() => _isSubmitting = false);
     ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text("✅ Profile setup complete!"))
+        const SnackBar(content: Text("✅ Profile setup complete!"))
     );
     Get.back();
   }
@@ -144,8 +173,8 @@ class _TrainerProfileSetupPageState extends State<TrainerProfileSetupPage> {
               child: ElevatedButton.icon(
                 onPressed: _isSubmitting ? null : _submitProfile,
                 icon: _isSubmitting
-                    ? SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2))
-                    : Icon(Icons.check),
+                    ? const SizedBox(width: 20, height: 20, child: CircularProgressIndicator(strokeWidth: 2))
+                    : const Icon(Icons.check),
                 label: Text(_isSubmitting ? "Submitting..." : "Submit Profile"),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: theme.primaryColor,

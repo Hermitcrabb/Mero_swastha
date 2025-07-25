@@ -10,7 +10,7 @@ class MeroSwasthaApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return KhaltiScope(
-      publicKey: 'test_public_key_dc74b3be763f481f9fbc87cf51484974', // use test key for testing
+        publicKey: 'test_public_key_d01318c535b84727855f6c7f3af161fd', // use test key for testing
       builder: (context, navKey) {
         return GetMaterialApp(
           navigatorKey: navKey,

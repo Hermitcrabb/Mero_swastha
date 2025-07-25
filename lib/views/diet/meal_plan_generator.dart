@@ -25,7 +25,7 @@ class MealPlanGenerator {
       "Pickle",
       "Chicken",
       "Paneer",
-      "Buff Meat"
+      "Buff"
     ],
     'Dinner': [
       "Roti",
@@ -52,13 +52,13 @@ class MealPlanGenerator {
       List<String> mealLabels,
       List<String> userStaples,
       String dietType,
-      double caloriesPerMeal,
+      Map<String, double> caloriesPerMeal,
       ) async {
 
     final user = FirebaseAuth.instance.currentUser;
     if (user == null) return {};
 
-    final MealCategory localMeals = await loadLocalMealData();
+    final localMeals = await MealDataLoader.loadLocalMealData();
     final Map<String, List<FoodProduct>> mealPlan = {};
 
     for (final label in mealLabels) {
@@ -94,12 +94,17 @@ class MealPlanGenerator {
         )).toList();
 
         // Then apply calorie-limiting selection logic
-        final selected = FoodProductService.selectProductsForMeal(localProducts, caloriesPerMeal);
+        final selected = FoodProductService.selectProductsForMeal(
+          localProducts,
+          caloriesPerMeal[label] ?? 0.0,
+        );
+
         mealPlan[label] = selected;
       } else {
         // If no local meals found, fallback to Open Food Facts API
-        final fetched = await FoodProductService.fetchProductsByStapleAndDiet(userRelevantStaples, dietType);
-        final selected = FoodProductService.selectProductsForMeal(fetched, caloriesPerMeal);
+        final fetched = await FoodProductService.fetchProductsFromUSDA(userRelevantStaples, dietType);
+        final selected = FoodProductService.selectProductsForMeal(fetched, caloriesPerMeal[label] ?? 0.0);
+        print(caloriesPerMeal[label]);
         mealPlan[label] = selected;
       }
     }
