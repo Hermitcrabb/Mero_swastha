@@ -7,11 +7,11 @@ import '../premium/payment_gateway.dart';
 class HomePage extends StatelessWidget {
   const HomePage({super.key});
 
-  Future<String> fetchUserName() async {
+  Future<DocumentSnapshot?> fetchUserData() async {
     final uid = FirebaseAuth.instance.currentUser?.uid;
-    if (uid == null) return "Guest";
+    if (uid == null) return null;
     final doc = await FirebaseFirestore.instance.collection('users').doc(uid).get();
-    return doc.exists ? (doc.data()?['username'] ?? 'User') : 'User';
+    return doc.exists ? doc : null;
   }
 
   @override
@@ -29,21 +29,36 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: FutureBuilder<String>(
-        future: fetchUserName(),
+      body: FutureBuilder<DocumentSnapshot?>(
+        future: fetchUserData(),
         builder: (context, snapshot) {
-          final name = snapshot.data ?? '...';
+          if (snapshot.connectionState == ConnectionState.waiting) {
+            return const Center(child: CircularProgressIndicator());
+          }
+
+          final userData = snapshot.data?.data() as Map<String, dynamic>?;
+
+          final name = userData?['username'] ?? 'User';
+          final isPremium = userData?['isPremium'] ?? false;
+
           return SingleChildScrollView(
             padding: const EdgeInsets.all(24),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Text(
-                  "Welcome, $name 👋",
-                  style: Theme.of(context).textTheme.titleLarge?.copyWith(
-                    fontWeight: FontWeight.bold,
-                    color: Colors.deepPurple,
-                  ),
+                Row(
+                  children: [
+                    Text(
+                      "Welcome, $name 👋",
+                      style: Theme.of(context).textTheme.titleLarge?.copyWith(
+                        fontWeight: FontWeight.bold,
+                        color: Colors.deepPurple,
+                      ),
+                    ),
+                    const SizedBox(width: 8),
+                    if (isPremium)
+                      const Icon(Icons.verified, color: Colors.amber, size: 28),
+                  ],
                 ),
                 const SizedBox(height: 24),
                 const Text(
@@ -69,13 +84,13 @@ class HomePage extends StatelessWidget {
                   child: Padding(
                     padding: const EdgeInsets.all(16.0),
                     child: Column(
-                      children: const [
+                      children: [
                         Text(
-                          "Go Premium 🚀",
-                          style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
+                          isPremium ? "You are Premium 🎉" : "Go Premium 🚀",
+                          style: const TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                         ),
-                        SizedBox(height: 10),
-                        Text(
+                        const SizedBox(height: 10),
+                        const Text(
                           "• Personalized coaching\n• Advanced workout routines\n• Motivational messages\n• In-depth progress tracking",
                           style: TextStyle(fontSize: 16),
                         ),
@@ -84,22 +99,33 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
                 const SizedBox(height: 20),
-                Center(
-                  child: ElevatedButton(
-                    onPressed: () {
-                      // Handle premium action
-                      Navigator.push(
-                      context,
-                          MaterialPageRoute(builder: (context) => const PaymentGatewayPage()),
-                      );
-                    },
-                    style: ElevatedButton.styleFrom(
-                      backgroundColor: Colors.deepPurple,
-                      padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+                if (!isPremium)
+                  Center(
+                    child: ElevatedButton(
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => PaymentGateway()),
+                        );
+                      },
+                      style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.deepPurple,
+                        padding: const EdgeInsets.symmetric(horizontal: 40, vertical: 16),
+                      ),
+                      child: const Text("Upgrade to Premium"),
                     ),
-                    child: const Text("Upgrade to Premium"),
+                  )
+                else
+                  Center(
+                    child: Text(
+                      '🎉 Enjoy your Premium Features!',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Colors.green[700],
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                   ),
-                ),
               ],
             ),
           );
