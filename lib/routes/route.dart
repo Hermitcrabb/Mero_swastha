@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../views/auth/login.dart';
 import '../views/auth/verify.dart';
+import '../views/premium/Chatwithtrainer/ChatWithTrainerView.dart';
 import '../views/setup/profile_setup.dart';
 import '../views/profile/profile_page.dart';
 import '../views/dashboard/dashboard.dart';
@@ -15,6 +16,9 @@ import '../views/auth/trainer_signup.dart';
 import '../admin/admin_trainer_approval_page.dart';
 import '../views/setup/trainer/trainer_profile_setup_page.dart';
 import '../views/setup/trainer/trainer_view_page.dart';
+
+
+
 
 final List<GetPage> appRoutes = [
   GetPage(name: '/startup', page: () => const StartupScreen()),
@@ -43,6 +47,10 @@ final List<GetPage> appRoutes = [
       return TrainerViewPage(trainerId: args['trainerId']);
     },
   ),
+GetPage(
+  name: '/chat_with_trainer_view',
+  page: () => ChatWithTrainerView(),
+),
 
 
 ];
