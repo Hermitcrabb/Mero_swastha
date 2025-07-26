@@ -4,7 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import '../../khalti_process/api_service.dart';
 
-const bool isDemo = false;
+const bool isDemo = true;
 
 class PaymentGatewayPage extends StatelessWidget {
   const PaymentGatewayPage({super.key});

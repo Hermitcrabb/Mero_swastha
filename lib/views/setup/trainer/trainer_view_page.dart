@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:get/get.dart';
 
 class TrainerViewPage extends StatelessWidget {
   final String trainerId;
@@ -136,7 +137,9 @@ class TrainerViewPage extends StatelessWidget {
                           width: double.infinity,
                           child: ElevatedButton.icon(
                             onPressed: () {
-                              // add logic to contact trainer
+                              Get.toNamed('/chat_with_trainer_view', arguments: {
+                                'trainerId': trainerId,
+                              });// add logic to contact trainer
                             },
                             icon: const Icon(Icons.message),
                             label: const Text("Contact Trainer"),

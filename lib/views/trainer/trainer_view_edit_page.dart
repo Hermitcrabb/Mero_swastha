@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:get/get.dart';
 import 'edit_trainer_profile_page.dart'; // You'll create this page next
 
 class TrainerViewEditPage extends StatelessWidget {
@@ -151,7 +152,7 @@ class TrainerViewEditPage extends StatelessWidget {
                           width: double.infinity,
                           child: ElevatedButton.icon(
                             onPressed: () {
-                              // Add logic to contact trainer
+                              //add logic here
                             },
                             icon: const Icon(Icons.message),
                             label: const Text("Contact Trainer"),
