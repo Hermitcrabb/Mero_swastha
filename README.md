@@ -2,7 +2,7 @@
 
 A Nepali Fitness App
 
-![Diet Plan](./screenshots/diet_plan.png)
+![Diet Plan](./screenshots/login_page.png)
 
 
 ## Getting Started
