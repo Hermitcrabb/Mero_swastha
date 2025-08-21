@@ -48,13 +48,9 @@ Follow these steps to run **Mero Swastha** locally:
    git clone https://github.com/your-username/mero-swastha.git
    cd mero-swastha
 
-    Install Flutter dependencies:
+2.Install Flutter dependencies:
+  
 
-flutter pub get
-
-Connect a device or emulator, then run:
-
-    flutter run
 ### 📚 Useful Resources
 If you are new to Flutter, these resources will help:
 
