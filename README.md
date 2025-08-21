@@ -18,23 +18,23 @@ It is built with a focus on **Nepali cuisine**, **budget-friendly diets**, and *
 ## 📱 App UI Preview
 
 <p align="center">
-  <img src="./screenshots/login_page.png" width="250"/>
-  <img src="./screenshots/signup_page.png" width="250"/>
+  <img src="./screenshots/login_page" width="250"/>
+  <img src="./screenshots/signup_page" width="250"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/home_page.png" width="250"/>
-  <img src="./screenshots/workout_page.png" width="250"/>
+  <img src="./screenshots/home_page" width="250"/>
+  <img src="./screenshots/workout_page" width="250"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/diet_page.png" width="250"/>
-  <img src="./screenshots/bmi_page.png" width="250"/>
+  <img src="./screenshots/diet_page" width="250"/>
+  <img src="./screenshots/bmi_page" width="250"/>
 </p>
 
 <p align="center">
-  <img src="./screenshots/trainers_page.png" width="250"/>
-  <img src="./screenshots/trainer_profile_page.png" width="250"/>
+  <img src="./screenshots/trainers_page" width="250"/>
+  <img src="./screenshots/trainer_profile_page" width="250"/>
 </p>
 
 ---
