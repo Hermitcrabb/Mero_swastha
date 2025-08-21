@@ -26,7 +26,7 @@ It is built with a focus on **Nepali cuisine**, **budget-friendly diets**, and *
 as a **final year project for Nepal Engineering College**.
 
 ### 📄 Project Report
-You can view the full project report [here](./docs/mero_swasthy_report.docx).
+You can view the full project report [here](./docs/mero_swasthya_report.docx).
 
 
 ## 📱 App UI Preview
