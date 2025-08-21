@@ -15,6 +15,20 @@ It is built with a focus on **Nepali cuisine**, **budget-friendly diets**, and *
 
 ---
 
+## 👨‍💻 Project Info
+
+**Mero Swastha** was built by:
+
+- **Aashish Roka**  
+- **Pratham Bhandari**  
+- **Pramod Bist**  
+
+as a **final year project for Nepal Engineering College**.
+
+### 📄 Project Report
+You can view the full project report [here](./docs/mero_swasthy_report.docx).
+
+
 ## 📱 App UI Preview
 
 <p align="center">
