@@ -1,4 +1,4 @@
-# 🌱 Mero Swastha 🧘‍♂️🍎
+# Mero Swastha 
 
 **Mero Swastha** is a comprehensive fitness mobile application designed to promote healthier living through **personalized diet plans, exercise routines, BMI tracking, and motivational support**.  
 It is built with a focus on **Nepali cuisine**, **budget-friendly diets**, and **accessible fitness guidance**.
@@ -6,16 +6,16 @@ It is built with a focus on **Nepali cuisine**, **budget-friendly diets**, and *
 ---
 
 ## ✨ Features
-- 📊 **BMI & TDEE Calculator** – calculates based on age, gender, and activity level  
-- 🍲 **Dynamic Diet Plans** – personalized and budget-friendly (Low, Medium, High)  
-- 🏋️ **Workout Routines** – beginner, intermediate, and advanced workouts  
-- 🎯 **Progress Tracking** – stay motivated with goals and milestones  
-- 👨‍🏫 **Trainers Section** – connect with fitness trainers and view profiles  
-- 🔐 **User Accounts** – easy signup/login with Firebase authentication  
+-  **BMI & TDEE Calculator** – calculates based on age, gender, and activity level  
+-  **Dynamic Diet Plans** – personalized and budget-friendly (Low, Medium, High)  
+-  **Workout Routines** – beginner, intermediate, and advanced workouts  
+-  **Progress Tracking** – stay motivated with goals and milestones  
+-  **Trainers Section** – connect with fitness trainers and view profiles  
+-  **User Accounts** – easy signup/login with Firebase authentication  
 
 ---
 
-## 👨‍💻 Project Info
+##  Project Info
 
 **Mero Swastha** was built by:
 
@@ -88,7 +88,7 @@ Here are some planned improvements and upcoming features for **Mero Swastha**:
 - 📈 [More detailed progress analytics](#)
 
 
-🤝 Contributing
+ Contributing
 
 Contributions are welcome!
 Feel free to fork this repo and submit a pull request.
