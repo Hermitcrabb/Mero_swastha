@@ -39,22 +39,49 @@ It is built with a focus on **Nepali cuisine**, **budget-friendly diets**, and *
 
 ---
 
-## 🚀 Installation & Setup
+## 🚀 Getting Started
 
-1. Clone the repository:
+Follow these steps to run **Mero Swastha** locally:
+
+1. Clone this repository:
    ```bash
    git clone https://github.com/your-username/mero-swastha.git
    cd mero-swastha
 
-## Getting Started
+    Install Flutter dependencies:
 
-This project is a starting point for a Flutter application.
+flutter pub get
 
-A few resources to get you started if this is your first Flutter project:
+Connect a device or emulator, then run:
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+    flutter run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+📚 Useful Resources
+
+If you are new to Flutter, these resources will help:
+
+    Write your first Flutter app
+
+Flutter Cookbook
+
+Flutter Documentation
+🛠️ Tech Stack
+
+    Flutter – Cross-platform mobile development
+
+    Firebase – Authentication & Firestore Database
+
+    GetX – State management
+
+📌 Future Plans
+
+    📅 Daily motivational tips & reminders
+
+    🥗 AI-powered smart diet recommendations
+
+    📈 More detailed progress analytics
+
+🤝 Contributing
+
+Contributions are welcome!
+Feel free to fork this repo and submit a pull request.
