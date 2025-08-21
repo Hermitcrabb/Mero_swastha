@@ -55,31 +55,22 @@ flutter pub get
 Connect a device or emulator, then run:
 
     flutter run
-
-📚 Useful Resources
-
+### 📚 Useful Resources
 If you are new to Flutter, these resources will help:
 
-    Write your first Flutter app
+- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Flutter Cookbook](https://docs.flutter.dev/cookbook)
+- [Flutter Documentation](https://docs.flutter.dev/)
 
-Flutter Cookbook
+---
 
-Flutter Documentation
-🛠️ Tech Stack
+### 📌 Future Plans
+Here are some planned improvements and upcoming features for **Mero Swastha**:
 
-    Flutter – Cross-platform mobile development
+- 📅 [Daily motivational tips & reminders](#)  <!-- Replace # with actual link if you have one -->
+- 🥗 [AI-powered smart diet recommendations](#)
+- 📈 [More detailed progress analytics](#)
 
-    Firebase – Authentication & Firestore Database
-
-    GetX – State management
-
-📌 Future Plans
-
-    📅 Daily motivational tips & reminders
-
-    🥗 AI-powered smart diet recommendations
-
-    📈 More detailed progress analytics
 
 🤝 Contributing
 
@@ -88,15 +79,3 @@ Feel free to fork this repo and submit a pull request.
 
 
 ---
-
-✅ Once you fix these two things:  
-- Add **`.png`** to all image paths  
-- Reformat **Getting Started** and other sections properly  
-
-…your README.md will look **professional and clean** on GitHub.  
-
----
-
-If you want, I can **rewrite your full README.md** now with **all images, Getting Started, features, and sections properly formatted**, so you can just copy-paste it and it’s ready.  
-
-Do you want me to do that?
