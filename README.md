@@ -2,6 +2,9 @@
 
 A Nepali Fitness App
 
+![Diet Plan](./screenshots/diet_plan.png)
+
+
 ## Getting Started
 
 This project is a starting point for a Flutter application.
