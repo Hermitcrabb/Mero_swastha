@@ -32,6 +32,14 @@ class _VerifyState extends State<Verify> {
       Get.snackbar("Error", "User not found or already verified");
     }
   }
+  @override
+  void initState() {
+    super.initState();
+    // Automatically send verification email on first load
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      sendVerifyLink();
+    });
+  }
 
   void reloadAndCheck() async {
     setState(() => isLoading = true);
